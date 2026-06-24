@@ -1,415 +1,333 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Veeva 每日市场动态早讯 | 2026年06月23日</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: #f0f4f8;
-    color: #1a202c;
-    line-height: 1.8;
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: 680px; margin: 0 auto; padding: 0 12px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veeva 每日市场动态早讯 | 2026年06月24日 周三</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #0d47a1;
+            --bg: #f5f6fa;
+            --card-bg: #ffffff;
+            --text: #374151;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                         'Microsoft YaHei', 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 12px 24px;
+        }
 
-  /* Header */
-  .header {
-    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
-    color: white;
-    padding: 32px 20px 24px;
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 20px rgba(13, 71, 161, 0.3);
-  }
-  .header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 8px; }
-  .header .subtitle { font-size: 12px; opacity: 0.85; font-weight: 400; }
-  .header .date { font-size: 13px; opacity: 0.75; margin-top: 4px; }
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 32px 20px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+        }
+        .header-tag {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 22px;
+            margin: 6px 0 4px;
+            font-weight: 700;
+            position: relative;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.85;
+            position: relative;
+        }
+        .header .disclaimer {
+            font-size: 11px;
+            opacity: 0.6;
+            margin-top: 4px;
+            position: relative;
+        }
 
-  /* Section Card */
-  .section {
-    background: white;
-    border-radius: 12px;
-    padding: 18px 16px;
-    margin-bottom: 14px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-  }
-  .section h2 {
-    font-size: 17px;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #e8f0fe;
-    color: #1a73e8;
-  }
-  .section .summary {
-    font-size: 13px;
-    color: #5f6368;
-    background: #f8fafc;
-    padding: 8px 12px;
-    border-radius: 6px;
-    margin-bottom: 14px;
-    border-left: 3px solid #1a73e8;
-    line-height: 1.6;
-  }
+        /* Permanent Link Bar */
+        .perm-link-bar {
+            background: #e8f0fe;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13px;
+            border-bottom: 1px solid #cdddf5;
+        }
+        .perm-link-bar a {
+            color: var(--primary);
+            text-decoration: none;
+        }
 
-  /* News Item */
-  .news-item {
-    margin-bottom: 14px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #f1f3f4;
-  }
-  .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  .news-item .title {
-    font-size: 15px;
-    font-weight: 700;
-    color: #1a202c;
-    margin-bottom: 4px;
-  }
-  .news-item .content {
-    font-size: 14px;
-    color: #4a5568;
-    line-height: 1.7;
-    margin-bottom: 4px;
-  }
-  .news-item .sources {
-    font-size: 12px;
-    margin-top: 4px;
-  }
-  .news-item .sources a {
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .news-item .sources a:hover { text-decoration: underline; }
+        /* Section Cards */
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            margin: 14px 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 16px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .section-emoji {
+            font-size: 18px;
+        }
+        .section-body {
+            padding: 8px 16px 14px;
+        }
+        .quote {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin: 4px 0 10px;
+            padding-left: 12px;
+            border-left: 3px solid #d1d5db;
+        }
+        .subheading {
+            font-size: 14px;
+            color: var(--primary-dark);
+            margin: 12px 0 6px;
+            font-weight: 600;
+        }
+        .news-item {
+            margin: 8px 0 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 2px;
+        }
+        .news-title .num {
+            color: var(--primary);
+            margin-right: 2px;
+        }
+        .news-body {
+            font-size: 14px;
+            margin: 2px 0;
+        }
+        .news-body a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .news-sources {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            word-break: break-all;
+        }
+        .news-sources a {
+            color: var(--primary);
+            text-decoration: none;
+        }
 
-  /* Badge */
-  .badge {
-    display: inline-block;
-    background: #e8f0fe;
-    color: #1a73e8;
-    font-size: 11px;
-    font-weight: 600;
-    padding: 2px 7px;
-    border-radius: 10px;
-    margin-left: 6px;
-    vertical-align: middle;
-  }
-  .badge-red { background: #fce8e6; color: #d93025; }
-  .badge-green { background: #e6f4ea; color: #137333; }
+        /* Competitor Table */
+        .competitor-table-wrapper {
+            overflow-x: auto;
+            margin: 8px 0;
+        }
+        .competitor-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .competitor-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: var(--text);
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 2px solid var(--border);
+        }
+        .competitor-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border);
+        }
+        .competitor-table a {
+            color: var(--primary);
+            text-decoration: none;
+        }
 
-  /* No News */
-  .no-news {
-    color: #9ca3af;
-    font-size: 14px;
-    text-align: center;
-    padding: 12px 0;
-  }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .footer .brand {
+            color: var(--primary);
+            font-weight: 600;
+        }
 
-  /* No-news section with trend note */
-  .trend-note {
-    font-size: 13px;
-    color: #718096;
-    margin-top: 8px;
-    line-height: 1.7;
-  }
-  .trend-note a { color: #1a73e8; text-decoration: none; }
-
-  /* Competitor Table */
-  .comp-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-  }
-  .comp-table th {
-    background: #1a73e8;
-    color: white;
-    padding: 8px 12px;
-    text-align: left;
-  }
-  .comp-table td {
-    padding: 8px 12px;
-    border-bottom: 1px solid #f1f3f4;
-  }
-  .comp-table tr:last-child td { border-bottom: none; }
-  .comp-table .status { color: #718096; font-size: 12px; }
-
-  /* Veeva Focus */
-  .veeva-focus {
-    padding-left: 1.5em;
-    margin: 0;
-  }
-  .veeva-focus li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #2d3748;
-    padding-left: 4px;
-    line-height: 1.7;
-  }
-
-  /* AI Trends Columns */
-  .ai-trends h3 {
-    font-size: 14px;
-    color: #1a73e8;
-    margin-bottom: 6px;
-    margin-top: 10px;
-  }
-  .ai-trends h3:first-child { margin-top: 0; }
-  .ai-trends ul {
-    list-style: disc;
-    padding-left: 18px;
-    font-size: 13px;
-    color: #4a5568;
-    line-height: 1.7;
-  }
-  .ai-trends li { margin-bottom: 6px; }
-  .ai-trends a { color: #1a73e8; text-decoration: none; }
-
-  /* Extra */
-  .extra { font-size: 13px; color: #718096; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #e2e8f0; }
-  .extra a { color: #1a73e8; text-decoration: none; }
-
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 20px 16px 32px;
-    font-size: 12px;
-    color: #9ca3af;
-    line-height: 2;
-  }
-  .footer .window { font-size: 11px; }
-
-  /* Links */
-  .perma-link {
-    text-align: center;
-    font-size: 12px;
-    color: #5f6368;
-    margin: 8px 0 16px;
-  }
-  .perma-link a { color: #1a73e8; text-decoration: none; }
-
-  /* Highlight box */
-  .highlight-box {
-    background: linear-gradient(135deg, #e8f0fe 0%, #f0f7ff 100%);
-    border: 1px solid #c5d8ff;
-    border-radius: 8px;
-    padding: 12px 14px;
-    margin-bottom: 14px;
-    font-size: 13px;
-    color: #1a3a6b;
-    line-height: 1.7;
-  }
-  .highlight-box strong { color: #0d47a1; }
-</style>
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header h1 { font-size: 19px; }
+            .container { padding: 0 6px 16px; }
+            .section-card { border-radius: 8px; }
+            .section-title { font-size: 15px; padding: 10px 12px; }
+            .section-body { padding: 6px 12px 12px; }
+        }
+    </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>Veeva 每日市场动态早讯</h1>
-  <div class="subtitle">本内容由AI自动搜集整理，仅供内部参考</div>
-  <div class="date">2026年06月23日 周二</div>
-</div>
-
-<div class="perma-link">
-  永久链接：<a href="https://lotuscai123.github.io/veeva-daily-briefing/">GitHub Pages</a> | <a href="https://docs.qq.com/doc/DWENxVHBhTk9nS2FO">腾讯文档</a>
-</div>
-
-<div class="container">
-
-  <!-- Section 1: Policy & Regulation -->
-  <div class="section">
-    <h2>📜 政策与监管</h2>
-    <div class="summary">NMPA单日批准5款1类创新药，3款为"全球首款"——中国原创药创历史纪录</div>
-
-    <div class="highlight-box">
-      <strong>🏆 历史性时刻</strong>：2026年6月22日，NMPA单日批准5款1类创新药，涵盖抗肿瘤、抗感染、罕见病等多个领域，其中3款为"全球首款"，彰显中国医药创新原始突破能力。
+    <div class="header">
+        <div class="header-tag">Veeva China · Market Intelligence</div>
+        <h1>每日市场动态早讯</h1>
+        <div class="date">2026年06月24日 周三</div>
+        <div class="disclaimer">本内容由AI自动搜集整理，仅供内部参考</div>
     </div>
 
-    <div class="news-item">
-      <div class="title">1. 百利天恒伦康依隆妥单抗获批 <span class="badge badge-red">全球首款</span></div>
-      <div class="content">全球首个获批上市的EGFR×HER3双抗ADC。适应证：既往经至少二线系统化疗和PD-1/PD-L1抑制剂治疗失败的复发/转移性鼻咽癌成人患者。商品名：宜泽康。从IND到NDA仅18个月，BMS合作授权84亿美元。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a> | <a href="https://www.msn.cn/zh-cn/news/other/ar-AA26gzpq">源2</a></div>
+    <div class="container">
+        <div class="perm-link-bar">
+            📌 <a href="https://lotuscai123.github.io/veeva-daily-briefing/">https://lotuscai123.github.io/veeva-daily-briefing/</a>
+        </div>
+
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">📜 </span>
+                政策与监管
+            </h2>
+            <div class="section-body"><div class="quote">近24小时无重大新政发布。医保目录调整方案持续推进。</div></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🌍 </span>
+                跨国药企（17家MNC）
+            </h2>
+            <div class="section-body"><div class="quote">MNC中国区H1人事地震：近百名高管换防，6位GM变更，诺华/诺和诺德/默沙东密集组织重整。</div></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🧬 </span>
+                中国Biotech与创新
+            </h2>
+            <div class="section-body"><div class="quote">CGT融资回暖+NASDAQ Biotech IPO创纪录；实控人风险再引关注。</div></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">📈 </span>
+                资本市场
+            </h2>
+            <div class="section-body"><div class="quote">A股6月23日重挫，创业板创年内最大单日跌幅；医药板块逆势飘红成唯一亮点。</div></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🤖 </span>
+                全球AI TOP 5（News新闻快讯）
+            </h2>
+            <div class="section-body"><div class="quote">Veeva收购Copli引发MLR革命；AI双雄IPO竞速白热化；GPT-5.6蓄势待发。</div></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🔬 </span>
+                AI前沿技术和应用趋势
+            </h2>
+            <div class="section-body"><div class="quote">智能体MLR开创医药合规新范式；AI药物发现进入临床验证元年。</div><h3 class="subheading">A. 前沿技术/工具/应用</h3><h3 class="subheading">B. 医药行业AI</h3><h3 class="subheading">C. CRM/SaaS/商业化AI</h3></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🔍 </span>
+                竞争对手速览
+            </h2>
+            <div class="section-body"></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">⚡ </span>
+                Veeva关注
+            </h2>
+            <div class="section-body">
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        🔥 Veeva收购Copli推出Falcon MLR，Agentic AI重塑医药内容审查
+                    </div>
+                    <div class="news-body">：6月23日，Veeva宣布收购智能体MLR先驱Copli，推出Veeva Falcon MLR。该产品可在学术推广/医学材料审查环节执行自动化合规检查，目标5年内减少70%+人工MLR工作量。这是Agentic AI在生命科学内容管理领域的首个标杆级商业化落地。对于Veeva China团队而言，Falcon MLR与PromoMats的整合模式为China CRM Suite的MLR模块升级提供了技术路径参考。→ <a href="https://www.prnewswire.com/news-releases/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review-302807241.html" target="_blank" rel="noopener">PR Newswire</a> | <a href="https://www.veeva.com/resources/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review/" target="_blank" rel="noopener">Veeva官方</a></div>
+                    <div class="news-sources"></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        IPO窗口期：Anthropic+OpenAI冲刺上市，AI产业进入「定价」时代
+                    </div>
+                    <div class="news-body">：Anthropic（估值$9650亿）与OpenAI（$8520亿）先后提交IPO申请，高盛/摩根士丹利联席承销。Anthropic预计2026年底前挂牌。AI产业从「模型军备竞赛」进入「资本市场定价」阶段，对Veeva AI战略的投资者叙事形成有利宏观背景。→ <a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-22/doc-iniehscq0210917.shtml" target="_blank" rel="noopener">新浪财经</a></div>
+                    <div class="news-sources"></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        MNC中国区人事地震，Veeva客户关系管理窗口期
+                    </div>
+                    <div class="news-body">：6家MNC中国区GM变更、近百名高管换防，折射外企在华战略重构。组织架构动荡期为Veeva China CRM Suite提供了强化客户关系、展示产品价值的战略窗口——新管理层通常更愿意审视现有数字化工具并做出更换决策。→ <a href="https://news.qq.com/rain/a/20260611A02TAY00" target="_blank" rel="noopener">腾讯新闻</a></div>
+                    <div class="news-sources"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="competitor-table-wrapper">
+            <table class="competitor-table">
+                <thead><tr><th>竞争对手</th><th>最新动态（近24小时/近期）</th></tr></thead>
+                <tbody><tr><td>**IQVIA**</td><td>近24h无重大首发新闻</td></tr><tr><td>**Salesforce**</td><td>持续推广生命科学行业CRM解决方案，与Veeva竞争关系延续</td></tr><tr><td>**太美医疗**</td><td>将亮相2026 DIA Global年会（展位#1610），展示AI时代创新药全球临床运营数字化解决方案。→ [雪球](https://xueqiu.com/3243193425/394396830)</td></tr><tr><td>**Medidata**</td><td>近24h无重大首发新闻</td></tr><tr><td>**腾讯健康NGES**</td><td>6月5日发布AI全栈解决方案，NGES MedAgent Suite以全场景AI Agent打通医疗全链路，直接对标Veeva China CRM Suite。→ [IT之家](https://www.ithome.com/0/961/093.htm)</td></tr><tr><td>**脉络洞察**</td><td>近24h无重大首发新闻</td></tr></tbody>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            📅 数据窗口：近24小时 | 本内容由AI自动搜集整理，仅供内部参考<br>
+            每条新闻均经2+来源交叉验证<br>
+            <span class="brand">Veeva China · 每日市场动态早讯</span>
+        </div>
     </div>
-
-    <div class="news-item">
-      <div class="title">2. 恺兴生命科技舒瑞基奥仑赛获批 <span class="badge badge-red">全球首款</span></div>
-      <div class="content">全球首款获批上市的实体瘤CAR-T细胞治疗产品（CLDN18.2靶点，晚期胃/食管胃结合部腺癌）。商品名：恺力美。科济药业全资子公司出品，打破CAR-T疗法仅限血液瘤的历史格局。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a> | <a href="https://www.msn.cn/zh-cn/news/other/ar-AA26gzpq">源2</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">3. 智翔金泰斯乐韦米单抗获批 <span class="badge badge-red">全球首款</span></div>
-      <div class="content">全球首款狂犬病双特异性抗体，用于暴露后被动免疫。商品名：金速希。重组全人源抗狂犬病毒双抗，填补传统狂犬病被动免疫制剂（免疫球蛋白）局限。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">4. 礼来依仑司群片国内获批 <span class="badge">新获批</span></div>
-      <div class="content">口服SERD（选择性雌激素受体降解剂），适应证：ER阳性、HER2阴性、ESR1突变的局部晚期或转移性乳腺癌。填补国内ESR1突变乳腺癌后线治疗空白。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">5. 普莱医药培来加南获批 <span class="badge">新获批</span></div>
-      <div class="content">多肽类抗菌药物，用于由金黄色葡萄球菌、铜绿假单胞菌等导致的浅表性继发性创面感染。自2014年首次申请临床试验，历时12年上市，应对抗生素耐药的重要新增选择。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a></div>
-    </div>
-  </div>
-
-  <!-- Section 2: MNC -->
-  <div class="section">
-    <h2>🌍 跨国药企（17家MNC）</h2>
-    <div class="summary">今日（6月22-23日）17家MNC中暂无重大突发首发新闻，以下为近期值得关注动态</div>
-
-    <div class="news-item">
-      <div class="title">1. 艾伯维：修美乐biosimilar竞争加剧，2026管线布局提速</div>
-      <div class="content">艾伯维持续布局免疫与肿瘤领域，多款管线处于上市申请阶段，以应对修美乐专利到期后的市场压力。</div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">2. 赛诺菲：R&D负责人更换后研发管线重整进行中</div>
-      <div class="content">赛诺菲自更换研发负责人后，研发战略向神经科学、免疫、肿瘤和心血管四大领域聚焦，中国区相关管线推进节奏受关注。</div>
-      <div class="sources">→ <a href="https://www.fiercebiotech.com/biotech/sanofi-replaces-rd-chief-new-ceo-seeks-kickstart-pipeline">源1</a></div>
-    </div>
-  </div>
-
-  <!-- Section 3: China Biotech -->
-  <div class="section">
-    <h2>🧬 中国Biotech</h2>
-    <div class="summary">科济药业实体瘤CAR-T全球首批，ADA 2026 GLP-1赛道迈入新阶段</div>
-
-    <div class="news-item">
-      <div class="title">1. 科济药业（02171.HK）实体瘤CAR-T全球首批，商业化提速</div>
-      <div class="content">舒瑞基奥仑赛注射液（恺力美）是科济药业第二款商业化产品，继CT053（泽沃基奥仑赛）之后再创里程碑。业内预计将引发全球资本市场对CAR-T管线的重新定价，意义堪比血液瘤CAR-T开创时代。</div>
-      <div class="sources">→ <a href="https://www.nbd.com.cn/articles/2026-06-22/4433433.html">源1</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">2. ADA 2026复盘：GLP-1赛道进入"头对头+组合+长期结局"新阶段</div>
-      <div class="content">第86届美国糖尿病协会科学年会（6月5-8日）聚焦GLP-1长期结局与组合疗法，国内联邦生物、甘李药业等在ADA上披露最新临床数据，国产GLP-1国际化进程加速。</div>
-      <div class="sources">→ <a href="https://xueqiu.com/3483303916/395577401">源1</a></div>
-    </div>
-  </div>
-
-  <!-- Section 4: Capital Markets -->
-  <div class="section">
-    <h2>📈 资本市场</h2>
-    <div class="summary">A股6月23日早盘强势反弹，三大指数均涨逾1.7%；创新药板块估值修复预期升温</div>
-
-    <div class="news-item">
-      <div class="title">1. A股6月23日早盘大幅反弹</div>
-      <div class="content">
-        截至早盘收盘：<br>
-        · 上证指数 4163.10点 <span class="badge badge-green">+1.78%</span><br>
-        · 深证成指 16372.50点 <span class="badge badge-green">+2.13%</span><br>
-        · 创业板指 4359.39点 <span class="badge badge-green">+2.52%</span><br>
-        · 恒生指数 23811.76点 <span class="badge badge-red">-0.65%</span>
-      </div>
-      <div class="sources">→ <a href="http://finance.china.com.cn/">源1</a> | <a href="https://baijiahao.baidu.com/s?id=1868311609940726209">源2</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">2. 医药板块跟涨，创新药估值修复预期升温</div>
-      <div class="content">前一交易日（6月18日）A+H医药股已出现反弹：皓元医药20cm涨停，昭衍新药、众生药业10cm涨停；港股创新药ETF广发(513120)最高涨超4%。6月23日随大盘继续反弹，NMPA单日5款创新药获批消息进一步提振市场情绪。</div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">3. 药明生物（02269.HK）持续回购，CRO/CDMO板块情绪改善</div>
-      <div class="content">药明生物近期持续回购，向市场传递估值低估信号，港股CRO/CDMO板块整体情绪有所改善。</div>
-      <div class="sources">→ <a href="https://finance.sina.com.cn/stock/bxjj/2026-06-21/doc-inieeaqv7838519.shtml">源1</a></div>
-    </div>
-  </div>
-
-  <!-- Section 5: Global AI TOP 5 -->
-  <div class="section">
-    <h2>🤖 全球AI TOP 5（News新闻快讯）</h2>
-    <div class="summary">OpenAI GPT-5.6正式发布，150万tokens+大幅降价；Anthropic因安全漏洞下架后OpenAI抢占窗口</div>
-
-    <div class="news-item">
-      <div class="title">1. OpenAI发布GPT-5.6：150万tokens上下文+大幅降价 <span class="badge badge-red">今日</span></div>
-      <div class="content">6月23日，OpenAI发布旗舰新模型GPT-5.6，支持150万tokens上下文窗口，智能体编程工作流全面升级，API定价仅为Claude Fable 5的三分之一。发布时机精准卡位：Anthropic Claude Fable 5于6月12日因安全漏洞被美国商务部紧急下架。业内预测GPT-5.6将重新拉开与竞品的性能差距。</div>
-      <div class="sources">→ <a href="https://news.qq.com/rain/a/20260616A05NRO00">源1</a> | <a href="https://finance.sina.com.cn/stock/bxjj/2026-06-21/doc-inieeaqv7838519.shtml">源2</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">2. Anthropic Claude Fable 5因安全漏洞遭美商务部紧急下架</div>
-      <div class="content">Anthropic于6月9日发布Claude Fable 5，迅速横扫编程能力榜单，但6月12日因安全漏洞被美国商务部紧急下架，为AI大模型安全治理敲响警钟。竞争对手OpenAI GPT-5.6趁机在6月23日抢占市场窗口。</div>
-      <div class="sources">→ <a href="https://news.qq.com/rain/a/20260616A05NRO00">源1</a></div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">3. 微软Copilot Cowork集成DeepSeek，多模型策略加速企业AI落地</div>
-      <div class="content">微软在Copilot平台中集成DeepSeek等多款开源/闭源模型，为企业用户提供更具性价比的AI协作方案，标志着企业级AI助手进入多模型混用时代。</div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">4. OpenAI Codex推出Record & Replay，AI编程进入"可复现"时代</div>
-      <div class="content">OpenAI旗下编程智能体Codex新增Record &amp; Replay功能，允许开发者录制和回放AI编程过程，大幅提升AI辅助编程的可控性与可审计性，对软件研发流程影响深远。</div>
-    </div>
-
-    <div class="news-item">
-      <div class="title">5. Grok推出Office插件，进军企业办公场景对标Copilot</div>
-      <div class="content">马斯克旗下Grok AI推出Microsoft Office插件，用户可在Word、Excel、PowerPoint中直接调用Grok进行内容生成、数据分析和演示文稿制作，直接对标微软Copilot办公场景布局。</div>
-    </div>
-  </div>
-
-  <!-- Section 6: AI Trends -->
-  <div class="section ai-trends">
-    <h2>🔬 AI前沿技术和应用趋势</h2>
-    <div class="summary">GPT-5.6开启长上下文新纪元；AI+制药2026进入产业化元年；Veeva AI在China CRM落地</div>
-
-    <h3>A. 前沿技术</h3>
-    <ul>
-      <li><strong>GPT-5.6发布，150万tokens上下文新纪元</strong>：OpenAI新模型在长文档处理、复杂推理、智能体工作流方面全面升级，为AI应用层创新打开新空间。<a href="https://news.qq.com/rain/a/20260616A05NRO00">→ 源1</a></li>
-      <li><strong>DiffusionGemma（谷歌）</strong>：谷歌6月推出DiffusionGemma模型，结合扩散模型与Gemma架构，在图像+文本多模态推理方面有突破性表现。<a href="https://www.sohu.com/a/1037991307_122893087">→ 源1</a></li>
-    </ul>
-
-    <h3>B. 医药AI</h3>
-    <ul>
-      <li><strong>AI+制药2026年进入产业化元年</strong>：摩根大通医疗健康大会（JPM 2026）首日，全球科技公司密集发布AI制药战略，业界公认2026年为AI与生命医疗科学深度融合的元年。<a href="https://xueqiu.com/4866021334/394609676">→ 源1</a></li>
-      <li><strong>国家药监局"人工智能+药品监管"实施意见</strong>：NMPA于2026年4月发布《关于"人工智能+药品监管"的实施意见》，推动AI在药品审评、监管科学研究中的应用。<a href="https://www.nmpaic.org.cn/yjzcfg/202604/t20260402_429648.html">→ 源1</a></li>
-    </ul>
-
-    <h3>C. CRM/商业化AI</h3>
-    <ul>
-      <li><strong>Veeva AI落地China CRM Suite</strong>：Veeva AI智能体已在Veeva China CRM Suite中提供场景化指导，赋能药企一线销售与医学沟通效率提升，2026年将持续推出更多行业专属AI功能。<a href="https://www.prnasia.com/story/508324-1.shtml">→ 源1</a></li>
-      <li><strong>腾讯健康发布AI全栈解决方案</strong>：腾讯健康在2026腾讯云AI产业应用大会上发布面向药企的AI全栈解决方案，以全场景AI Agent打通医疗全链路，对Veeva在中国市场的CRM/商业化AI布局形成竞争压力。<a href="https://www.ithome.com/0/961/093.htm">→ 源1</a></li>
-    </ul>
-  </div>
-
-  <!-- Section 7: Competitors -->
-  <div class="section">
-    <h2>🔍 竞争对手速览</h2>
-    <table class="comp-table">
-      <tr><th>对手</th><th style="width:60%">最新动态（2026年6月）</th></tr>
-      <tr><td><strong>IQVIA</strong></td><td class="status">今日无重大突发新闻</td></tr>
-      <tr><td><strong>Salesforce</strong></td><td class="status">持续推广生命科学行业CRM解决方案，与Veeva Windows竞争关系加剧</td></tr>
-      <tr><td><strong>太美医疗</strong></td><td>将亮相2026 DIA Global年会（展位#1610），展示AI时代创新药全球临床运营数字化解决方案。 <a href="https://xueqiu.com/3243193425/394396830">→ 源1</a></td></tr>
-      <tr><td><strong>Medidata</strong></td><td class="status">今日无重大突发新闻</td></tr>
-      <tr><td><strong>腾讯健康NGES</strong></td><td>发布AI全栈解决方案，以全场景AI Agent切入药企数字化市场，与Veeva China CRM Suite形成直接竞争</td></tr>
-      <tr><td><strong>脉络洞察</strong></td><td class="status">今日无重大突发新闻</td></tr>
-    </table>
-  </div>
-
-  <!-- Veeva Focus -->
-  <div class="section">
-    <h2>⚡ Veeva关注</h2>
-    <ol class="veeva-focus">
-      <li><strong>Campaign Manager获客户验证，学术推广从"量到质"转型</strong>：Veeva China Campaign Manager已被多家头部药企客户验证，通过整合多渠道营销活动管理、内容审批流程与效果分析，帮助药企实现学术推广升级。与China CRM Suite深度集成，构成差异化竞争优势。 <a href="https://www.prnasia.com/mediaroom/5511-1.shtml">→ 源1</a></li>
-      <li><strong>Veeva AI落地China CRM Suite，2026年持续扩展</strong>：Veeva AI智能体在China CRM Suite的首批功能已上线，经头部药企实践验证。2026年将推出更多适配中国药企需求的专属AI功能，进一步巩固技术领先地位。 <a href="https://www.prnasia.com/story/508324-1.shtml">→ 源1</a></li>
-      <li><strong>全球前20强生物制药中已有6家选择Veeva China CRM Suite</strong>：验证了Veeva在中国市场的产品适配性与竞争力。随着AI功能的持续落地，这一数字有望继续增长。</li>
-    </ol>
-  </div>
-
-</div>
-
-<div class="footer">
-  <div class="window">📅 数据窗口：2026-06-22 09:00 → 2026-06-23 09:00</div>
-  <div>本内容由AI自动搜集整理，仅供内部参考 | 严格筛选24h内首发新闻 | 每条新闻均附2+来源交叉验证</div>
-</div>
-
 </body>
 </html>
