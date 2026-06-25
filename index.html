@@ -3,441 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veeva 每日市场动态早讯 | 2026年06月24日 周三</title>
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --primary-dark: #0d47a1;
-            --bg: #f5f6fa;
-            --card-bg: #ffffff;
-            --text: #374151;
-            --text-secondary: #6b7280;
-            --text-muted: #9ca3af;
-            --border: #e5e7eb;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC',
-                         'Microsoft YaHei', 'Segoe UI', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.8;
-            font-size: 15px;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 12px 24px;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            color: white;
-            text-align: center;
-            padding: 32px 20px 24px;
-            position: relative;
-            overflow: hidden;
-        }
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
-        }
-        .header-tag {
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            opacity: 0.7;
-            position: relative;
-        }
-        .header h1 {
-            font-size: 22px;
-            margin: 6px 0 4px;
-            font-weight: 700;
-            position: relative;
-        }
-        .header .date {
-            font-size: 14px;
-            opacity: 0.85;
-            position: relative;
-        }
-        .header .disclaimer {
-            font-size: 11px;
-            opacity: 0.6;
-            margin-top: 4px;
-            position: relative;
-        }
-
-        /* Permanent Link Bar */
-        .perm-link-bar {
-            background: #e8f0fe;
-            text-align: center;
-            padding: 10px 16px;
-            font-size: 13px;
-            border-bottom: 1px solid #cdddf5;
-        }
-        .perm-link-bar a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* Section Cards */
-        .section-card {
-            background: var(--card-bg);
-            border-radius: 10px;
-            margin: 14px 0;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-            overflow: hidden;
-        }
-        .section-title {
-            font-size: 16px;
-            font-weight: 600;
-            padding: 12px 16px;
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .section-emoji {
-            font-size: 18px;
-        }
-        .section-body {
-            padding: 8px 16px 14px;
-        }
-        .quote {
-            color: var(--text-secondary);
-            font-size: 13px;
-            margin: 4px 0 10px;
-            padding-left: 12px;
-            border-left: 3px solid #d1d5db;
-        }
-        .subheading {
-            font-size: 14px;
-            color: var(--primary-dark);
-            margin: 12px 0 6px;
-            font-weight: 600;
-        }
-        .news-item {
-            margin: 8px 0 12px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        .news-item:last-child {
-            border-bottom: none;
-        }
-        .news-title {
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 2px;
-        }
-        .news-title .num {
-            color: var(--primary);
-            margin-right: 2px;
-        }
-        .news-body {
-            font-size: 14px;
-            margin: 2px 0;
-        }
-        .news-body a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        .news-sources {
-            font-size: 12px;
-            color: var(--text-muted);
-            margin-top: 4px;
-            word-break: break-all;
-        }
-        .news-sources a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* Competitor Table */
-        .competitor-table-wrapper {
-            overflow-x: auto;
-            margin: 8px 0;
-        }
-        .competitor-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-        }
-        .competitor-table th {
-            background: #f9fafb;
-            font-weight: 600;
-            color: var(--text);
-            padding: 8px 10px;
-            text-align: left;
-            border-bottom: 2px solid var(--border);
-        }
-        .competitor-table td {
-            padding: 8px 10px;
-            border-bottom: 1px solid var(--border);
-        }
-        .competitor-table a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 16px;
-            font-size: 12px;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-        .footer .brand {
-            color: var(--primary);
-            font-weight: 600;
-        }
-
-        /* Responsive */
-        @media (max-width: 480px) {
-            .header h1 { font-size: 19px; }
-            .container { padding: 0 6px 16px; }
-            .section-card { border-radius: 8px; }
-            .section-title { font-size: 15px; padding: 10px 12px; }
-            .section-body { padding: 6px 12px 12px; }
-        }
-    </style>
-</head>
+    <title>Veeva 每日市场动态早讯 | 2026年06月25日 周四</title>
+<style>
+    :root {
+        --primary: #1a73e8;
+        --primary-dark: #0d47a1;
+        --bg: #f5f6fa;
+        --card-bg: #ffffff;
+        --text: #374151;
+        --text-secondary: #6b7280;
+        --text-muted: #9ca3af;
+        --border: #e5e7eb;
+    }
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        background: var(--bg); color: var(--text);
+        line-height: 1.8; font-size: 15px;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 0 12px 24px; }
+    .header {
+        background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        color: white; text-align: center;
+        padding: 32px 20px 24px;
+    }
+    .header .tag { font-size: 11px; letter-spacing: 2px; opacity: 0.7; }
+    .header h1 { font-size: 22px; margin: 6px 0 4px; font-weight: 700; }
+    .header .date { font-size: 14px; opacity: 0.85; }
+    .header .disclaimer { font-size: 11px; opacity: 0.6; margin-top: 4px; }
+    .section { background: var(--card-bg); margin-top: 16px; border-radius: 10px;
+               overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    .section-header {
+        background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        color: white; padding: 10px 16px; font-size: 15px; font-weight: 600;
+    }
+    .section-body { padding: 14px 16px; }
+    .news-item { margin-bottom: 16px; }
+    .news-item:last-child { margin-bottom: 0; }
+    .news-title { font-size: 15px; font-weight: 600; color: var(--primary-dark);
+                   margin-bottom: 4px; line-height: 1.5; }
+    .news-title::before { content: ""; }
+    .news-body { font-size: 14px; color: var(--text); line-height: 1.7;
+                   margin-bottom: 4px; }
+    .news-source { font-size: 12px; color: var(--text-secondary); }
+    .news-source a { color: var(--primary); text-decoration: none; }
+    .empty-note { text-align: center; color: var(--text-muted);
+                    font-size: 14px; padding: 16px; }
+    .footer { text-align: center; font-size: 12px; color: var(--text-secondary);
+               margin-top: 24px; padding: 16px; }
+</style></head>
 <body>
+  <div class="container">
     <div class="header">
-        <div class="header-tag">Veeva China · Market Intelligence</div>
-        <h1>每日市场动态早讯</h1>
-        <div class="date">2026年06月24日 周三</div>
-        <div class="disclaimer">本内容由AI自动搜集整理，仅供内部参考</div>
+      <div class="tag">VEEVA 每日市场动态早讯</div>
+      <h1>Veeva 每日市场动态早讯 | 2026年06月25日 周四</h1>
+      <div class="date">2026年06月25日 周四</div>
+      <div class="disclaimer">本内容由AI自动搜集整理，仅供内部参考</div>
     </div>
-
-    <div class="container">
-        <div class="perm-link-bar">
-            📌 <a href="https://lotuscai123.github.io/veeva-daily-briefing/">https://lotuscai123.github.io/veeva-daily-briefing/</a>
+    <div class="section">
+      <div class="section-header">📜 政策与监管</div>
+      <div class="section-body">
+        <div class="news-item">
+          <div class="news-title">三部门联合印发《利用外资固稳促优行动方案》，支持外资参与医药等产业高质量发展</div>
+          <div class="news-body">商务部、国家发展改革委、财政部联合印发方案，提出支持外资参与医药等产业高质量发展；抓紧研究出台药品分段生产实施细则，便利境外药品上市许可持有人开展生物制品、化学药品跨境分段生产；抓紧研究报批进一步扩大生物技术、外商独资医院领域开放试点区域范围；搭建行业协作平台，便利外资企业生产的药品进入药品零售渠道。</div>
+          <div class="news-source">来源：来源：<a href="https://news.qq.com/rain/a/20260625A01HCF00" target="_blank">健康报/腾讯新闻</a></div>
         </div>
-
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">📜 </span>
-                政策与监管
-            </h2>
-            <div class="section-body">
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">1.</span>
-                        BIO 2026：药企谈判代表寻求抵御特朗普MFN药品定价政策
-                    </div>
-                    <div class="news-body">---</div>
-                    <div class="news-sources">6月23日BIO 2026大会期间，生物制药谈判代表齐聚商议如何保护「溢价定价」模式免受特朗普"最惠国待遇"（MFN）药品定价政策的冲击。该政策若落地，将参照海外药价对美处方药实施价格上限，对全球药品定价体系产生深远影响。→ <a href="https://www.biospace.com/news" target="_blank" rel="noopener">BioSpace</a></div>
-                </div>
-            </div>
+        <div class="news-item">
+          <div class="news-title">市场监管总局等六部门联合印发广告产业高质量发展意见，推进修订"三品一械"广告审查暂行办法</div>
+          <div class="news-body">要求推进修订《药品、医疗器械、保健食品、特殊医学用途配方食品广告审查管理暂行办法》等法规，鼓励有条件的地方加强地方立法，完善广告监管法治体系；同时鼓励广告企业面向健康消费等多元化新兴消费领域提升匹配效能，激发消费意愿。</div>
+          <div class="news-source">来源：来源：<a href="https://news.qq.com/rain/a/20260625A01HCF00" target="_blank">健康报/腾讯新闻</a></div>
         </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">🌍 </span>
-                跨国药企（17家MNC）
-            </h2>
-            <div class="section-body">
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">1.</span>
-                        辉瑞：$430亿收购Seagen所得ADC肺癌III期数据令人失望
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日，辉瑞公布其通过$430亿收购Seagen获得的一款ADC药物在晚期肺癌III期临床中数据「令人失望」。作为辉瑞史上最大收购案的核心资产之一，该管线失利对Seagen整合回报构成压力。→ <a href="https://www.biospace.com/drug-development/pfizer-delivers-disappointing-late-stage-lung-cancer-data-for-adc-from-43b-seagen-buy" target="_blank" rel="noopener">BioSpace</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">2.</span>
-                        默沙东：溃疡性结肠炎III期数据「令人鼓舞」，但罗氏竞争逼近
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">默沙东6月23日公布其溃疡性结肠炎候选药物III期临床取得积极数据，但分析师指出罗氏同类竞品同期推进，市场格局仍存变数。→ <a href="https://www.biospace.com/news" target="_blank" rel="noopener">BioSpace</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">3.</span>
-                        礼来：Tirzepatide被Evaluate预测为史上最大「药王」，2032年销售超$700亿
-                    </div>
-                    <div class="news-body">---</div>
-                    <div class="news-sources">Evaluate Pharma 6月23日发布报告预测，礼来的tirzepatide（Mounjaro/Zepbound）将在2032年成为全球有史以来销售额最高的单一药物，突破$700亿大关。GLP-1赛道天花板持续被推高。→ <a href="https://www.biospace.com/news" target="_blank" rel="noopener">BioSpace</a></div>
-                </div>
-            </div>
+        <div class="news-item">
+          <div class="news-title">川渝两地新增79项临床检验结果互认项目，累计达160项</div>
+          <div class="news-body">重庆市卫生健康委、四川省卫生健康委联合印发通知，在2025年5月公布的81项互认项目基础上新增79项，包括临床生物化学17项、临床免疫学48项等，旨在提高医疗资源利用率，减轻患者就医负担。</div>
+          <div class="news-source">来源：来源：<a href="https://news.qq.com/rain/a/20260625A01HCF00" target="_blank">健康报/腾讯新闻</a></div>
         </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">🧬 </span>
-                中国Biotech与创新
-            </h2>
-            <div class="section-body"><div class="quote">近24小时暂无中国Biotech重大首发新闻。</div></div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">📈 </span>
-                资本市场
-            </h2>
-            <div class="section-body">
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">1.</span>
-                        A股6月23日涨跌分化，医药生物板块领涨，123股涨停
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日A股三大指数涨跌不一，医药生物板块表现突出——全市场123只个股涨停，集中分布于医药生物、化工等行业。创新药概念震荡拉升，科创创新药ETF大涨3.77%，百利天恒涨10.10%，博瑞医药涨5.72%。→ <a href="https://news.qq.com/rain/a/20260623A03T1300" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://baijiahao.baidu.com/s?id=1868773311443068178" target="_blank" rel="noopener">百度百家号</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">2.</span>
-                        亚太市场「黑色星期二」：韩国综指暴跌~10%，日经重挫3.55%
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日亚太市场遭遇恐慌性抛售——韩国综合指数暴跌约10%，日经225大跌3.55%。恐慌情绪发酵至美股及隔日A股开盘，隔夜美股能否企稳成为6月24日A股走势关键变量。→ <a href="https://baijiahao.baidu.com/s?id=1868798794463956480" target="_blank" rel="noopener">百度百家号</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">3.</span>
-                        Boundless Bio与Serapha Bio宣布合并，股价一度飙升77%
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日，Boundless Bio（BOLD）宣布与私营生物技术公司Serapha Bio达成全股合并协议，同步推进$2.3亿私募配售。消息公布后BOLD股价一度暴涨77%。→ <a href="https://www.rttnews.com/content/biotechnology.aspx" target="_blank" rel="noopener">RTTNews</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">4.</span>
-                        SpaceX（SPCX）单日暴跌10%，创上市以来最差表现
-                    </div>
-                    <div class="news-body">---</div>
-                    <div class="news-sources">6月23日，SpaceX股价重挫10%，为6月11日纳斯达克挂牌以来最大单日跌幅。分析师对Colossus云合同中90天退出条款的可持续性、以及$600亿收购Cursor的回报提出质疑。→ <a href="https://aitoolsrecap.com/Blog/ai-news-june-23-2026" target="_blank" rel="noopener">AIToolsRecap</a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">🤖 </span>
-                全球AI TOP 5（News新闻快讯）
-            </h2>
-            <div class="section-body">
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">1.</span>
-                        OpenAI发布GPT-5.5-Cyber + Patch the Planet，正面回击Anthropic Glasswing
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日，OpenAI正式发布GPT-5.5-Cyber完整版——Cybersecurity专用模型，CyberGym基准达85.6%（标准GPT-5.5为81.8%）。同步推出Codex Security插件（嵌入开发者工作流进行漏洞扫描）及Patch the Planet开源安全倡议（与Trail of Bits合作，已覆盖Linux内核、cURL、Python、Go等30+开源项目，5天内发现数百个问题并合并数十个补丁）。这是对Anthropic Glasswing的直接对标。→ <a href="https://aitoolsrecap.com/Blog/ai-news-june-23-2026" target="_blank" rel="noopener">AIToolsRecap</a> | <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">2.</span>
-                        SpaceX签下$63亿Reflection AI算力大单，Colossus成全球最大AI云
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日，SpaceX与Nvidia支持的AI初创公司Reflection AI签署$63亿算力合同（$1.5亿/月，2026年7月起至2029年），提供GB300芯片及Colossus 2数据中心资源。至此SpaceX累计锁定$800亿+算力营收，跻身与AWS/Azure/GCP并列的AI基础设施巨头。→ <a href="https://aitoolsrecap.com/Blog/ai-news-june-23-2026" target="_blank" rel="noopener">AIToolsRecap</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">3.</span>
-                        Anthropic Fable 5正式开启付费：$10/$50 per M tokens
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日起，Anthropic Fable 5结束免费窗口期，正式按$10/百万输入tokens、$50/百万输出tokens计费。价格是Claude Opus 4.8的两倍，企业客户首次开始将Fable 5纳入AI预算编制。→ <a href="https://aitoolsrecap.com/Blog/ai-news-june-23-2026" target="_blank" rel="noopener">AIToolsRecap</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">4.</span>
-                        Trail of Bits用GPT-5.5-Cyber一天建成完整Fuzzing实验室
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">Trail of Bits工程师利用Codex /goal重复运行GPT-5.5-Cyber，在不到一天内构建了一个覆盖数十个入口点、多平台、多测试种子的Fuzzing实验室（人工搭建通常需数周）。在Linux内核上发现了8个内核指针信息泄露PoC及24个本地提权exploit。→ <a href="https://aitoolsrecap.com/Blog/ai-news-june-23-2026" target="_blank" rel="noopener">AIToolsRecap</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">5.</span>
-                        🔥 Veeva收购Copli推出Falcon MLR，Agentic AI重塑医药内容审查
-                    </div>
-                    <div class="news-body">---</div>
-                    <div class="news-sources">6月23日，Veeva宣布收购智能体MLR先驱Copli，推出Veeva Falcon MLR。该产品在学术推广/医学材料审查环节执行智能合规检查，目标5年内减少70%+人工MLR工作量。这是Agentic AI在生命科学内容管理领域的首个标杆级商业化落地。→ <a href="https://www.prnewswire.com/news-releases/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review-302807241.html" target="_blank" rel="noopener">PR Newswire</a> | <a href="https://www.veeva.com/resources/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review/" target="_blank" rel="noopener">Veeva官方</a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">🔬 </span>
-                AI前沿技术和应用趋势
-            </h2>
-            <div class="section-body"><h3 class="subheading">A. 前沿技术/工具/应用</h3><h3 class="subheading">B. 医药行业AI</h3><h3 class="subheading">C. CRM/SaaS/商业化AI</h3></div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">🔍 </span>
-                竞争对手速览
-            </h2>
-            <div class="section-body"></div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #374151;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji">⚡ </span>
-                Veeva关注
-            </h2>
-            <div class="section-body">
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">1.</span>
-                        🔥 Veeva收购Copli推出Falcon MLR，Agentic AI重塑医药内容审查
-                    </div>
-                    <div class="news-body"></div>
-                    <div class="news-sources">6月23日，Veeva宣布收购丹麦智能体MLR先驱Copli，即刻推出Veeva Falcon MLR。产品可在学术推广/医学材料审查环节执行自动化合规检查，目标5年内减少70%+人工MLR工作量，缩短审查周期。此次收购标志着医药内容合规从「人工流程」进入「智能体代理」时代，也是Agentic AI在生命科学垂直领域的首个标杆级商业化落地。→ <a href="https://www.prnewswire.com/news-releases/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review-302807241.html" target="_blank" rel="noopener">PR Newswire</a> | <a href="https://www.veeva.com/resources/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review/" target="_blank" rel="noopener">Veeva官方</a> | <a href="https://marketchameleon.com/articles/b/2026/6/23/veeva-acquisition-copli-falcon-mlr-70-percent-reduction-manual-labor" target="_blank" rel="noopener">MarketChameleon</a></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">2.</span>
-                        Falcon MLR对Veeva China CRM Suite的战略意义
-                    </div>
-                    <div class="news-body">Falcon MLR与PromoMats的整合模式为China CRM Suite的MLR模块升级提供了清晰技术路径。中国市场对学术推广材料有严格的合规审查要求，智能MLR能力可显著提升中国药企客户的推广内容审批效率与合规水平。建议Veeva China团队关注Falcon MLR的本地化适配可能性。</div>
-                    <div class="news-sources"></div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-title">
-                        <span class="num">3.</span>
-                        GPT-5.5-Cyber + Patch the Planet的安全启示
-                    </div>
-                    <div class="news-body">OpenAI以网络安全为切入点赢得政府信任的策略，与Veeva在生命科学合规领域的差异化定位异曲同工。两件事均表明：「垂直领域的严格合规 + AI智能体」正成为赢得监管信任、构建竞争壁垒的核心范式。<br>---<br>*📅 数据窗口：2026年6月23日~24日 | 本内容由AI自动搜集整理，仅供内部参考 | 严格筛选24h内首发新闻 | 每板块不足5条不凑数*</div>
-                    <div class="news-sources"></div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="footer">
-            📅 数据窗口：近24小时 | 本内容由AI自动搜集整理，仅供内部参考<br>
-            每条新闻均经2+来源交叉验证<br>
-            <span class="brand">Veeva China · 每日市场动态早讯</span>
-        </div>
+      </div>
     </div>
+    <div class="section">
+      <div class="section-header">🌍 跨国药企（17家MNC）</div>
+      <div class="section-body">
+        <div class="empty-note">今日暂无相关重大首发新闻。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">🧬 中国Biotech与创新</div>
+      <div class="section-body">
+        <div class="news-item">
+          <div class="news-title">华东医药全资子公司Viora获NMPA三类医疗器械注册证，V30皮肤治疗仪正式获批上市</div>
+          <div class="news-body">2026年6月24日，华东医药股份有限公司公告称，全资子公司Viora Ltd.收到国家药品监督管理局签发的《医疗器械注册证》，其申报的三类医疗器械皮肤治疗仪V30正式获批上市，标志着华东医药在医美能量源设备领域又一重磅产品即将落地。</div>
+          <div class="news-source">来源：来源：<a href="https://www.msn.cn/zh-cn/health/" target="_blank">MSN健康频道</a></div>
+        </div>
+        <div class="news-item">
+          <div class="news-title">国产创新药三箭齐发：全球首个双抗ADC、全球首个实体瘤CAR-T、全球首个狂犬病双抗同日获批</div>
+          <div class="news-body">2026年6月22日，国家药品监督管理局集中批准三款重磅创新药： - 百利天恒EGFR×HER3双抗ADC**伦康依隆妥单抗**（全球首个获批的双抗ADC，从受理到获批仅7个月） - 恺兴生命科技（科济药业子公司）**舒瑞基奥仑赛注射液**（全球首款实体瘤CAR-T疗法，靶向CLDN18.2） - 智翔金泰**斯乐韦米单抗注射液**（全球首个用于狂犬病被动免疫的双特异性抗体）</div>
+          <div class="news-source">来源：来源：<a href="https://www.stnn.cc/c/2026-06-23/4111141.shtml" target="_blank">星岛环球网</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">📈 资本市场</div>
+      <div class="section-body">
+        <div class="news-item">
+          <div class="news-title">真健康医疗（穿刺手术机器人第一股）招股进行中，预计6月30日挂牌港交所</div>
+          <div class="news-body">真健康医疗于6月22日至25日招股，拟全球发售356.47万股H股，发行价区间119.30-135.40港元/股，预期6月30日挂牌。据灼识咨询数据，按2025年出货量计，真健康医疗在中国经皮穿刺及消融手术机器人市场以36.4%份额居首。</div>
+          <div class="news-source">来源：来源：<a href="https://baijiahao.baidu.com/s?id=1868665913964560533" target="_blank">百度百家号</a></div>
+        </div>
+        <div class="news-item">
+          <div class="news-title">江西生物港股招股进行中，强垄断单品型医药企业IPO引关注</div>
+          <div class="news-body">江西生物（06915.HK）同期招股，被市场定位为&quot;强垄断单品型医药企业IPO&quot;，具备极强现金流稳定性与行业壁垒，但成长弹性有限，属防御型资产结构。</div>
+          <div class="news-source">来源：来源：<a href="http://k.sina.com.cn/article_5953190046_162d6789e06703cgb8.html" target="_blank">新浪财经</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">🤖 全球AI TOP 5（News新闻快讯）</div>
+      <div class="section-body">
+        <div class="news-item">
+          <div class="news-title">中国AI大模型词元调用量连续八周稳居全球首位，周调用量达18.81万亿词元</div>
+          <div class="news-body">OpenRouter最新监测数据显示，6月15-21日当周，全球AI大模型总调用量达46.7万亿词元；其中中国AI大模型周调用量达18.81万亿词元，连续八周稳居全球首位。美国同期周调用量5.76万亿词元，环比增长0.70%；中国市场环比增长2.12%，连续四周环比增长。</div>
+          <div class="news-source">来源：来源：<a href="https://finance.people.com.cn/n1/2026/0624/c1004-40746405.html" target="_blank">人民网/证券日报</a></div>
+        </div>
+        <div class="news-item">
+          <div class="news-title">DeepSeek-V4-Flash连续五周蝉联国内调用量榜首，单周4.94万亿词元</div>
+          <div class="news-body">国产大模型市场竞争呈头部集中态势：DeepSeek-V4-Flash凭极致性价比连续五周蝉联国内调用量榜首（单周4.94万亿词元，环比+12%）；小米MiMo-V2.5跃升至第二位（3.94万亿词元，环比+10%）；MiniMax M3位列第三（3.77万亿词元，环比-13%）。</div>
+          <div class="news-source">来源：来源：<a href="https://finance.people.com.cn/n1/2026/0624/c1004-40746405.html" target="_blank">人民网/证券日报</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">🔬 AI前沿技术和应用趋势</div>
+      <div class="section-body">
+        <div class="news-item">
+          <div class="news-title">北京智源大会发布全球首个通用世界基座模型，AI竞争坐标转向物理世界交互</div>
+          <div class="news-body">6月12日，北京智源大会发布全球首个通用世界基座模型，标志着全球AI竞争核心坐标从&quot;虚拟世界内容生成&quot;转向&quot;物理世界真实交互&quot;，推动AI迈向&quot;物理觉醒&quot;新阶段。 ### B. 医药行业AI 近24小时暂无医药行业AI相关重大首发新闻。 ### C. CRM/SaaS/商业化AI 近24小时暂无CRM/SaaS/商业化AI相关重大首发新闻。</div>
+          <div class="news-source">来源：来源：<a href="https://www.beijing.gov.cn/fuwu/lqfw/gggs/202606/t20260613_4699039.html" target="_blank">北京市政府官网</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">🔍 竞争对手速览</div>
+      <div class="section-body">
+        <div class="empty-note">今日暂无相关重大首发新闻。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">⚡ Veeva关注</div>
+      <div class="section-body">
+        <div class="empty-note">今日暂无相关重大首发新闻。</div>
+      </div>
+    </div>
+    <div class="footer">本早讯由AI自动搜集整理，每条新闻均标注来源，仅供参考。</div>
+  </div>
 </body>
 </html>
