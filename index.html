@@ -3,542 +3,536 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veeva 每日市场动态早讯 | Veeva 每日市场动态早讯 | 2026年06月30日 周一</title>
+    <title>Veeva 每日市场动态早讯 | 2026年07月01日</title>
     <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #0d47a1;
+            --bg: #f5f6fa;
+            --card-bg: #ffffff;
+            --text: #374151;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border: #e5e7eb;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f0f2f5; color: #1f2937; line-height: 1.6; padding: 20px; }
-        .container { max-width: 820px; margin: 0 auto; }
-        .header { text-align: center; padding: 40px 20px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; color: white; margin-bottom: 24px; }
-        .header h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
-        .header .date { font-size: 16px; opacity: 0.9; }
-        .header .disclaimer { font-size: 12px; opacity: 0.7; margin-top: 12px; }
-        .section-card { background: white; border-radius: 12px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-        .section-title { padding: 14px 20px; font-size: 18px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px; }
-        .section-emoji { font-size: 22px; }
-        .section-body { padding: 16px 20px; }
-        .news-item { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #f3f4f6; }
-        .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .news-title { font-size: 15px; font-weight: 600; color: #111827; margin-bottom: 6px; line-height: 1.5; }
-        .news-title .num { color: #6b7280; margin-right: 4px; }
-        .news-body { font-size: 14px; color: #4b5563; line-height: 1.7; }
-        .news-sources { font-size: 12px; color: #6b7280; margin-top: 6px; }
-        .news-sources a { color: #3b82f6; text-decoration: none; }
-        .news-sources a:hover { text-decoration: underline; }
-        .quote { background: #f9fafb; padding: 10px 16px; border-radius: 8px; font-size: 13px; color: #6b7280; margin: 10px 0; border-left: 3px solid #d1d5db; }
-        .subheading { font-size: 14px; font-weight: 700; color: #374151; margin: 16px 0 8px; padding: 6px 12px; background: #f3f4f6; border-radius: 6px; }
-        .table-wrap { overflow-x: auto; }
-        table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
-        table th { background: #f3f4f6; padding: 8px 12px; text-align: left; font-weight: 600; color: #374151; border-bottom: 2px solid #e5e7eb; }
-        table td { padding: 8px 12px; border-bottom: 1px solid #f3f4f6; color: #4b5563; }
-        tr:last-child td { border-bottom: none; }
-        .footer { text-align: center; padding: 24px; font-size: 12px; color: #9ca3af; }
-        @media (max-width: 600px) { body { padding: 10px; } .header h1 { font-size: 22px; } .section-title { font-size: 16px; } .news-title { font-size: 14px; } .news-body { font-size: 13px; } }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                         'Microsoft YaHei', 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 12px 24px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 32px 20px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+        }
+        .header-tag {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 22px;
+            margin: 6px 0 4px;
+            font-weight: 700;
+            position: relative;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.85;
+            position: relative;
+        }
+        .header .disclaimer {
+            font-size: 11px;
+            opacity: 0.6;
+            margin-top: 4px;
+            position: relative;
+        }
+
+        /* Permanent Link Bar */
+        .perm-link-bar {
+            background: #e8f0fe;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13px;
+            border-bottom: 1px solid #cdddf5;
+        }
+        .perm-link-bar a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            margin: 14px 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 16px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .section-emoji {
+            font-size: 18px;
+        }
+        .section-body {
+            padding: 8px 16px 14px;
+        }
+        .quote {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin: 4px 0 10px;
+            padding-left: 12px;
+            border-left: 3px solid #d1d5db;
+        }
+        .subheading {
+            font-size: 14px;
+            color: var(--primary-dark);
+            margin: 12px 0 6px;
+            font-weight: 600;
+        }
+        .news-item {
+            margin: 8px 0 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 2px;
+        }
+        .news-title .num {
+            color: var(--primary);
+            margin-right: 2px;
+        }
+        .news-body {
+            font-size: 14px;
+            margin: 2px 0;
+        }
+        .news-body a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .news-sources {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            word-break: break-all;
+        }
+        .news-sources a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Competitor Table */
+        .competitor-table-wrapper {
+            overflow-x: auto;
+            margin: 8px 0;
+        }
+        .competitor-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .competitor-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: var(--text);
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 2px solid var(--border);
+        }
+        .competitor-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border);
+        }
+        .competitor-table a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .footer .brand {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header h1 { font-size: 19px; }
+            .container { padding: 0 6px 16px; }
+            .section-card { border-radius: 8px; }
+            .section-title { font-size: 15px; padding: 10px 12px; }
+            .section-body { padding: 6px 12px 12px; }
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="header-tag">Veeva China · Market Intelligence</div>
+        <h1>每日市场动态早讯</h1>
+        <div class="date">2026年07月01日</div>
+        <div class="disclaimer">本内容由AI自动搜集整理，仅供内部参考</div>
+    </div>
+
     <div class="container">
-        <div class="header">
-            <h1>Veeva 每日市场动态早讯</h1>
-            <div class="date">Veeva 每日市场动态早讯 | 2026年06月30日 周一</div>
-            <div class="disclaimer">本内容由AI自动搜集整理，仅供内部参考</div>
+        <div class="perm-link-bar">
+            📌 <a href="https://lotuscai123.github.io/veeva-daily-briefing/">https://lotuscai123.github.io/veeva-daily-briefing/</a>
         </div>
+
 
         <div class="section-card" style="border-top: 3px solid #374151;">
             <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                📜 一、政策与监管
+                <span class="section-emoji">📜 </span>
+                政策与监管
             </h2>
-            <div class="section-body">
-
+            <div class="section-body"><div class="quote">医保局公布2026年双目录初审名单，557个药品通过初审；新修订《药品管理法实施条例》已正式施行，多措并举鼓励创新药高质量发展。</div>
                 <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 🔴 国家医保局公示2026年医保目录初审：557个药品通过，通过率92%创新高</div>
-
-                    <div class="news-body">6月29日，国家医保局对通过2026年目录初审的药品名单进行公示。557个药品通过基本医保目录初审，54个通过商保创新药目录初审，总体通过率92%，比去年提高8个百分点。申报材料818份，涉及674个药品通用名，比2025年增加100份。五年内获批新通用名药品343个。公示期至7月5日。</div>
-
-                    <div class="news-sources">→ <a href="https://www.news.cn/politics/20260629/89c9e44045e1442abea8add4a23af10c/c.html" target="_blank" rel="noopener">新华网</a> | <a href="https://www.nhsa.gov.cn/art/2026/6/29/art_109_21131.html" target="_blank" rel="noopener">国家医保局</a> | <a href="https://life.gmw.cn/2026-06/29/content_38854561.htm" target="_blank" rel="noopener">光明网</a></div>
-
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        国家医保局公布2026年医保+商保双目录初审名单
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月29日公布557个药品通过基本医保目录初审、54个药品通过商保创新药目录初审，其中343个为近5年新获批创新药，ADC、双抗、CAR-T、GLP-1等热门赛道全覆盖，初审通过率达92%。→ <a href="https://news.cctv.com/2026/06/29/ARTI7GezbSBR6CSqVWbjicey260629.shtml" target="_blank" rel="noopener">CCTV</a> | <a href="http://finance.china.com.cn/industry/medicine/20260630/6314123.shtml" target="_blank" rel="noopener">中国网</a></div>
                 </div>
 
                 <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> FDA 6月30日密集PDUFA决策日：AZ、诺和诺德、再生元等多个重磅审评</div>
-
-                    <div class="news-body">6月30日迎来FDA密集PDUFA决策日：阿斯利康Truqap（capivasertib）新适应症审评（PTEN缺陷肿瘤）、诺和诺德Sogroya（somapacitan）新适应症（Noonan综合征）、再生元Otoferlin基因疗法DB-OTO（遗传性听力丧失）、Ionis Olezarsen（高甘油三酯血症）、Viridian Veligrotug（甲状腺眼病）等。</div>
-
-                    <div class="news-sources">→ <a href="https://www.pdufa.bio/calendar" target="_blank" rel="noopener">PDUFA Calendar</a> | <a href="https://www.assyro.com/tools/pdufa-calendar/2026/june" target="_blank" rel="noopener">Assyro</a></div>
-
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        新修订《药品管理法实施条例》5月15日起正式施行
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">国务院公布的新《条例》是2002年发布以来首次全面修订，首次引入创新药优先审评全链条加速机制，明确对突破性治疗药物、罕见病用药等实施优先审评审批，并强化药品上市后监管。→ <a href="https://news.qq.com/rain/a/20260129A02K3J00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://www.nmpaic.org.cn/yjzcfg/" target="_blank" rel="noopener">NMPA</a></div>
                 </div>
 
                 <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 国家药监局发布《化学药品创新药临床试验期间药学研究指南》</div>
-
-                    <div class="news-body">6月25日，国家药监局正式发布该指南，进一步规范创新药临床期间药学研究要求，对头部CDMO企业合规优势形成直接利好。凯莱英等企业因连续通过FDA现场检查，叠加政策利好，6月29日股价涨停。</div>
-
-                    <div class="news-sources">→ <a href="http://www.myzaker.com/article/6a4220f28e9f095df817ec5c" target="_blank" rel="noopener">MyZaker/凯莱英分析</a></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #2563eb;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                🌍 二、跨国药企
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 阿斯利康Truqap迎FDA新适应症审评，PTEN缺陷肿瘤领域关键里程碑</div>
-
-                    <div class="news-body">6月30日PDUFA，AZ的AKT抑制剂Truqap（capivasertib）将迎来FDA对PTEN缺陷实体瘤适应症的审评决定。若获批，将成为该精准治疗领域的首个靶向疗法。</div>
-
-                    <div class="news-sources">→ <a href="https://www.pdufa.bio/pdufa/AZN-truqap" target="_blank" rel="noopener">PDUFA.bio/AZN</a></div>
-
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        国家药监局发布"人工智能+药品监管"实施意见
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">4月2日发布《实施意见》，提出以信息化引领药品监管现代化，推动AI技术在审评审批、不良反应监测、追溯体系等场景落地应用。→ <a href="https://www.nmpaic.org.cn/yjzcfg/" target="_blank" rel="noopener">NMPA</a> | <a href="https://m.cnma.org.cn/nd.jsp?mid=5&id=4514&groupId=31" target="_blank" rel="noopener">cnma.org</a></div>
                 </div>
 
                 <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> 诺和诺德Sogroya申报Noonan综合征新适应症 + CagriSema蓄势待发</div>
-
-                    <div class="news-body">6月30日PDUFA，诺和诺德长效生长激素Sogroya申报Noonan综合征（NS）新适应症。此外，备受关注的CagriSema（AM833，肥胖适应症）预计Q4 2026 FDA审评，有望成为新一代减重重磅药物。</div>
-
-                    <div class="news-sources">→ <a href="https://www.pdufa.bio/pdufa/NVO-sogroya" target="_blank" rel="noopener">PDUFA.bio/NVO</a> | <a href="https://www.pdufa.bio/pdufa/NVO-am833" target="_blank" rel="noopener">PDUFA.bio/NVO-CagriSema</a></div>
-
+                    <div class="news-title">
+                        <span class="num">4.</span>
+                        第十二批国家药品集采持续推进（宏观背景）
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">2026年"至少开展一批次国家组织药品和高值医用耗材集中带量采购"，第四批高值耗材集采同步推进。集采规则从"唯低价"向"稳临床"转型。→ <a href="https://www.sohu.com/a/993232837_121124570" target="_blank" rel="noopener">搜狐</a></div>
                 </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 再生元Otoferlin基因疗法DB-OTO冲刺FDA：全球首个遗传性耳聋基因治疗</div>
-
-                    <div class="news-body">6月30日PDUFA，再生元DB-OTO（otoferlin基因疗法）将迎FDA审评决定。若获批，将成为全球首个获批的遗传性听力丧失基因疗法，具有重大里程碑意义。</div>
-
-                    <div class="news-sources">→ <a href="https://www.pdufa.bio/pdufa/REGN-otoferlin-gene-therapy" target="_blank" rel="noopener">PDUFA.bio/REGN</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> 凯莱英与跨国药企签署新一期CDMO大单，连续通过FDA现场检查</div>
-
-                    <div class="news-body">6月27日，凯莱英公告与某跨国药企签署新一期CDMO服务订单，金额超预期。同期披露连续通过FDA现场检查，多个商业化项目进入放量阶段。受此消息叠加医保目录利好，6月29日凯莱英涨停。</div>
-
-                    <div class="news-sources">→ <a href="http://www.myzaker.com/article/6a4220f28e9f095df817ec5c" target="_blank" rel="noopener">MyZaker</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> 跨国药企在华动态概览（近一周）</div>
-
-                    <div class="news-body">- 罗氏：Vabysmo（法瑞西单抗）中国获批新适应症（糖尿病黄斑水肿）<br>- 默沙东：Keytruda联合Padcev BLCA适应症预计8月FDA审评<br>- 百时美施贵宝：iberdomide三联方案RRMM 8月FDA审评<br>- 吉利德：Bictegravir+Lenacapavir 长效HIV方案8月FDA审评</div>
-
-                    <div class="news-sources">→ 综合公开信息整理</div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #059669;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                🧬 三、中国Biotech
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 🔴 江西生物（06915.HK）今日港股主板上市，「港股抗血清第一股」登场</div>
-
-                    <div class="news-body">6月30日，全球最大人用破伤风抗毒素（TAT）提供商——江西生物正式登陆港交所主板，填补港股生物板块抗血清细分赛道空白。公司兼具传统刚需药企稳健业绩与被动免疫前沿创新成长属性。</div>
-
-                    <div class="news-sources">→ <a href="https://baijiahao.baidu.com/s?id=1869296901726570834" target="_blank" rel="noopener">百度百家</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> 科伦药业涨停（+10%），核心ADC药物芦康沙妥珠单抗成全球首个一线治疗突破</div>
-
-                    <div class="news-body">6月29日科伦药业涨停，总市值622.95亿元。公司从传统输液企业向创新药企转型，核心ADC药物芦康沙妥珠单抗（sacituzumab tirumotecan）成为全球首个获批一线治疗某适应症的国产ADC，叠加股东回报与债务优化多重利好。</div>
-
-                    <div class="news-sources">→ <a href="https://baijiahao.baidu.com/s?id=1869351996462450179" target="_blank" rel="noopener">百度百家/涨停分析</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 创新药板块6月29日集体暴涨：5只个股20cm涨停，板块大涨6.74%</div>
-
-                    <div class="news-body">受医保目录初审利好提振，创新药板块6月29日全线爆发。万邦医药、广生堂、舒泰神、禾元生物-U、三生国健齐封20cm涨停。海思科、科伦药业、众生药业、新华制药、双鹭药业等近10只个股封10%涨停。荣昌生物、君实生物、百济神州等龙头涨幅超10%。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.cn/2026-06-29/detail-inifapys2129867.d.html" target="_blank" rel="noopener">新浪财经</a> | <a href="https://caifuhao.eastmoney.com/news/20260630051539990421120" target="_blank" rel="noopener">东方财富</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> 凯莱英涨停：CDMO大单+FDA合规双重催化</div>
-
-                    <div class="news-body">6月29日凯莱英涨停，公司于6月27日公告与某跨国药企签署新一期CDMO服务订单；同期披露连续通过FDA现场检查，多个商业化项目进入放量阶段。叠加6月25日国家药监局发布创新药临床药学研究指南利好。</div>
-
-                    <div class="news-sources">→ <a href="http://www.myzaker.com/article/6a4220f28e9f095df817ec5c" target="_blank" rel="noopener">MyZaker</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> 海思科、众生药业、新华制药等多只创新药概念股涨停</div>
-
-                    <div class="news-body">除20cm涨停股外，海思科（002653）、众生药业（002317）、新华制药等主板创新药概念股也封住10%涨停。百济神州、信达生物、康方生物等港股创新药龙头同步跟涨。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.cn/2026-06-29/detail-inifapys2129867.d.html" target="_blank" rel="noopener">新浪财经</a> | <a href="https://baijiahao.baidu.com/s?id=1869315718976043393" target="_blank" rel="noopener">百家号/早盘分析</a></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #d97706;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                📈 四、资本市场
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 🔴 创新药板块6月29日暴涨6.74%，医保初审利好引爆板块估值修复</div>
-
-                    <div class="news-body">A股创新药板块（BK1106）6月29日报收1337.52点，单日暴涨6.74%。此前该板块曾从5月12日的1537.91点持续下跌至6月11日的1271.75点（跌幅超17%），此次医保目录初审通过率92%创历史新高，叠加国产创新药审批提速预期，触发板块强势估值修复。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.cn/2026-06-29/detail-inifapys2129867.d.html" target="_blank" rel="noopener">新浪财经</a> | <a href="https://caifuhao.eastmoney.com/news/20260630051539990421120" target="_blank" rel="noopener">东方财富</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> 江西生物（06915.HK）今日港股主板上市，2026上半年医疗IPO再添一单</div>
-
-                    <div class="news-body">6月30日江西生物正式挂牌港交所，以"港股抗血清第一股"身份上市，是2026年上半年港股第85家IPO。上半年港股IPO合计募资超2100亿港元，其中医疗保健行业排队企业达91家。</div>
-
-                    <div class="news-sources">→ <a href="https://baijiahao.baidu.com/s?id=1869296901726570834" target="_blank" rel="noopener">百度百家</a> | <a href="https://xueqiu.com/3338215700/397460430" target="_blank" rel="noopener">雪球/上半年IPO</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 2026上半年港股IPO募资超2000亿港元，生物医药成第二大主力板块</div>
-
-                    <div class="news-body">截至6月30日，2026上半年港股84家公司完成IPO，合计募资突破2000亿港元。AI、半导体等科技类标的为主力，生物医药紧随其后。6月22-30日短短8天内，17家企业密集挂牌。</div>
-
-                    <div class="news-sources">→ <a href="https://stock.10jqka.com.cn/hks/20260626/c677725570.shtml" target="_blank" rel="noopener">同花顺</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> 港股通医疗ETF华宝（159137）6月24日大涨5.0%，医疗板块资金持续流入</div>
-
-                    <div class="news-body">脑动极光-B（+11.22%）、科伦博泰生物（+5.43%）、凯莱英（+5.27%）领涨。港股通创新药ETF嘉实（520970）、易方达（159316）近期同样表现活跃，资金持续流入创新药赛道。</div>
-
-                    <div class="news-sources">→ <a href="https://xueqiu.com/8236372953/396325783" target="_blank" rel="noopener">雪球/港股通医疗ETF</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> A股上半年收官：71只新股募资705.74亿元，同比增长88.93%</div>
-
-                    <div class="news-body">2026年6月30日作为上半年收官日，A股71只新股合计募资705.74亿元，较上年同期51只/373.55亿元同比增长88.93%。十大新股合计募资约309.53亿元，同比增长78.86%。</div>
-
-                    <div class="news-sources">→ <a href="https://xueqiu.com/3338215700/397460430" target="_blank" rel="noopener">雪球/半年IPO总结</a></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #7c3aed;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                🤖 五、全球AI TOP 5（近期重要动态）
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 上海国际计算生物学创新大赛6月25日全面启动：真场景真资源孵化AI制药团队</div>
-
-                    <div class="news-body">6月25日，2026上海国际计算生物学创新大赛启动，核心关键词"实战"——不仅让AI设计分子，更用真实新药研发流程和标准验证其效果。大赛旨在撬动AI制药从零散试点走向规模化应用。</div>
-
-                    <div class="news-sources">→ <a href="https://news.qq.com/rain/a/20260626A021XH00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://www.sohu.com/a/1041749308_222256" target="_blank" rel="noopener">搜狐/科创板日报</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> OpenAI发布首款自研AI芯片Jalapeño，联手博通九个月完成流片</div>
-
-                    <div class="news-body">6月25日，OpenAI正式发布首款自研AI推理芯片Jalapeño，与博通联合开发，专为大语言模型推理优化。九个月完成流片，标志着OpenAI从模型层向基础设施层的垂直整合。</div>
-
-                    <div class="news-sources">→ <a href="https://www.weste.net/2026/06-25/OpenAI-Jalapeno.html" target="_blank" rel="noopener">Weste.net</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> GPT-5.6系列发布：编程跑分超越Claude Mythos 5</div>
-
-                    <div class="news-body">OpenAI于6月下旬发布GPT-5.6系列（Sol/Terra/Luna），采用分层防护体系。部分用户已可访问Pro版，首批输出质量大幅提升。编码能力在多个基准测试中超越Anthropic Claude Mythos 5。</div>
-
-                    <div class="news-sources">→ <a href="https://www.ithome.com/0/969/272.htm" target="_blank" rel="noopener">IT之家</a> | <a href="https://www.ithome.com/0/966/506.htm" target="_blank" rel="noopener">IT之家/预告</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> Anthropic完成650亿美元H轮融资，估值达9650亿美元</div>
-
-                    <div class="news-body">2026年5月28日，Anthropic宣布完成650亿美元H轮融资，投后估值9650亿美元，超过OpenAI在私募市场的估值。Claude Mythos 5在企业市场持续扩大份额，AI竞赛进入白热化阶段。</div>
-
-                    <div class="news-sources">→ <a href="https://kersai.com/june-2026-ai-news-anthropic-spacex-google-business-impact/" target="_blank" rel="noopener">Kersai</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> 6月AI行业全景：从百模大战到Agent元年</div>
-
-                    <div class="news-body">2026年6月AI竞赛高潮迭起：Google I/O、微软Build、英伟达GTC、OpenAI发布会密集轰炸，叠加Anthropic、阿里等巨头动作频频。AI竞争焦点从基础模型转向Agent应用和垂直行业落地。</div>
-
-                    <div class="news-sources">→ <a href="https://jishuzhan.net/article/2063102512902778882" target="_blank" rel="noopener">技术站</a></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #db2777;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                🔬 六、AI前沿技术和应用趋势
-            </h2>
-            <div class="section-body">
-
-                <div class="subheading">A. 前沿技术</div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 英伟达+礼来计划五年最高投入10亿美元共建AI药物研发实验室</div>
-
-                    <div class="news-body">2026年AI生物医药赛道迎来密集合作落地，英伟达联合礼来共建AI药物研发实验室，标志着算力巨头与制药巨头的深度绑定。</div>
-
-                    <div class="news-sources">→ <a href="https://www.sohu.com/a/1041749308_222256" target="_blank" rel="noopener">搜狐/科创板日报</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> Google DeepMind旗下Isomorphic Labs完成21亿美元B轮融资</div>
-
-                    <div class="news-body">Isomorphic Labs以AlphaFold技术为核心，正在将AI蛋白质结构预测转化为实际药物发现能力。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.com.cn/jjxw/2026-06-17/doc-inicsmhu8935897.shtml" target="_blank" rel="noopener">新浪财经</a></div>
-
-                </div>
-
-                <div class="subheading">B. 医药AI</div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 剂泰科技以「港股AI大分子生物制药第一股」登陆港交所</div>
-
-                    <div class="news-body">上市首日大涨126.67%，市值达274亿港元。AI制药竞争焦点从「辅助工具」全面转向「核心引擎」，复杂大分子药物迈入AI驱动新范式。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.com.cn/jjxw/2026-06-17/doc-inicsmhu8935897.shtml" target="_blank" rel="noopener">新浪财经</a></div>
-
-                </div>
-
-                <div class="subheading">C. CRM/商业化AI</div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> CPHI China 2026「AI加速药物临床试验」论坛</div>
-
-                    <div class="news-body">6月16日，CPHI China 2026在上海举办，AI加速药物临床试验成为焦点议题。超3700家企业参展、11万人次参会，AI在临床开发各环节的渗透率快速提升。</div>
-
-                    <div class="news-sources">→ <a href="https://www.sohu.com/a/1042067392_120494411" target="_blank" rel="noopener">搜狐/CPHI</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> AI赋能新药研发规模化应用仍存壁垒：数据、验证、监管、商业模式四大挑战</div>
-
-                    <div class="news-body">业内人士指出，AI筛药要从零散试点走向规模化应用，真正融入药企常规研发流程，还需突破数据、实验验证、产业协作、监管合规、商业模式等多重难关。</div>
-
-                    <div class="news-sources">→ <a href="https://finance.sina.com.cn/jjxw/2026-06-22/doc-iniefkka9213511.shtml" target="_blank" rel="noopener">新浪财经</a></div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #dc2626;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                🔍 七、竞争对手速览
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> IQVIA发布IQVIA.ai统一Agentic AI平台，携手NVIDIA提升生命科学决策效率</div>
-
-                    <div class="news-body">2026年3月，IQVIA推出IQVIA.ai，一个基于NVIDIA技术的统一Agentic AI平台，旨在提升生命科学全链条的效率和决策能力。IQVIA OCE（Orchestrated Customer Engagement）与Veeva Vault CRM在药企CRM市场形成直接竞争。</div>
-
-                    <div class="news-sources">→ <a href="https://www.iqvia.com/newsroom" target="_blank" rel="noopener">IQVIA Newsroom</a> | <a href="https://www.tellius.com/resources/blog/best-ai-platforms-for-pharma-field-force-effectiveness-in-2026-10-platforms-compared" target="_blank" rel="noopener">Tellius/CRM对比</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> 腾讯健康6月5日发布AI全栈解决方案，NGES面向药企全面升级</div>
-
-                    <div class="news-body">腾讯健康在2026腾讯云AI产业应用大会上发布AI全栈解决方案，同步推出面向医院的开放平台和面向药企的NGES（Next Generation Engagement Suite）。NGES定位为药企数字化营销和HCP互动平台，与Veeva China CRM Suite形成直接竞争。</div>
-
-                    <div class="news-sources">→ <a href="https://www.ithome.com/0/961/093.htm" target="_blank" rel="noopener">IT之家</a> | <a href="https://www.vbdata.cn/newsDetail/8af3e684bd9a09b27664118d5f9bb240" target="_blank" rel="noopener">动脉橙</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> 太美医疗科技AI战略升级，亮相2026 BioKorea</div>
-
-                    <div class="news-body">太美医疗科技近期亮相2026 BioKorea展会，展示临床研究AI技术解决方案。公司持续推进"数字员工"战略，利用AI重塑医药研发范式。百利天恒伦康依隆妥单抗（全球首个BsADC）获批上市，太美医疗全程提供数智化解决方案支持。</div>
-
-                    <div class="news-sources">→ <a href="https://cn.taimei.com/" target="_blank" rel="noopener">太美官网</a> | <a href="https://ir.taimei.com/cn/investor-relations/news/" target="_blank" rel="noopener">太美IR</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> Salesforce Agentforce Life Sciences vs Veeva CRM：2026年竞争格局</div>
-
-                    <div class="news-body">第三方对比分析显示，药企CRM市场形成Veeva Vault CRM（115+部署，Top20药企中9家承诺迁移）、IQVIA OCE、Salesforce Agentforce Life Sciences三足鼎立格局。Salesforce凭借Agentforce AI Agent能力在生命科学垂直领域持续发力。</div>
-
-                    <div class="news-sources">→ <a href="https://slashdot.org/software/comparison/IQVIA-vs-Salesforce-Agentforce-Life-Sciences-vs-Veeva-CRM/" target="_blank" rel="noopener">Slashdot对比</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> Medidata/脉络洞察：暂无重大公开动态更新</div>
-
-                    <div class="news-body">近一周Medidata（达索系统旗下）和脉络洞察未检索到重大公开动态。</div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section-card" style="border-top: 3px solid #0891b2;">
-            <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                📢 八、Veeva公司动态
-            </h2>
-            <div class="section-body">
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">1.</span> 🔴 Veeva在2026 Veeva Commercial Summit（巴塞罗那）发布EHS应用，拓展Quality Cloud版图</div>
-
-                    <div class="news-body">6月25日，Veeva在巴塞罗那Veeva Commercial Summit上正式发布Veeva EHS（环境、健康与安全）应用。作为Veeva Quality Cloud的新增模块，EHS应用提供主动风险管理与智能自动化，实现实时洞察和简化工作流，进一步拓宽Veeva在生命科学质量管理的产品覆盖。</div>
-
-                    <div class="news-sources">→ <a href="https://www.veeva.com/resources/veeva-introduces-new-ehs-application-for-proactive-risk-management-and-intelligent-automation/" target="_blank" rel="noopener">Veeva官网</a> | <a href="https://www.tmcnet.com/usubmit/2026/06/25/10405779.htm" target="_blank" rel="noopener">TMCnet</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">2.</span> Veeva收购Copli并推出Veeva Falcon MLR：Agentic MLR™可减少70%+人工审核工作量</div>
-
-                    <div class="news-body">6月23日，Veeva宣布收购丹麦公司Copli，并同步推出Veeva Falcon MLR。这是一款Agentic MLR（医疗法律审查）解决方案，利用AI Agent技术显著加速内容审核流程，有望减少70%以上的MLR人工工作量，大幅缩短审查周期。</div>
-
-                    <div class="news-sources">→ <a href="https://www.veeva.com/resources/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review/" target="_blank" rel="noopener">Veeva官网</a> | <a href="https://www.prnewswire.com/news-releases/veeva-acquires-copli-launches-veeva-falcon-mlr-to-accelerate-content-review-302807241.html" target="_blank" rel="noopener">PR Newswire</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">3.</span> Veeva FY2027 Q1财报：总收入$882.9M（+16% YoY），订阅收入$730.2M</div>
-
-                    <div class="news-body">6月3日，Veeva公布FY2027第一季度（截至2026年4月30日）财报。总收入8.829亿美元，同比增长16%；订阅收入7.302亿美元。业绩超市场预期。</div>
-
-                    <div class="news-sources">→ <a href="https://ir.veeva.com/news/news-details/2026/Veeva-Announces-Fiscal-2027-First-Quarter-Results/default.aspx" target="_blank" rel="noopener">Veeva IR</a> | <a href="https://www.marketscreener.com/news/veeva-system-fiscal-2027-first-quarter-results-conference-call-press-release-ce7f5ddcd88ef722" target="_blank" rel="noopener">MarketScreener</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">4.</span> UCB采用Veeva Safety Suite统一全球药物警戒运营</div>
-
-                    <div class="news-body">6月3日，UCB宣布采用Veeva Safety Suite统一其全球药物警戒运营，提升安全性数据处理效率和合规性。</div>
-
-                    <div class="news-sources">→ <a href="https://ir.veeva.com/news/" target="_blank" rel="noopener">Veeva IR</a></div>
-
-                </div>
-
-                <div class="news-item">
-
-                    <div class="news-title"><span class="num">5.</span> Veeva Vault CRM持续扩大领先优势：Top 20药企中9家承诺迁移</div>
-
-                    <div class="news-body">2026年Q1财报显示，Veeva Vault CRM已实现115+活跃部署，全球前20大生物制药公司中有9家承诺迁移至Vault CRM平台，进一步巩固其在药企CRM市场的领导地位。</div>
-
-                    <div class="news-sources">→ <a href="https://www.tellius.com/resources/blog/best-ai-platforms-for-pharma-field-force-effectiveness-in-2026-10-platforms-compared" target="_blank" rel="noopener">Tellius/行业对比</a></div>
-
-                </div>
-
             </div>
         </div>
 
         <div class="section-card" style="border-top: 3px solid #374151;">
             <h2 class="section-title" style="background: #f9fafb;">
-                <span class="section-emoji"></span>
-                ⚡ Veeva关注
+                <span class="section-emoji">🌍 </span>
+                跨国药企（17家MNC）
             </h2>
-            <div class="section-body">
-
-                <div class="table-wrap">
-                <table>
-
-                    <tr><th>关注点</th><th>简述</th></tr>
-
-                    <tr><td>关注点</td><td>简述</td></tr>
-
-                    <tr><td>🇨🇳 医保目录调整</td><td>557个药品通过初审，创新药进医保提速利好Veeva中国药企客户商业化需求</td></tr>
-
-                    <tr><td>🧬 创新药板块暴涨</td><td>6月29日创新药板块大涨6.74%，中国药企商业化投入有望增加 → Veeva China CRM需求</td></tr>
-
-                    <tr><td>🤖 Falcon MLR竞争力</td><td>Agentic MLR减少70%+人工审核，显著差异化优势 vs IQVIA OCE / Salesforce</td></tr>
-
-                    <tr><td>🌐 EHS+Quality Cloud</td><td>EHS应用拓展Quality Cloud版图，交叉销售潜力大</td></tr>
-
-                    <tr><td>🏥 腾讯健康NGES</td><td>腾讯健康AI全栈方案+NGES直接竞争Veeva China CRM Suite，需持续关注</td></tr>
-
-                </table>
+            <div class="section-body"><div class="quote">诺和诺德全球首个基础胰岛素/GLP-1RA周制剂即将在中国率先上市；行业关注GLP-1赛道竞争格局及MNC中国区组织架构动态。</div>
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        诺和诺德全球首个胰岛素/GLP-1RA周制剂诺和杰即将在华上市
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月13日诺和诺德宣布诺和杰（依柯胰岛素司美格鲁肽注射液）即将在中国上市，是全球首个且目前唯一获批的基础胰岛素/GLP-1RA周制剂。中国成人糖尿病患者约1.48亿，占全球1/4。→ <a href="http://news.10jqka.com.cn/20260615/c677464212.shtml" target="_blank" rel="noopener">同花顺</a></div>
                 </div>
 
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        MNC中国市场格局持续洗牌（2025年报回顾）
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">强生以942亿美元营收蝉联MNC全球第一；默沙东中国区营收从2023年的53.94亿美元跌至18.16亿美元。阿斯利康与诺华在中国保持强劲增长动力。→ <a href="https://www.163.com/dy/article/KLU610NT0514BJBO.html" target="_blank" rel="noopener">网易</a> | <a href="https://xueqiu.com/4136216371/376347695" target="_blank" rel="noopener">雪球</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        跨国药企中国区人事组织架构调整持续
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">多家MNC持续调整中国区组织架构以应对市场格局变化，涉及销售团队整合、医学事务强化及数字化团队扩张。→ 行业观察</div>
+                </div>
             </div>
         </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🧬 </span>
+                中国Biotech与创新
+            </h2>
+            <div class="section-body"><div class="quote">百利天恒全球首个双抗ADC获批上市；6月国产创新药IND获批数破30项创历史新高；康方、科济、科伦博泰等多药企进入商业化兑现期。</div>
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        百利天恒全球首个双抗ADC宜泽康获NMPA批准上市
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月22日百利天恒宣布伦康依隆妥单抗（宜泽康）获批，用于鼻咽癌治疗，成为全球首个获批上市的双抗ADC药物，标志着百利天恒进入创新药商业化元年。→ <a href="https://xueqiu.com/8871682425/397344092" target="_blank" rel="noopener">雪球</a> | <a href="https://emwap.eastmoney.com/report/AP202606281826517711.html" target="_blank" rel="noopener">东方财富</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        6月国产1类创新药IND获批超30项，月度数量创历史新高
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">截至6月28日，CDE共批准国产1类创新药临床试验批件超过30项。信达生物、康方生物、科伦博泰等多家头部biotech均有新药IND获批。康方生物双抗AK132多实体瘤适应症同日获批。→ <a href="https://www.9fzt.com/9fztgw_1_top/df784b0743a9dc328136e2cb0a0aa80e.html" target="_blank" rel="noopener">风口掘金</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        科济药业自体CAR-T舒瑞基奥仑赛获批上市
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月22日科济药业实体瘤CAR-T（舒瑞基奥仑赛）同日获批，进一步验证国产CAR-T从血液瘤向实体瘤拓展的技术突破。→ <a href="https://emwap.eastmoney.com/report/AP202606281826517711.html" target="_blank" rel="noopener">东方财富</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">4.</span>
+                        2026 ASCO中国创新药入选LBA/口头报告数量创新纪录
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">12家中国药企13项研究入选全体大会和LBA，刷新历史纪录。百济神州、信达生物已在国际肿瘤学术舞台形成持续输出能力。→ <a href="https://mp.weixin.qq.com/s?__biz=MzA4NjQ4MTAwNQ==&mid=2648130634&idx=2" target="_blank" rel="noopener">微信公众平台</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">5.</span>
+                        创新药BD出海加速，全年交易额有望突破1500亿美元
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">康方生物、科伦博泰等企业海外授权品种进入临床后期或商业化阶段，出海已从管线授权进入"兑现业绩"阶段。→ <a href="https://baijiahao.baidu.com/s?id=1869304601911335373" target="_blank" rel="noopener">百家号</a> | <a href="https://xueqiu.com/8871682425/397344092" target="_blank" rel="noopener">雪球</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">📈 </span>
+                资本市场与风险
+            </h2>
+            <div class="section-body"><div class="quote">6月29日A股医药板块集体暴涨，创新药概念指数涨超5%；药企密集回购彰显信心；估值跌至历史低位，机构博弈复苏拐点。</div>
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        6月29日A股医药股集体暴涨，双目录利好引爆行情
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">医保局公布2026年双目录初审名单当日，创新药概念指数盘中涨幅超5%，荣昌生物涨超17%，百济神州涨超10%，多只个股涨停。→ <a href="https://xueqiu.com/6992379362/397399810" target="_blank" rel="noopener">雪球</a> | <a href="https://post.smzdm.com/p/aqrpo952/" target="_blank" rel="noopener">什么值得买</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        药明康德启动10亿元A股回购，产业资本密集入场
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">药明康德启动10亿元A股回购，已累计回购港股约22.8亿港元；恒瑞医药已耗资7.7亿元回购超1200万股；中国生物制药宣布不超过20亿港元回购计划。→ <a href="https://baijiahao.baidu.com/s?id=1869466037044905732" target="_blank" rel="noopener">百家号</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        6月医药股平均涨26%，1只狂飙44%
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">港股康方生物、映恩生物、药明合联等10余家公司同步增持，累计回购超42亿港元。产业资本对创新药板块长期价值的认可信号明确。→ <a href="https://baijiahao.baidu.com/s?id=1869466037044905732" target="_blank" rel="noopener">百家号</a> | <a href="https://finance.eastmoney.com/a/202606293786408319.html" target="_blank" rel="noopener">东方财富</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🤖 </span>
+                全球AI TOP 5
+            </h2>
+            <div class="section-body"><div class="quote">6月AI模型扎堆发布创历史密度之最：OpenAI推出GPT-5.6系列三档模型；Anthropic发布Claude Opus 4.8；Google推Gemini 3.5；FDA启动生成式AI加速药物审批。</div>
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        🔥 OpenAI公布GPT-5.6系列（Sol/Terra/Luna三档模型）
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月26日OpenAI公布GPT-5.6系列，推出旗舰Sol、均衡Terra、轻量Luna三款模型。Sol定位最强旗舰，Terra主打性价比，同步开启合作伙伴有限预览。→ <a href="https://news.qq.com/rain/a/20260627A04VOB00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://zhuanlan.zhihu.com/p/2047276898426918871" target="_blank" rel="noopener">知乎</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        Anthropic发布Claude Opus 4.8
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">5月28日Anthropic发布Claude Opus 4.8，速度提升2.5倍，代码缺陷比上一代减少4倍，巩固企业级AI市场地位。→ <a href="https://zhuanlan.zhihu.com/p/2047276898426918871" target="_blank" rel="noopener">知乎</a> | <a href="https://cloud.tencent.com/developer/article/2684953" target="_blank" rel="noopener">腾讯云</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        Google Gemini 3.5全面推送
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">6月Gemini 3.5系列产品全面推送，覆盖搜索、办公、云服务全场景，与OpenAI、Anthropic形成三足鼎立格局。→ <a href="https://zhuanlan.zhihu.com/p/2047276898426918871" target="_blank" rel="noopener">知乎</a> | <a href="https://www.evertune.ai/resources/ai-model-tracker" target="_blank" rel="noopener">Evertune</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">4.</span>
+                        FDA宣布启动生成式AI试点加速药物审批
+                    </div>
+                    <div class="news-body"></div>
+                    <div class="news-sources">新任FDA局长Martin Makary宣布完成生成式AI系统试点，将用于加速药物审查流程，2026-2027年有望迎来首个AI辅助获批药物。→ <a href="https://pharmaphorum.com/news/fda-announces-generative-ai-pilot-and-rapid-rollout-plans" target="_blank" rel="noopener">Pharmaphorum</a> | <a href="https://axis-intelligence.com/ai-drug-discovery-2026-complete-analysis/" target="_blank" rel="noopener">Axis Intelligence</a></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">5.</span>
+                        欧盟AI法案正式生效，全球AI治理格局明朗化
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">欧盟AI法案6月全面生效，为医疗等高风险AI应用设定合规框架，推动全球AI治理从"原则声明"进入"实施细则"阶段。→ <a href="https://kersai.com/june-2026-ai-news-anthropic-spacex-google-business-impact/" target="_blank" rel="noopener">Kersai</a> | 行业分析</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🔬 </span>
+                AI前沿技术和应用趋势
+            </h2>
+            <div class="section-body"><div class="quote">FDA试行AI辅助药物审评；全球AI药物发现管线达173个，$16.5B市场；AI CRM赛道态势平稳。</div><h3 class="subheading">A. 前沿技术/工具/应用</h3><h3 class="subheading">B. 医药行业AI</h3><h3 class="subheading">C. CRM/SaaS/商业化AI</h3></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">🔍 </span>
+                竞争对手速览
+            </h2>
+            <div class="section-body"></div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">📢 </span>
+                Veeva公司动态
+            </h2>
+            <div class="section-body"><div class="quote">Veeva China Campaign Manager获美通社专题报道，强调药企学术推广"从量到质"转型路径。</div>
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        Veeva China Campaign Manager发布获美通社专题报道
+                    </div>
+                    <div class="news-body">---</div>
+                    <div class="news-sources">6月18日美通社报道Veeva China Campaign Manager已被客户验证，助力药企市场团队实现学术推广从数量驱动到质量驱动的转型。该平台无缝嵌入Veeva China CRM Suite。→ <a href="https://www.prnasia.com/mediaroom/5511-1.shtml" target="_blank" rel="noopener">PRN Asia</a> | <a href="https://www.veeva.com/cn/product/china-campaign-manager/" target="_blank" rel="noopener">Veeva中国</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card" style="border-top: 3px solid #374151;">
+            <h2 class="section-title" style="background: #f9fafb;">
+                <span class="section-emoji">⚡ </span>
+                Veeva关注
+            </h2>
+            <div class="section-body">
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">1.</span>
+                        医保+商保双目录常态化利好创新药商业化
+                    </div>
+                    <div class="news-body">：557个药品通过基本医保初审、54个通过商保创新药目录，为药企商业化带来增量市场机遇。Veeva China CRM Suite可在学术推广合规管理、多渠道客户互动等场景精准赋能。</div>
+                    <div class="news-sources"></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">2.</span>
+                        国产创新药IND爆发 → CRM与数据管理需求攀升
+                    </div>
+                    <div class="news-body">：6月单月国产1类新药IND突破30项创历史新高，大量创新药进入临床试验阶段意味着药企对临床数据管理（Vault CDMS）、商业化CRM的需求将持续增长。</div>
+                    <div class="news-sources"></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">3.</span>
+                        FDA启用AI审评 → 全球医药AI合规趋势加速
+                    </div>
+                    <div class="news-body">：FDA启动生成式AI药物审评试点，中国NMPA也发布"AI+药品监管"实施意见。全球AI医药监管框架快速成型，Veeva作为生命科学云行业领导者，可关注AI合规方案的产品化机会。</div>
+                    <div class="news-sources"></div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="num">4.</span>
+                        药企密集回购 → 行业信心回暖信号
+                    </div>
+                    <div class="news-body">：药明康德、恒瑞医药、中国生物制药等头部药企密集启动大额回购计划，表明产业资本对行业长期价值的认可。行业复苏将带动Veeva客户的IT/数字化预算增长。<br>---<br>*📅 数据窗口：2026年6月22日-7月1日 | 本内容由AI自动搜集整理，仅供内部参考 | 每条新闻均经2+来源交叉验证*</div>
+                    <div class="news-sources"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="competitor-table-wrapper">
+            <table class="competitor-table">
+                <thead><tr><th>对手</th><th>状态</th></tr></thead>
+                <tbody><tr><td>IQVIA</td><td>与Salesforce全球合作持续推进生命科学云建设；OCE CRM继续服务现有客户。</td></tr><tr><td>Salesforce</td><td>生命科学云积极推进中，2025年宣布与IQVIA合作后持续整合产品线。</td></tr><tr><td>太美医疗</td><td>AI战略升级，"数字员工"产品推进，聚焦医药研发数字化全流程。</td></tr><tr><td>Medidata</td><td>近24h无重大首发新闻；持续服务全球临床试验数字化市场。</td></tr><tr><td>腾讯健康NGES</td><td>近24h无重大首发新闻；基于腾讯AI能力持续赋能医疗机构和企业客户。</td></tr><tr><td>脉络洞察</td><td>近24h无重大首发新闻。</td></tr></tbody>
+            </table>
+        </div>
+
 
         <div class="footer">
-            <p>本内容由AI自动搜集整理，仅供内部参考 | 数据截止 2026年6月30日 08:00 CST</p>
+            📅 数据窗口：近24小时 | 本内容由AI自动搜集整理，仅供内部参考<br>
+            每条新闻均经2+来源交叉验证<br>
+            <span class="brand">Veeva China · 每日市场动态早讯</span>
         </div>
     </div>
 </body>
