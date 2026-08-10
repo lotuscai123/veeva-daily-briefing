@@ -211,8 +211,11 @@
     <a href="https://docs.qq.com/sheet/XvTnaSXeSBuP?tab=VpkalH" target="_blank" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;transition:all 0.2s;">
       <span>💰</span><span>付费媒体刊例价</span><span style="font-size:10px;color:var(--text-secondary);">58条</span>
     </a>
+    <span onclick="copyPrompt('请帮我在IMA品牌知识库中搜索Veeva品牌定位、Messaging体系、MAAP架构等核心资料。')" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">
+      <span>🏷️</span><span>IMA 品牌知识库</span><span style="font-size:10px;color:var(--text-secondary);">定位·MAAP·话术</span>
+    </span>
     <span onclick="copyPrompt('请帮我在IMA PR工作知识库中搜索相关背景资料。')" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">
-      <span>📚</span><span>IMA PR知识库</span><span style="font-size:10px;color:var(--text-secondary);">点击复制查询Prompt</span>
+      <span>📚</span><span>IMA PR工作知识库</span><span style="font-size:10px;color:var(--text-secondary);">稿件·采访·简报</span>
     </span>
     <span style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:13px;cursor:pointer;transition:all 0.2s;" onclick="document.getElementById('quick-actions').scrollIntoView({behavior:'smooth'})">
       <span>⚡</span><span>快捷操作区</span><span style="font-size:10px;color:var(--text-secondary);">一键串联流程</span>
@@ -281,23 +284,22 @@
       </div>
     </div>
 
-    <!-- G17 跨国药企高管情报周刊 -->
-    <div class="card" onclick="launchSkill('G17 Pharma 简报', '请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">
+    <!-- G17 跨国药企高管情报周刊 - 自动化运行 -->
+    <div class="card">
       <div class="card-header">
         <div class="card-icon">🌐</div>
-        <span class="card-badge ready">已就绪</span>
+        <span class="card-badge ready">运行中</span>
       </div>
       <div class="card-title">G17 跨国药企高管情报周刊</div>
-      <div class="card-desc">面向 17 家跨国药企中国区 CEO 及 GM 的英文行业周刊，每周自动梳理全球药企 AI 战略、中国政策变化、行业趋势。可直接用于客户沟通和 Thought Leadership。</div>
+      <div class="card-desc">WorkBuddy 定时自动化任务。每周自动生成面向 17 家跨国药企中国区 CEO 及 GM 的英文行业周刊，覆盖全球药企 AI 战略、中国政策变化、行业趋势。自动推送至邮箱，可直接用于客户沟通和 Thought Leadership。</div>
       <div class="card-skill">g17-pharma-newsletter</div>
       <div class="card-tags" style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;">
         <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">🇬🇧 英文周刊</span>
         <span style="font-size:10px;background:#fef3c7;color:#92400e;padding:2px 7px;border-radius:4px;">👔 高管定向</span>
-        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">📧 邮件推送</span>
+        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">📧 自动邮件推送</span>
       </div>
       <div class="card-actions">
-        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('G17 Pharma 简报', '请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">🚀 生成本周简报</button>
-        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">📋 复制 Prompt</button>
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏰ 自动运行中 · 每周推送</button>
       </div>
     </div>
 
@@ -708,7 +710,7 @@
 
   console.log('🟢 Veeva PR AI 工作台已就绪');
   console.log('💡 点击管道按钮筛选流程 | 点击功能卡片 → Prompt 复制 → 粘贴执行');
-  console.log('📊 6 项已就绪 Skill | 2 项自动化运行中 | 7 项按需 | 2 项规划中 | 3 组快捷串联流程');
+  console.log('📊 4 项已就绪 Skill | 2 项自动化运行中 | 9 项按需 | 2 项规划中 | 3 组快捷串联流程');
 </script>
 </body>
 </html>
