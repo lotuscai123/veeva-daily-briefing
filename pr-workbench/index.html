@@ -142,6 +142,15 @@
   }
   .toast.show { opacity: 1; }
 
+  /* Phase section visibility for filtering */
+  .phase-section.hidden { display: none; }
+  .show-all-btn { 
+    display: none; font-size: 12px; color: var(--accent); cursor: pointer; 
+    padding: 4px 12px; border-radius: 6px; border: 1px solid var(--accent);
+    background: transparent; margin-bottom: 16px; font-family: inherit; font-weight: 600;
+  }
+  .show-all-btn.visible { display: inline-block; }
+
   /* Responsive */
   @media (max-width: 768px) {
     .pipeline { flex-wrap: wrap; }
@@ -194,6 +203,22 @@
     </div>
   </div>
 
+  <!-- Resource Quick Links -->
+  <div style="display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
+    <a href="https://docs.qq.com/sheet/XvTnaSXeSBuP?tab=vZnXM0" target="_blank" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;transition:all 0.2s;">
+      <span>👥</span><span>媒体通讯录</span><span style="font-size:10px;color:var(--text-secondary);">242人</span>
+    </a>
+    <a href="https://docs.qq.com/sheet/XvTnaSXeSBuP?tab=VpkalH" target="_blank" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;transition:all 0.2s;">
+      <span>💰</span><span>付费媒体刊例价</span><span style="font-size:10px;color:var(--text-secondary);">58条</span>
+    </a>
+    <span onclick="copyPrompt('请帮我在IMA PR工作知识库中搜索相关背景资料。')" style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">
+      <span>📚</span><span>IMA PR知识库</span><span style="font-size:10px;color:var(--text-secondary);">点击复制查询Prompt</span>
+    </span>
+    <span style="display:flex;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);font-size:13px;cursor:pointer;transition:all 0.2s;" onclick="document.getElementById('quick-actions').scrollIntoView({behavior:'smooth'})">
+      <span>⚡</span><span>快捷操作区</span><span style="font-size:10px;color:var(--text-secondary);">一键串联流程</span>
+    </span>
+  </div>
+
   <!-- Pipeline -->
   <div class="pipeline" id="pipeline">
     <div class="pipeline-step active" data-phase="intel">
@@ -233,6 +258,7 @@
   </div>
 
   <!-- Phase 0: Intelligence -->
+  <div class="phase-section" data-phase="intel">
   <div class="phase-divider"><span class="phase-label intel">Phase 0 · 情报监测</span><span class="phase-line"></span></div>
   <div class="cards-grid">
     <!-- 每日市场早讯 - 自动化运行 -->
@@ -301,8 +327,10 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Phase 1: Strategy -->
+  <div class="phase-section" data-phase="strategy">
   <div class="phase-divider"><span class="phase-label strategy">Phase 1 · 选题策划</span><span class="phase-line"></span></div>
   <div class="cards-grid">
     <div class="card" onclick="launchSkill('选题方向生成', '请基于当前医药行业AI热点（如MAAP架构、生命科学AI应用、药企数字化转型），为Veeva中国策划3-5个下周可行的传播选题方向。每个选题需要包含：1) 新闻角度，2) 目标媒体类型，3) 与Veeva品牌定位（AI Application公司）的契合点。')">
@@ -326,12 +354,15 @@
       <div class="card-title">媒体匹配推荐</div>
       <div class="card-desc">根据选题角度，智能匹配最合适的媒体和记者，输出推荐名单与匹配理由。</div>
       <div class="card-actions">
-        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请根据以下选题角度 [请在此填入你的选题]，从Veeva媒体资源库中推荐最匹配的5-8位记者/媒体，说明每位记者的匹配理由。')">📋 复制 Prompt</button>
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('媒体匹配推荐', '请根据以下选题角度，从Veeva媒体资源库中推荐最匹配的5-8位记者/媒体，说明每位记者的匹配理由（条线契合度、历史合作情况、媒体影响力）。\n\n选题：[请在此填入你的选题]')">🚀 智能匹配</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请根据以下选题角度，从Veeva媒体资源库中推荐最匹配的5-8位记者/媒体，说明每位记者的匹配理由（条线契合度、历史合作情况、媒体影响力）。\n\n选题：[请在此填入你的选题]')">📋 复制 Prompt</button>
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Phase 2: Creation -->
+  <div class="phase-section" data-phase="creation">
   <div class="phase-divider"><span class="phase-label creation">Phase 2 · 内容创作</span><span class="phase-line"></span></div>
   <div class="cards-grid">
     <div class="card" onclick="launchSkill('新闻稿撰写', '请为Veeva中国撰写一份新闻稿。主题：[请在此填入主题]。请调用Veeva品牌Messaging体系（定位：生命科学行业AI Application公司），确保稿件符合Veeva全球新闻稿模板与编辑规范。')">
@@ -354,7 +385,7 @@
         <span class="card-badge ready">已就绪</span>
       </div>
       <div class="card-title">高管采访应答</div>
-      <div class="card-desc">为主晓枫生成媒体采访Q&A应答要点，涵盖MAAP架构、品牌定位等核心口径。</div>
+      <div class="card-desc">为丁晓枫生成媒体采访Q&A应答要点，涵盖MAAP架构、品牌定位等核心口径。</div>
       <div class="card-skill">veeva-pr-executive-qa</div>
       <div class="card-actions">
         <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('高管采访应答', '请为Veeva中国总经理丁晓枫准备媒体采访应答要点。采访主题：[请填入具体主题]。基于MAAP架构和Veeva品牌定位，生成核心话术和预判问题应答。')">🚀 生成应答</button>
@@ -376,6 +407,19 @@
       </div>
     </div>
 
+    <div class="card" onclick="launchSkill('AIO FAQ 内容生成', '请为Veeva生成面向AI搜索优化的FAQ内容。背景：IQVIA、McKinsey等竞品正在抢占"生命科学AI"等关键词的AI搜索概念定义权。请基于Veeva品牌定位（生命科学行业AI Application公司），针对以下核心问题生成高质量FAQ：1) Veeva在生命科学AI领域做了什么？2) Veeva MAAP架构是什么？3) Veeva与通用AI公司的区别？每条约200字，确保被AI搜索优先引用。')">
+      <div class="card-header">
+        <div class="card-icon">🔍</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">AIO / SEO FAQ 生成</div>
+      <div class="card-desc">针对 AI 搜索引擎（如 Perplexity、ChatGPT Search）优化品牌 FAQ 内容，抢占「生命科学 AI」等关键概念定义权，应对 IQVIA/McKinsey 等竞品的 AI 搜索竞争。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('AIO FAQ', '请为Veeva生成AI搜索优化的FAQ内容，抢占"生命科学AI"等关键概念定义权，每条约200字。')">🚀 生成 FAQ</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva生成面向AI搜索优化的FAQ内容。背景：IQVIA、McKinsey等竞品正在抢占"生命科学AI"等关键词的AI搜索概念定义权。请基于Veeva品牌定位（生命科学行业AI Application公司），针对核心问题生成高质量FAQ。每条约200字，确保被AI搜索优先引用。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
     <div class="card" onclick="launchSkill('行业观点文章', '请为Veeva中国撰写一篇医药AI行业观点文章，署名丁晓枫。主题：[请在此填入主题]。要求以DT+PT思维框架深入解读，体现Veeva作为生命科学AI Application公司的行业洞察。约2000-3000字。')">
       <div class="card-header">
         <div class="card-icon">📖</div>
@@ -389,8 +433,10 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Phase 3: Distribution -->
+  <div class="phase-section" data-phase="distribution">
   <div class="phase-divider"><span class="phase-label distribution">Phase 3 · 媒体分发</span><span class="phase-line"></span></div>
   <div class="cards-grid">
     <div class="card" onclick="launchSkill('媒体邀约 Pitch', '请为Veeva生成媒体邀约个性化话术。目标记者：[请填入记者姓名]，所属媒体：[请填入媒体名称]，Pitch的话题/活动：[请填入]。生成微信邀约话术和邮件Pitch。')">
@@ -407,6 +453,19 @@
       </div>
     </div>
 
+    <div class="card" onclick="launchSkill('批量 Pitch 生成', '请为以下活动生成批量媒体Pitch话术。活动名称：[请填入活动名，如Veeva Commercial Summit 2026]，拟邀媒体名单：[请提供名单]。为每家媒体生成个性化微信话术+邮件Pitch，包括差异化角度建议。')">
+      <div class="card-header">
+        <div class="card-icon">📦</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">批量 Pitch 生成</div>
+      <div class="card-desc">活动/Summit场景：一次性为多位记者生成个性化邀约话术，区分付费媒体与免费媒体差异化 Pitch 策略。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('批量 Pitch', '请为以下活动生成批量媒体Pitch话术。活动：[请填入活动名]，拟邀媒体名单：[请提供]。为每家媒体生成个性化微信话术+邮件Pitch。')">🚀 批量生成</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为以下活动生成批量媒体Pitch话术。活动：[请填入活动名]，拟邀媒体名单：[请提供]。为每家媒体生成个性化微信话术+邮件Pitch，包括差异化角度建议。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-header">
         <div class="card-icon">📅</div>
@@ -419,8 +478,10 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Phase 4: Evaluation -->
+  <div class="phase-section" data-phase="evaluation">
   <div class="phase-divider"><span class="phase-label evaluation">Phase 4 · 效果评估</span><span class="phase-line"></span></div>
   <div class="cards-grid">
     <div class="card" onclick="launchSkill('传播周报', '请为Veeva中国生成本周传播工作周报。汇总本周媒体发稿、采访活动、社交内容发布情况，分析传播效果，提供下周工作建议。')">
@@ -436,6 +497,19 @@
       </div>
     </div>
 
+    <div class="card" onclick="launchSkill('社交传播效果分析', '请帮我分析Veeva中国近期社交媒体传播效果。请搜索和汇总：1) Veeva微信公众号近4周文章阅读量趋势，2) LinkedIn官方账号互动数据，3) 与竞品社交媒体表现的对比分析。生成一份社交传播效果报告。')">
+      <div class="card-header">
+        <div class="card-icon">📉</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">社交传播效果分析</div>
+      <div class="card-desc">汇总微信/LinkedIn等社交平台传播数据，追踪阅读量、互动量趋势，对标竞品社交表现。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('社交效果分析', '请帮我分析Veeva中国近期社交媒体传播效果：微信阅读趋势、LinkedIn互动数据、竞品对比。')">🚀 分析效果</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请帮我分析Veeva中国近期社交媒体传播效果：1) 微信公众号近4周文章阅读量趋势，2) LinkedIn官方账号互动数据，3) 与竞品社交媒体表现的对比分析。生成一份社交传播效果报告。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-header">
         <div class="card-icon">📊</div>
@@ -448,6 +522,73 @@
       </div>
     </div>
   </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div id="quick-actions" style="margin-top:36px;">
+    <div class="phase-divider"><span class="phase-label" style="background:#1a1a2e;color:#fff;">⚡ 快捷操作区</span><span class="phase-line"></span></div>
+    <div class="cards-grid">
+      <div class="card" onclick="runQuickAction('Summit Pitch 全流程', [
+        '请帮我扫描近期医药AI热点，识别适合Summit传播的话题方向。',
+        '基于热点分析，为Veeva Commercial Summit策划3个传播选题。',
+        '根据选题，从媒体资源库中匹配适合的记者名单。',
+        '为匹配的记者生成批量Pitch话术（微信+邮件）。'
+      ])">
+        <div class="card-header">
+          <div class="card-icon">🏔️</div>
+          <span class="card-badge ready">3步串联</span>
+        </div>
+        <div class="card-title">Summit Pitch 全流程</div>
+        <div class="card-desc">一键串联 Summit 传播全流程：热点分析 → 选题策划 → 媒体匹配 → 批量Pitch生成。</div>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="event.stopPropagation(); runQuickAction('Summit Pitch 全流程', [
+        '请帮我扫描近期医药AI热点，识别适合Summit传播的话题方向。',
+        '基于热点分析，为Veeva Commercial Summit策划3个传播选题。',
+        '根据选题，从媒体资源库中匹配适合的记者名单。',
+        '为匹配的记者生成批量Pitch话术（微信+邮件）。'
+      ])">🚀 启动全流程</button>
+        </div>
+      </div>
+
+      <div class="card" onclick="runQuickAction('高管专访全流程', [
+        '请为Veeva中国总经理丁晓枫准备媒体采访应答要点，基于MAAP架构和品牌定位。',
+        '基于以上应答要点，撰写一份新闻稿草案。',
+        '基于新闻稿，生成微信/LinkedIn/短视频等多平台社交内容。'
+      ])">
+        <div class="card-header">
+          <div class="card-icon">🎤</div>
+          <span class="card-badge ready">3步串联</span>
+        </div>
+        <div class="card-title">高管专访全流程</div>
+        <div class="card-desc">一键串联高管专访全流程：应答准备 → 新闻稿 → 社交多平台分发内容。</div>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="event.stopPropagation(); runQuickAction('高管专访全流程', [
+        '请为Veeva中国总经理丁晓枫准备媒体采访应答要点，基于MAAP架构和品牌定位。',
+        '基于以上应答要点，撰写一份新闻稿草案。',
+        '基于新闻稿，生成微信/LinkedIn/短视频等多平台社交内容。'
+      ])">🚀 启动全流程</button>
+        </div>
+      </div>
+
+      <div class="card" onclick="runQuickAction('周报一键生成', [
+        '请为Veeva中国生成本周传播工作周报，汇总发稿、采访、社交内容发布情况。',
+        '请帮我分析Veeva中国近期社交媒体传播效果：微信阅读趋势、LinkedIn互动数据。'
+      ])">
+        <div class="card-header">
+          <div class="card-icon">📊</div>
+          <span class="card-badge ready">2步串联</span>
+        </div>
+        <div class="card-title">周报一键生成</div>
+        <div class="card-desc">一键生成传播周报 + 社交效果分析，覆盖效果评估全维度。</div>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="event.stopPropagation(); runQuickAction('周报一键生成', [
+        '请为Veeva中国生成本周传播工作周报，汇总发稿、采访、社交内容发布情况。',
+        '请帮我分析Veeva中国近期社交媒体传播效果：微信阅读趋势、LinkedIn互动数据。'
+      ])">🚀 启动全流程</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -455,16 +596,49 @@
 <div class="toast" id="toast"></div>
 
 <script>
-  // Pipeline navigation
+  // Pipeline navigation with phase filtering
+  let activePhase = null;
+  const showAllBtn = document.createElement('button');
+  showAllBtn.className = 'show-all-btn';
+  showAllBtn.textContent = '📋 显示全部流程';
+  showAllBtn.onclick = showAllPhases;
+  document.getElementById('pipeline').parentNode.insertBefore(showAllBtn, document.getElementById('pipeline'));
+
   document.querySelectorAll('.pipeline-step').forEach(step => {
     step.addEventListener('click', function() {
+      const phase = this.dataset.phase;
+      if (activePhase === phase) {
+        // Clicking same phase again = show all
+        showAllPhases();
+        return;
+      }
+      // Deactivate all pipeline steps
       document.querySelectorAll('.pipeline-step').forEach(s => s.classList.remove('active'));
       this.classList.add('active');
-      const phase = this.dataset.phase;
-      const divider = document.querySelector(`.phase-divider:has(.phase-label.${phase})`); // Simplified - just scroll
-      window.scrollTo({ top: (this.offsetTop - 100), behavior: 'smooth' });
+      activePhase = phase;
+
+      // Hide all phases except the selected one
+      document.querySelectorAll('.phase-section').forEach(section => {
+        if (section.dataset.phase === phase) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+      showAllBtn.classList.add('visible');
+      // Scroll to the visible section
+      const visible = document.querySelector(`.phase-section[data-phase="${phase}"]`);
+      if (visible) visible.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  function showAllPhases() {
+    document.querySelectorAll('.phase-section').forEach(s => s.classList.remove('hidden'));
+    document.querySelectorAll('.pipeline-step').forEach(s => { s.classList.remove('active'); });
+    activePhase = null;
+    showAllBtn.classList.remove('visible');
+    document.getElementById('pipeline').scrollIntoView({ behavior: 'smooth' });
+  }
 
   // Launch skill - copies prompt and shows toast
   function launchSkill(name, prompt) {
@@ -501,28 +675,40 @@
     toast._timeout = setTimeout(() => toast.classList.remove('show'), 2500);
   }
 
-  // Theme toggle (dark mode support)
-  function toggleTheme() {
+  // Theme toggle with localStorage persistence
+  const DARK_CSS = { '--bg': '#0f172a', '--card-bg': '#1e293b', '--text': '#f1f5f9', '--text-secondary': '#94a3b8', '--border': '#334155' };
+  const LIGHT_CSS = { '--bg': '#f5f6f8', '--card-bg': '#ffffff', '--text': '#1a1a2e', '--text-secondary': '#6b7280', '--border': '#e5e7eb' };
+
+  function applyTheme(isDark) {
+    const vars = isDark ? DARK_CSS : LIGHT_CSS;
     const root = document.documentElement;
-    const isDark = root.style.getPropertyValue('--bg') === '#0f172a';
-    if (isDark) {
-      root.style.setProperty('--bg', '#f5f6f8');
-      root.style.setProperty('--card-bg', '#ffffff');
-      root.style.setProperty('--text', '#1a1a2e');
-      root.style.setProperty('--text-secondary', '#6b7280');
-      root.style.setProperty('--border', '#e5e7eb');
-    } else {
-      root.style.setProperty('--bg', '#0f172a');
-      root.style.setProperty('--card-bg', '#1e293b');
-      root.style.setProperty('--text', '#f1f5f9');
-      root.style.setProperty('--text-secondary', '#94a3b8');
-      root.style.setProperty('--border', '#334155');
-    }
+    Object.entries(vars).forEach(([k, v]) => root.style.setProperty(k, v));
+    localStorage.setItem('pr-workbench-theme', isDark ? 'dark' : 'light');
+  }
+
+  function toggleTheme() {
+    const isDark = document.documentElement.style.getPropertyValue('--bg') === '#0f172a';
+    applyTheme(!isDark);
+  }
+
+  // Init theme on load
+  (function() {
+    const saved = localStorage.getItem('pr-workbench-theme');
+    if (saved === 'dark') applyTheme(true);
+  })();
+
+  // Quick action: copy all prompts sequentially
+  function runQuickAction(name, prompts) {
+    const fullText = '【' + name + '】请依次执行以下步骤，每完成一步后继续下一步：\n\n' +
+      prompts.map((p, i) => '第' + (i+1) + '步：' + p).join('\n\n') +
+      '\n\n---\n💡 提示：完成一步后，在对话中说"继续下一步"即可。';
+    copyToClipboard(fullText);
+    showToast('✅ "' + name + '" 已启动！' + prompts.length + '步流程 Prompt 已复制，在 WorkBuddy 粘贴执行。');
   }
 
   console.log('🟢 Veeva PR AI 工作台已就绪');
-  console.log('💡 点击任意功能卡片 → Prompt 自动复制 → 在 WorkBuddy 中粘贴执行');
-  console.log('📊 7 项已就绪 | 2 项自动化运行中 | 3 项按需 | 2 项规划中');
+  console.log('💡 点击管道按钮筛选流程 | 点击功能卡片 → Prompt 复制 → 粘贴执行');
+  console.log('📊 6 项已就绪 Skill | 2 项自动化运行中 | 7 项按需 | 2 项规划中 | 3 组快捷串联流程');
 </script>
 </body>
 </html>
