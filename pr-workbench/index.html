@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veeva PR AI 工作台</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card-bg: #ffffff;
+    --text: #1a1a2e;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --green: #059669;
+    --green-light: #d1fae5;
+    --amber: #d97706;
+    --amber-light: #fef3c7;
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --red: #dc2626;
+    --red-light: #fee2e2;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 24px; }
+
+  /* Header */
+  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+  .header-left h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+  .header-left .subtitle { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+  .header-right { display: flex; gap: 12px; }
+  .theme-toggle {
+    width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--card-bg); cursor: pointer; font-size: 16px; display: flex;
+    align-items: center; justify-content: center; transition: all 0.2s;
+  }
+  .theme-toggle:hover { border-color: var(--accent); }
+
+  /* Stats bar */
+  .stats-bar { display: flex; gap: 16px; margin-bottom: 28px; }
+  .stat-card {
+    flex: 1; background: var(--card-bg); border-radius: var(--radius);
+    padding: 16px 20px; box-shadow: var(--shadow); display: flex;
+    align-items: center; gap: 14px; border: 1px solid var(--border);
+  }
+  .stat-icon { font-size: 28px; width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .stat-icon.blue { background: var(--accent-light); }
+  .stat-icon.green { background: var(--green-light); }
+  .stat-icon.purple { background: var(--purple-light); }
+  .stat-icon.amber { background: var(--amber-light); }
+  .stat-value { font-size: 22px; font-weight: 700; }
+  .stat-label { font-size: 12px; color: var(--text-secondary); }
+
+  /* Pipeline */
+  .pipeline { display: flex; gap: 4px; margin-bottom: 28px; background: var(--card-bg); border-radius: var(--radius); padding: 8px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .pipeline-step {
+    flex: 1; text-align: center; padding: 14px 8px; border-radius: 10px;
+    cursor: pointer; transition: all 0.2s; position: relative;
+    border: 2px solid transparent;
+  }
+  .pipeline-step:hover { background: #f9fafb; }
+  .pipeline-step.active { border-color: var(--accent); background: var(--accent-light); }
+  .pipeline-step .step-num { font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; }
+  .pipeline-step .step-icon { font-size: 22px; margin-bottom: 4px; }
+  .pipeline-step .step-title { font-size: 13px; font-weight: 600; }
+  .pipeline-step .step-desc { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+  .pipeline-arrow { display: flex; align-items: center; color: #cbd5e1; font-size: 18px; flex-shrink: 0; padding: 0 2px; }
+
+  /* Section */
+  .section-title {
+    font-size: 16px; font-weight: 700; margin-bottom: 16px; display: flex;
+    align-items: center; gap: 8px;
+  }
+  .section-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+  /* Cards grid */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(295px, 1fr)); gap: 16px; margin-bottom: 32px; }
+
+  .card {
+    background: var(--card-bg); border-radius: var(--radius); padding: 20px;
+    box-shadow: var(--shadow); border: 1px solid var(--border);
+    transition: all 0.2s; cursor: pointer; position: relative; overflow: hidden;
+  }
+  .card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+  .card-icon { font-size: 32px; }
+  .card-badge {
+    font-size: 11px; padding: 3px 8px; border-radius: 20px; font-weight: 600;
+  }
+  .card-badge.ready { background: var(--green-light); color: var(--green); }
+  .card-badge.plan { background: var(--amber-light); color: var(--amber); }
+  .card-badge.new { background: var(--purple-light); color: var(--purple); }
+  .card-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .card-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 14px; }
+  .card-skill { font-size: 11px; color: var(--accent); background: var(--accent-light); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-family: "SF Mono", "Fira Code", monospace; }
+  .card-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn {
+    padding: 7px 14px; border-radius: 6px; font-size: 12px; font-weight: 600;
+    border: none; cursor: pointer; transition: all 0.15s; font-family: inherit;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #1d4ed8; }
+  .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-sm { padding: 5px 10px; font-size: 11px; }
+
+  /* Phase label */
+  .phase-divider {
+    display: flex; align-items: center; gap: 12px; margin: 32px 0 16px;
+  }
+  .phase-divider:first-of-type { margin-top: 0; }
+  .phase-label {
+    font-size: 13px; font-weight: 700; white-space: nowrap;
+    padding: 6px 14px; border-radius: 20px;
+  }
+  .phase-label.intel { background: var(--purple-light); color: var(--purple); }
+  .phase-label.strategy { background: var(--amber-light); color: var(--amber); }
+  .phase-label.creation { background: var(--accent-light); color: var(--accent); }
+  .phase-label.distribution { background: var(--green-light); color: var(--green); }
+  .phase-label.evaluation { background: var(--red-light); color: var(--red); }
+  .phase-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+    background: #1a1a2e; color: #fff; padding: 10px 22px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; z-index: 1000; opacity: 0;
+    transition: opacity 0.3s; pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+  .toast.show { opacity: 1; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pipeline { flex-wrap: wrap; }
+    .pipeline-arrow { display: none; }
+    .pipeline-step { flex: 1 1 30%; padding: 10px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .stats-bar { flex-wrap: wrap; }
+    .stat-card { flex: 1 1 40%; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>📋 Veeva PR AI 工作台</h1>
+      <div class="subtitle">AI-Powered PR Workflow · 从情报到评估的全链路自动化</div>
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" onclick="toggleTheme()" title="切换主题">🌓</button>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-icon blue">📰</div>
+      <div><div class="stat-value">7</div><div class="stat-label">已就绪 AI 能力</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon green">🤖</div>
+      <div><div class="stat-value">2</div><div class="stat-label">自动化监测运行中</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon purple">👥</div>
+      <div><div class="stat-value">242</div><div class="stat-label">媒体联系人</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon amber">📊</div>
+      <div><div class="stat-value">17家</div><div class="stat-label">G17 药企监测</div></div>
+    </div>
+  </div>
+
+  <!-- Pipeline -->
+  <div class="pipeline" id="pipeline">
+    <div class="pipeline-step active" data-phase="intel">
+      <div class="step-num">Phase 0</div>
+      <div class="step-icon">🔍</div>
+      <div class="step-title">情报监测</div>
+      <div class="step-desc">热点·竞品</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step" data-phase="strategy">
+      <div class="step-num">Phase 1</div>
+      <div class="step-icon">🎯</div>
+      <div class="step-title">选题策划</div>
+      <div class="step-desc">方向·匹配</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step" data-phase="creation">
+      <div class="step-num">Phase 2</div>
+      <div class="step-icon">✍️</div>
+      <div class="step-title">内容创作</div>
+      <div class="step-desc">稿件·应答·社交</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step" data-phase="distribution">
+      <div class="step-num">Phase 3</div>
+      <div class="step-icon">📨</div>
+      <div class="step-title">媒体分发</div>
+      <div class="step-desc">邀约·Pitch</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step" data-phase="evaluation">
+      <div class="step-num">Phase 4</div>
+      <div class="step-icon">📊</div>
+      <div class="step-title">效果评估</div>
+      <div class="step-desc">报告·简报</div>
+    </div>
+  </div>
+
+  <!-- Phase 0: Intelligence -->
+  <div class="phase-divider"><span class="phase-label intel">Phase 0 · 情报监测</span><span class="phase-line"></span></div>
+  <div class="cards-grid">
+    <!-- 每日市场早讯 - 自动化运行 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">🌅</div>
+        <span class="card-badge ready">运行中</span>
+      </div>
+      <div class="card-title">每日市场早讯</div>
+      <div class="card-desc">WorkBuddy 定时自动化任务。每日自动监测生物医药市场动态、行业趋势、竞对信息，生成早讯简报，自动更新到 GitHub Pages 网页并推送至邮箱。</div>
+      <div class="card-tags" style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;">
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">📡 市场监测</span>
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">🏭 行业动态</span>
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">🔎 竞对追踪</span>
+        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">📧 邮件推送</span>
+        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">🌐 GitHub Pages</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏰ 自动运行中 · 每日推送</button>
+      </div>
+    </div>
+
+    <!-- G17 跨国药企高管情报周刊 -->
+    <div class="card" onclick="launchSkill('G17 Pharma 简报', '请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">
+      <div class="card-header">
+        <div class="card-icon">🌐</div>
+        <span class="card-badge ready">已就绪</span>
+      </div>
+      <div class="card-title">G17 跨国药企高管情报周刊</div>
+      <div class="card-desc">面向 17 家跨国药企中国区 CEO 及 GM 的英文行业周刊，每周自动梳理全球药企 AI 战略、中国政策变化、行业趋势。可直接用于客户沟通和 Thought Leadership。</div>
+      <div class="card-skill">g17-pharma-newsletter</div>
+      <div class="card-tags" style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;">
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">🇬🇧 英文周刊</span>
+        <span style="font-size:10px;background:#fef3c7;color:#92400e;padding:2px 7px;border-radius:4px;">👔 高管定向</span>
+        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">📧 邮件推送</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('G17 Pharma 简报', '请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">🚀 生成本周简报</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请生成本周G17 Pharma Executive Intelligence Newsletter，面向17家跨国药企中国区CEO及GM，覆盖全球药企AI动态、中国政策变化、行业趋势等关键情报。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <!-- 行业热点深度扫描 -->
+    <div class="card" onclick="launchSkill('行业热点深度扫描', '请帮我深度扫描医药行业最近一周的AI相关热点动态，重点关注生命科学AI应用、药企数字化转型、AI Agent在制药领域的落地。生成一份热点简报，包含关键事件摘要和对Veeva的传播启示。')">
+      <div class="card-header">
+        <div class="card-icon">🔥</div>
+        <span class="card-badge new">按需触发</span>
+      </div>
+      <div class="card-title">行业热点深度扫描</div>
+      <div class="card-desc">按需触发。针对特定话题（如 MAAP、AI 合规、药企数字化等）进行深度搜索和热点挖掘，为选题策划提供即时情报支撑。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); launchSkill('行业热点深度扫描', '请帮我深度扫描医药行业最近一周的AI相关热点动态，重点关注生命科学AI应用、药企数字化转型、AI Agent在制药领域的落地。生成一份热点简报，包含关键事件摘要和对Veeva的传播启示。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <!-- 竞品传播监测 -->
+    <div class="card" onclick="launchSkill('竞品传播监测', '请帮我监测IQVIA、McKinsey及主要竞品近期在中国市场的媒体声量和传播话题方向，重点关注：1) AI相关的内容发布，2) 与药企的合作案例，3) 媒体对竞品的评价角度。生成竞品传播周报。')">
+      <div class="card-header">
+        <div class="card-icon">🔎</div>
+        <span class="card-badge new">按需触发</span>
+      </div>
+      <div class="card-title">竞品传播监测</div>
+      <div class="card-desc">按需触发。定期扫描 IQVIA、McKinsey 等竞品媒体声量，追踪 AI 话题方向与传播策略变化，生成竞品传播分析报告。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); launchSkill('竞品传播监测', '请帮我监测IQVIA、McKinsey及主要竞品近期在中国市场的媒体声量和传播话题方向，重点关注：1) AI相关的内容发布，2) 与药企的合作案例，3) 媒体对竞品的评价角度。生成竞品传播周报。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 1: Strategy -->
+  <div class="phase-divider"><span class="phase-label strategy">Phase 1 · 选题策划</span><span class="phase-line"></span></div>
+  <div class="cards-grid">
+    <div class="card" onclick="launchSkill('选题方向生成', '请基于当前医药行业AI热点（如MAAP架构、生命科学AI应用、药企数字化转型），为Veeva中国策划3-5个下周可行的传播选题方向。每个选题需要包含：1) 新闻角度，2) 目标媒体类型，3) 与Veeva品牌定位（AI Application公司）的契合点。')">
+      <div class="card-header">
+        <div class="card-icon">💡</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">选题方向生成</div>
+      <div class="card-desc">基于情报分析结果，自动生成传播选题方向，匹配品牌定位与媒体偏好。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('选题方向生成', '请基于当前医药行业AI热点（如MAAP架构、生命科学AI应用、药企数字化转型），为Veeva中国策划3-5个下周可行的传播选题方向。每个选题需包含：新闻角度、目标媒体类型、与Veeva品牌定位的契合点。')">🚀 生成选题</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请基于当前医药行业AI热点（如MAAP架构、生命科学AI应用、药企数字化转型），为Veeva中国策划3-5个下周可行的传播选题方向。每个选题需包含：新闻角度、目标媒体类型、与Veeva品牌定位的契合点。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card" onclick="launchSkill('媒体匹配推荐', '请根据以下选题角度 [请在此填入你的选题]，从Veeva媒体资源库中推荐最匹配的5-8位记者/媒体，说明每位记者的匹配理由（条线契合度、历史合作情况、媒体影响力）。')">
+      <div class="card-header">
+        <div class="card-icon">🎯</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">媒体匹配推荐</div>
+      <div class="card-desc">根据选题角度，智能匹配最合适的媒体和记者，输出推荐名单与匹配理由。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请根据以下选题角度 [请在此填入你的选题]，从Veeva媒体资源库中推荐最匹配的5-8位记者/媒体，说明每位记者的匹配理由。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 2: Creation -->
+  <div class="phase-divider"><span class="phase-label creation">Phase 2 · 内容创作</span><span class="phase-line"></span></div>
+  <div class="cards-grid">
+    <div class="card" onclick="launchSkill('新闻稿撰写', '请为Veeva中国撰写一份新闻稿。主题：[请在此填入主题]。请调用Veeva品牌Messaging体系（定位：生命科学行业AI Application公司），确保稿件符合Veeva全球新闻稿模板与编辑规范。')">
+      <div class="card-header">
+        <div class="card-icon">📝</div>
+        <span class="card-badge ready">已就绪</span>
+      </div>
+      <div class="card-title">新闻稿撰写</div>
+      <div class="card-desc">基于品牌Messaging体系，自动生成符合Veeva全球规范的新闻稿草案。</div>
+      <div class="card-skill">veeva-pr-news-release</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('新闻稿撰写', '请为Veeva中国撰写一份新闻稿。主题：[请填入具体主题]。请调用Veeva品牌Messaging体系。')">🚀 写新闻稿</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva中国撰写一份新闻稿。主题：[请填入具体主题]。请调用Veeva品牌Messaging体系（定位：生命科学行业AI Application公司），确保稿件符合Veeva全球新闻稿模板与编辑规范。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card" onclick="launchSkill('高管采访应答', '请为Veeva中国总经理丁晓枫准备媒体采访应答要点。采访主题：[请在此填入主题]。基于MAAP架构和Veeva品牌定位，生成核心话术和预判问题应答。')">
+      <div class="card-header">
+        <div class="card-icon">🎤</div>
+        <span class="card-badge ready">已就绪</span>
+      </div>
+      <div class="card-title">高管采访应答</div>
+      <div class="card-desc">为主晓枫生成媒体采访Q&A应答要点，涵盖MAAP架构、品牌定位等核心口径。</div>
+      <div class="card-skill">veeva-pr-executive-qa</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('高管采访应答', '请为Veeva中国总经理丁晓枫准备媒体采访应答要点。采访主题：[请填入具体主题]。基于MAAP架构和Veeva品牌定位，生成核心话术和预判问题应答。')">🚀 生成应答</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva中国总经理丁晓枫准备媒体采访应答要点。采访主题：[请填入具体主题]。基于MAAP架构和品牌定位，生成核心话术和预判问题应答。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card" onclick="launchSkill('社交多平台内容', '请基于以下Veeva新闻话题 [请在此填入话题]，生成多平台社交媒体内容：1) 微信公众号长文，2) LinkedIn中英双语，3) 短视频脚本。参考Veeva品牌Messaging最新定位。')">
+      <div class="card-header">
+        <div class="card-icon">📱</div>
+        <span class="card-badge ready">已就绪</span>
+      </div>
+      <div class="card-title">社交多平台内容</div>
+      <div class="card-desc">将一个话题一键生成微信/LinkedIn/短视频等多平台社交内容。</div>
+      <div class="card-skill">veeva-pr-social-multiplatform</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('社交多平台内容', '请基于以下Veeva新闻话题 [请填入具体话题]，生成多平台社交媒体内容：微信公众号长文、LinkedIn中英双语、短视频脚本。')">🚀 生成社交内容</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请基于以下Veeva新闻话题 [请填入话题]，生成多平台社交媒体内容：1) 微信公众号长文，2) LinkedIn中英双语，3) 短视频脚本。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card" onclick="launchSkill('行业观点文章', '请为Veeva中国撰写一篇医药AI行业观点文章，署名丁晓枫。主题：[请在此填入主题]。要求以DT+PT思维框架深入解读，体现Veeva作为生命科学AI Application公司的行业洞察。约2000-3000字。')">
+      <div class="card-header">
+        <div class="card-icon">📖</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">行业观点文章</div>
+      <div class="card-desc">生成丁晓枫署名行业观点文章，以DT+PT框架深入解读，投放到高端商业/行业媒体。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('行业观点文章', '请为Veeva中国撰写一篇医药AI行业观点文章，署名丁晓枫。主题：[请填入具体主题]。要求以DT+PT思维框架深入解读，约2000-3000字。')">🚀 写观点文章</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva中国撰写一篇医药AI行业观点文章，署名丁晓枫。主题：[请填入具体主题]。以DT+PT思维框架深入解读，约2000-3000字。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 3: Distribution -->
+  <div class="phase-divider"><span class="phase-label distribution">Phase 3 · 媒体分发</span><span class="phase-line"></span></div>
+  <div class="cards-grid">
+    <div class="card" onclick="launchSkill('媒体邀约 Pitch', '请为Veeva生成媒体邀约个性化话术。目标记者：[请填入记者姓名]，所属媒体：[请填入媒体名称]，Pitch的话题/活动：[请填入]。生成微信邀约话术和邮件Pitch。')">
+      <div class="card-header">
+        <div class="card-icon">📬</div>
+        <span class="card-badge ready">已就绪</span>
+      </div>
+      <div class="card-title">媒体邀约 / Pitch</div>
+      <div class="card-desc">根据媒体和记者画像，自动生成个性化微信邀约话术和邮件Pitch。</div>
+      <div class="card-skill">veeva-pr-media-outreach</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('媒体邀约 Pitch', '请为Veeva生成媒体邀约个性化话术。目标记者：[请填入记者姓名]，所属媒体：[请填入媒体名称]，Pitch的话题/活动：[请填入]。')">🚀 生成邀约</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva生成媒体邀约个性化话术。目标记者：[请填入]，所属媒体：[请填入]，Pitch的话题/活动：[请填入]。生成微信邀约话术和邮件Pitch。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">📅</div>
+        <span class="card-badge plan">规划中</span>
+      </div>
+      <div class="card-title">发稿排期管理</div>
+      <div class="card-desc">管理媒体发稿排期，追踪各渠道稿件状态（待提交/审核中/已发布/已转载）。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏳ 即将上线</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 4: Evaluation -->
+  <div class="phase-divider"><span class="phase-label evaluation">Phase 4 · 效果评估</span><span class="phase-line"></span></div>
+  <div class="cards-grid">
+    <div class="card" onclick="launchSkill('传播周报', '请为Veeva中国生成本周传播工作周报。汇总本周媒体发稿、采访活动、社交内容发布情况，分析传播效果，提供下周工作建议。')">
+      <div class="card-header">
+        <div class="card-icon">📈</div>
+        <span class="card-badge new">新增</span>
+      </div>
+      <div class="card-title">传播周报生成</div>
+      <div class="card-desc">汇总本周传播数据，自动生成包含效果分析和下周建议的结构化周报。</div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="event.stopPropagation(); launchSkill('传播周报', '请为Veeva中国生成本周传播工作周报。汇总本周媒体发稿、采访活动、社交内容发布情况，分析传播效果，提供下周工作建议。')">🚀 生成周报</button>
+        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); copyPrompt('请为Veeva中国生成本周传播工作周报。汇总本周媒体发稿、采访活动、社交内容发布情况，分析传播效果，提供下周工作建议。')">📋 复制 Prompt</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">📊</div>
+        <span class="card-badge plan">规划中</span>
+      </div>
+      <div class="card-title">稿件收录追踪</div>
+      <div class="card-desc">自动追踪已发稿件的媒体收录与转载情况，生成传播覆盖报告。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏳ 即将上线</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+  // Pipeline navigation
+  document.querySelectorAll('.pipeline-step').forEach(step => {
+    step.addEventListener('click', function() {
+      document.querySelectorAll('.pipeline-step').forEach(s => s.classList.remove('active'));
+      this.classList.add('active');
+      const phase = this.dataset.phase;
+      const divider = document.querySelector(`.phase-divider:has(.phase-label.${phase})`); // Simplified - just scroll
+      window.scrollTo({ top: (this.offsetTop - 100), behavior: 'smooth' });
+    });
+  });
+
+  // Launch skill - copies prompt and shows toast
+  function launchSkill(name, prompt) {
+    copyToClipboard(prompt);
+    showToast(`✅ "${name}" 已启动！Prompt 已复制，在 WorkBuddy 中粘贴即可执行。`);
+  }
+
+  // Copy prompt
+  function copyPrompt(text) {
+    copyToClipboard(text);
+    showToast('📋 Prompt 已复制到剪贴板');
+  }
+
+  // Copy to clipboard
+  function copyToClipboard(text) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+  }
+
+  // Toast
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => toast.classList.remove('show'), 2500);
+  }
+
+  // Theme toggle (dark mode support)
+  function toggleTheme() {
+    const root = document.documentElement;
+    const isDark = root.style.getPropertyValue('--bg') === '#0f172a';
+    if (isDark) {
+      root.style.setProperty('--bg', '#f5f6f8');
+      root.style.setProperty('--card-bg', '#ffffff');
+      root.style.setProperty('--text', '#1a1a2e');
+      root.style.setProperty('--text-secondary', '#6b7280');
+      root.style.setProperty('--border', '#e5e7eb');
+    } else {
+      root.style.setProperty('--bg', '#0f172a');
+      root.style.setProperty('--card-bg', '#1e293b');
+      root.style.setProperty('--text', '#f1f5f9');
+      root.style.setProperty('--text-secondary', '#94a3b8');
+      root.style.setProperty('--border', '#334155');
+    }
+  }
+
+  console.log('🟢 Veeva PR AI 工作台已就绪');
+  console.log('💡 点击任意功能卡片 → Prompt 自动复制 → 在 WorkBuddy 中粘贴执行');
+  console.log('📊 7 项已就绪 | 2 项自动化运行中 | 3 项按需 | 2 项规划中');
+</script>
+</body>
+</html>
