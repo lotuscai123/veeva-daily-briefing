@@ -2,276 +2,234 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="format-detection" content="telephone=no">
-<meta name="description" content="Veeva 每日医药市场动态早报，覆盖政策监管、跨国药企、中国Biotech、资本市场与AI前沿。">
-<meta name="theme-color" content="#FF6D00">
-<title>Veeva 每日市场动态早讯 | 2026年09月05日 周六</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Veeva 每日市场动态早讯 | 2026年09月15日</title>
 <style>
-  :root {
-    --bg: #f5f6f8;
-    --card: #ffffff;
-    --ink: #1c1f23;
-    --ink-soft: #5b6470;
-    --ink-faint: #8a94a2;
-    --brand: #FF6D00;
-    --brand-soft: #fff3e8;
-    --line: #e8ebf0;
-    --link: #0b62d6;
-    --quote-bg: #fffaf3;
-    --quote-line: #ffb877;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1216;
-      --card: #171b21;
-      --ink: #e8ecf1;
-      --ink-soft: #a6b0bd;
-      --ink-faint: #7b8593;
-      --brand: #ff8b33;
-      --brand-soft: #2a1d12;
-      --line: #262c34;
-      --link: #5fa8ff;
-      --quote-bg: #22190f;
-      --quote-line: #a5622a;
-    }
-  }
-  * { box-sizing: border-box; -webkit-text-size-adjust: 100%; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-                 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-    letter-spacing: .2px;
-  }
-  .wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 0 56px;
-  }
-  .topbar {
-    background: linear-gradient(135deg, #FF6D00 0%, #FF9A3C 100%);
-    color: #fff;
-    padding: 26px 20px 22px;
-    box-shadow: 0 2px 14px rgba(255,109,0,.24);
-  }
-  .topbar .kicker {
-    font-size: 12px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    opacity: .92;
-    margin: 0 0 8px;
-  }
-  .topbar h1 {
-    font-size: 21px;
-    line-height: 1.4;
-    margin: 0 0 8px;
-    font-weight: 700;
-  }
-  .topbar .sub { font-size: 13px; opacity: .95; margin: 0; }
-  .card {
-    background: var(--card);
-    margin: 14px 12px 0;
-    padding: 20px 18px 22px;
-    border-radius: 14px;
-    box-shadow: 0 1px 3px rgba(20,25,35,.06);
-  }
-  /* 隐藏 markdown 里的一级标题与紧随其后的免责斜体（已在 topbar 呈现） */
-  .card > h1 { display: none; }
-  .card > h1 + p em { color: var(--ink-faint); }
-  h2 {
-    font-size: 18px;
-    margin: 34px 0 14px;
-    padding: 10px 14px;
-    background: var(--brand-soft);
-    border-left: 4px solid var(--brand);
-    border-radius: 0 8px 8px 0;
-    line-height: 1.5;
-    scroll-margin-top: 12px;
-  }
-  h2:first-of-type { margin-top: 8px; }
-  h3 {
-    font-size: 15.5px;
-    margin: 22px 0 10px;
-    padding-left: 10px;
-    border-left: 3px solid var(--ink-faint);
-    color: var(--ink-soft);
-  }
-  p { margin: 0 0 13px; }
-  strong { color: var(--ink); font-weight: 650; }
-  a { color: var(--link); text-decoration: none; word-break: break-all; }
-  a:active { opacity: .6; }
-  /* 来源行 */
-  p:has(> a[target="_blank"]) { font-size: 13px; }
-  blockquote {
-    margin: 14px 0;
-    padding: 11px 14px;
-    background: var(--quote-bg);
-    border-left: 3px solid var(--quote-line);
-    border-radius: 0 8px 8px 0;
-    color: var(--ink-soft);
-    font-size: 14.5px;
-  }
-  blockquote p { margin: 0 0 6px; }
-  blockquote p:last-child { margin: 0; }
-  hr {
-    border: 0;
-    border-top: 1px dashed var(--line);
-    margin: 26px 0;
-  }
-  ul, ol { padding-left: 22px; margin: 0 0 13px; }
-  li { margin-bottom: 7px; }
-  em { color: var(--ink-soft); font-style: normal; font-size: 13.5px; }
-  code {
-    background: var(--brand-soft);
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 13px;
-  }
-  .footer {
-    text-align: center;
-    color: var(--ink-faint);
-    font-size: 12px;
-    padding: 26px 20px 0;
-    line-height: 1.8;
-  }
-  @media (max-width: 420px) {
-    body { font-size: 15.5px; }
-    .topbar h1 { font-size: 19px; }
-    .card { margin: 12px 8px 0; padding: 18px 15px 20px; }
-    h2 { font-size: 17px; }
-  }
+:root{
+  --bg:#f4f6fb; --card:#ffffff; --ink:#1f2430; --muted:#6b7280;
+  --brand:#6d28d9; --brand2:#9333ea; --accent:#f59e0b; --line:#e6e8ef;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.7; font-size:16px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:720px;margin:0 auto;padding:18px 14px 56px}
+header.hero{
+  background:linear-gradient(135deg,var(--brand) 0%,var(--brand2) 100%);
+  color:#fff;border-radius:18px;padding:22px 20px;margin-bottom:18px;
+  box-shadow:0 8px 24px rgba(109,40,217,.18);
+}
+header.hero h1{font-size:22px;line-height:1.35;margin:0 0 8px;font-weight:800;letter-spacing:.2px}
+header.hero .sub{font-size:13px;opacity:.92}
+h2{
+  font-size:19px;margin:26px 0 12px;padding:12px 14px;border-radius:12px;
+  background:var(--card);border-left:5px solid var(--brand);
+  box-shadow:0 2px 10px rgba(31,36,48,.05);font-weight:700;
+}
+h2 .h2-inner{display:inline}
+h3{font-size:16px;margin:18px 0 8px;color:var(--brand2);font-weight:700}
+h4{font-size:15px;margin:14px 0 6px;color:var(--ink);font-weight:700}
+p{margin:10px 0}
+a{color:var(--brand);text-decoration:none;word-break:break-word;border-bottom:1px dotted #b9a4e6}
+a:hover{color:var(--brand2)}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:7px 0}
+blockquote{
+  margin:14px 0;padding:12px 14px;background:#faf5ff;border-left:4px solid var(--accent);
+  border-radius:10px;color:var(--muted);font-size:14px;
+}
+code{background:#f1f1f6;padding:1px 6px;border-radius:6px;font-size:13px}
+pre{background:#1f2430;color:#e6e6e6;padding:14px;border-radius:12px;overflow:auto;font-size:13px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px;background:var(--card);border-radius:10px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+th{background:#f3eefe;color:var(--brand)}
+.insights{
+  background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 100%);
+  border:1px solid #fcd34d;border-radius:16px;padding:16px 16px 6px;margin-top:14px;
+}
+.insights h2{border-left-color:var(--accent);background:transparent;box-shadow:none;padding:0}
+.insights ol{padding-left:20px}
+.insights li{margin:10px 0}
+.foot{margin-top:26px;text-align:center;color:var(--muted);font-size:12px}
+strong{color:#111827}
+@media (max-width:480px){
+  body{font-size:15px}
+  header.hero h1{font-size:19px}
+  .wrap{padding:12px 10px 48px}
+  h2{font-size:17px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="topbar">
-    <p class="kicker">VEEVA MARKET BRIEFING</p>
-    <h1>Veeva 每日市场动态早讯</h1>
-    <p class="sub">2026年09月05日 周六 · 本内容由AI自动搜集整理，仅供内部参考</p>
-  </header>
-  <main class="card">
-<h1 id="veeva-20260905">Veeva 每日市场动态早讯 | 2026年09月05日 周六</h1>
+<header class="hero">
+  <h1>Veeva 每日市场动态早讯 | 2026年09月15日 周二</h1>
+  <div class="sub">本内容由AI自动搜集整理，仅供内部参考</div>
+</header>
+<h1>Veeva 每日市场动态早讯 | 2026年09月15日 周二</h1>
 <p><em>本内容由AI自动搜集整理，仅供内部参考</em></p>
 <blockquote>
-<p>时间窗口：严格 24 小时（2026-09-04 至 2026-09-05，含近48h内重磅首发）。所有内容均基于公开搜索结果，未做任何编造。</p>
+<p>时间窗口：严格 24 小时（2026-09-14 ~ 2026-09-15 08:00）。超出窗口的背景信息已标注日期。以下全部内容基于公开搜索结果，未作任何虚构。</p>
 </blockquote>
-<hr>
-<h2 id="_1">📋 一、政策与监管</h2>
-<p><strong>1. 国新办"十五五"医保发布会：集采扩面、反内卷、支持创新</strong><br>
-9月4日国新办"开局起步'十五五'"发布会明确：常态化制度化推进药品与耗材集采，持续深耕中药、生物药、医用耗材，坚持"新药不集采、集采非新药"；以"畸高价出局、畸低价不带量"引导理性竞争，坚决打击围标串标；同时支持差异化创新，推动商保创新药目录与特例单议机制。来源：<a target="_blank" rel="noopener" href="https://www.phirda.com/artilce_43732.html?module=trackingCodeGenerator">中国医药报/phirda</a> | <a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A004YN00?refer=cp_1009">国新办发布会·腾讯新闻</a></p>
-<p><strong>2. 2026 医保目录谈判 + 商保创新药目录价格协商 9月5日启动</strong><br>
-据第一财经/易联招采，2026年国家基本医保药品目录谈判竞价及商保创新药目录价格协商工作已于9月5日在全国人大会议中心启动；2018年以来累计新增949种药品入医保，其中199种为创新药。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a></p>
-<p><strong>3. 2026版国家基本药物目录正式实施，共收录794种</strong><br>
-《国家基本药物目录(2026年版)》自9月1日起实施，收录药品794种（化药及生物制品476种、中成药318种），新增化药及生物制品68种、创新药16种，儿童适宜品种增至317种；公立医疗机构须于2个月内完成用药供应目录更新。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A02UYJ00?refer=cp_1009">腾讯新闻·医药食品</a></p>
-<p><strong>4. 第十一批药品集采原则：防围标、反内卷，首推"首告从宽"</strong><br>
-国家医保局明确第十一批集采遵循"稳临床、保质量、防围标、反内卷"：对关联企业投标视为1家；引入"首告从宽"机制破除围标利益同盟；优化最高有效申报价与价差控制"锚点"，要求企业不低于成本报价。来源：<a target="_blank" rel="noopener" href="http://gzylhyzx.com/detail.html?newsId=7001173">gzylhyzx</a></p>
-<p><strong>5. 最高检+医保局发布骗保典型案例；《医疗保障法》2027年施行</strong><br>
-9月4日最高检与医保局联合发布6件医保骗保犯罪典型案例（2025年至今年6月起诉5500余人，挽回基金损失近3亿元）；创新药械支付端政策工具集中落地，《医疗保障法》将于2027年1月1日起施行。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A02GQ800?refer=cp_1009">腾讯新闻·医保政策日报</a></p>
-<hr>
-<h2 id="mnc-17">🌍 二、跨国药企（MNC · 限17家）</h2>
-<p><strong>1. 阿斯利康：FDA 加速批准 camizestrant（Etcamah）联合 CDK4/6 抑制剂</strong><br>
-9月4日FDA加速批准阿斯利康口服SERD camizestrant，联合abemaciclib/palbociclib/ribociclib，用于ESR1突变、HR+/HER2-局部晚期或转移性乳腺癌。这是<strong>首款以ctDNA检测到耐药突变为治疗决策触发点</strong>的癌症疗法（SERENA-6，PFS 16 vs 9.2个月，HR 0.44）。来源：<a target="_blank" rel="noopener" href="https://www.morningstar.com/news/dow-jones/202609047250/astrazeneca-gets-fda-approval-for-breast-cancer-treatment">Morningstar</a> | <a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A02TCA00?refer=cp_1009">腾讯新闻</a> | <a target="_blank" rel="noopener" href="https://markets.ft.com/data/announce/detail?dockey=600-202609041903BIZWIRE_USPRX____20260904_BW408121-1">Financial Times</a></p>
-<p><strong>2. 艾伯维：Etentamig Ⅲ期 CERVINO 达 ORR 与 PFS 双重主要终点</strong><br>
-9月3日艾伯维宣布Etentamig在复发/难治多发性骨髓瘤Ⅲ期CERVINO研究的首次计划疗效中期分析中，达到客观缓解率（ORR）和无进展生存期（PFS）双重主要终点。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a></p>
-<p><strong>3. 罗氏：伐米奇拜单抗注射液上市申请获 CDE 受理</strong><br>
-9月3日CDE官网显示，罗氏伐米奇拜单抗注射液（faricimab类）上市申请获国家药监局受理，拟用于治疗葡萄膜炎性黄斑水肿。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a></p>
+<hr />
+<h2><span class="h2-inner">🏛️ 一、政策与监管</span></h2>
+<p><strong>1. 国家药监局发布创新药出海"成绩单"</strong><br />
+9月14日全国药品安全宣传周启动仪式上，NMPA 披露：今年以来创新药对外授权突破 <strong>1200亿美元</strong>（同比+36%），首付款超百亿美元；今年已有 <strong>59个创新药、51个创新医疗器械</strong> 获批上市，其中13个为新机制/新靶点首创新药。<br />
+来源：<a href="https://www.bjnews.com.cn/detail/1789406130189803.html">新京报</a> | <a href="https://www.macaodaily.com/html/2026-09/15/content_1933670.htm">澳门日报</a></p>
+<p><strong>2. 2026版国家基本药物目录出炉</strong><br />
+多家A股药企核心产品新进受益；跨国药企中诺和诺德司美格鲁肽注射液、德谷胰岛素、门冬胰岛素纳入，司美格鲁肽为<strong>唯一纳入基药的GLP-1 RA周制剂</strong>（仅限糖尿病治疗）。<br />
+来源：<a href="https://mt5official.com/html/57f89799045.html">MT5</a></p>
+<p><strong>3. 四川"药品安全宣传周"启动</strong><br />
+9月14日成都启动，主题"药监为民 创新引领"；川大华西药学院专家分享 AI 在药品监管与研发中的应用。<br />
+来源：<a href="https://xzb.scol.com.cn/shtml/xfzlb/20260915/1089621.html">消费质量报</a></p>
+<p><strong>4. 第七批国家耗材集采开标（背景：事件9/10）</strong><br />
+23种消化介入类耗材、148家企业517个产品中选，预计2027年1月实施，引入"双锚点"价格离散度控制。<br />
+来源：<a href="https://k.sina.com.cn/article_7517400647_1c0126e47059098fwc.html">健康报/新浪</a></p>
+<p><strong>5. 华润双鹤复方降脂药双规格过评</strong><br />
+依折麦布阿托伐他汀钙片(Ⅰ)(Ⅱ)获批生产并视同通过一致性评价，该品种2026H1销售额同比+631.68%。<br />
+来源：<a href="https://m.10jqka.com.cn/20260915/c679898355.shtml">同花顺</a></p>
+<hr />
+<h2><span class="h2-inner">🌍 二、跨国药企（MNC · 17家口径）</span></h2>
+<p><strong>1. 中国创新药出海再提速，MNC为最大买家</strong><br />
+2026上半年对外授权约1100亿美元（达2025全年80%），合作方覆盖阿斯利康、BMS、辉瑞、礼来、艾伯维、再生元、诺华等头部 MNC。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260824121024a4bc285f">腾讯证券</a> | <a href="https://www.163.com/dy/article/L6R2T6UJ05561FZY.html">网易</a></p>
+<p><strong>2. 重磅BD印证MNC在华抢资产</strong><br />
+石药→阿斯利康185亿美元（上半年全球最高BD）、信达→辉瑞105亿美元 / 信达→礼来89亿美元、荣昌→艾伯维56亿美元。<br />
+来源：<a href="https://www.toutiao.com/article/7685433426094260775">今日头条</a> | <a href="https://www.163.com/dy/article/L6R2T6UJ05561FZY.html">网易</a></p>
+<p><strong>3. 默沙东RSV预防新药在华获批</strong><br />
+克莱罗韦单抗注射液上市，用于预防RSV所致下呼吸道感染，为全球首个不限体重、统一固定剂量婴儿RSV被动免疫方案。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN2026061711201895174be5">腾讯证券</a></p>
+<p><strong>4. 礼来10亿美元级并购降GLP-1依赖</strong><br />
+宣布收购 Merida Biosciences（最高28.75亿美元），为2026年第10笔并购，布局选择性自身抗体降解平台。<br />
+来源：<a href="https://stockwirex.com/analysis/small-cap-biotech-acquisition-targets">Stockwirex</a></p>
+<p><strong>5. 诺和诺德司美格鲁肽入基药目录</strong><br />
+成为唯一纳入2026版国家基药的 GLP-1 RA 周制剂，巩固慢病规范化诊疗地位。<br />
+来源：<a href="https://mt5official.com/html/57f89799045.html">MT5</a></p>
+<hr />
+<h2><span class="h2-inner">🧬 三、中国 Biotech</span></h2>
+<p><strong>1. WCLC首尔会场中国新药刷纪录</strong><br />
+（9/12–15 世界肺癌大会）中国入选 Oral 19项、Mini Oral 45项；翰森/宜联生物 B7-H3 ADC III期入选主席专场；康方 AK112 vs K药随访36个月 mOS 30.8 vs 22.6个月（死亡风险↓约27%）。<br />
+来源：<a href="https://xueqiu.com/9745910102/409253561">雪球</a></p>
+<p><strong>2. 头部Biotech业绩兑现</strong><br />
+百济神州泽布替尼全球销售161亿元(+28.7%)；信达生物产品收入超82亿元(+55%)；A/H创新药上半年营收+21.3%、归母净利+88.8%，盈利拐点确认。<br />
+来源：<a href="https://finance.sina.cn/2026-09-15/detail-inirvqss4266981.d.html">新浪财经</a></p>
+<p><strong>3. 百利天恒 HER2 ADC 进III期</strong><br />
+T-Bren 联合帕妥珠单抗治疗 HER2+ 乳腺癌新辅助 III 期完成首例入组（9/13公告）。<br />
+来源：<a href="https://www.nbd.com.cn/articles/2026-09-14/4581216.html">每经</a></p>
+<p><strong>4. 康方生物 IO2.0+ADC2.0 战略开启</strong><br />
+2026H1收入18.1亿元(+27.9%)；依沃西三项国内适应症获批、一项 BLA 在 FDA 审评中。<br />
+来源：<a href="https://www.ufspace.com/blog/detail.htm?blogId=4405424">U财经</a></p>
+<p><strong>5. ST万邦 WP103 获FDA反馈</strong><br />
+子公司石杉碱甲注射液收到FDA关于新生儿缺氧缺血性脑病关键注册II期临床书面反馈（9/12收函，9/15披露），明确后续开发路径。<br />
+来源：<a href="https://www.cfi.net.cn/p20260915000700.html">中财网</a></p>
 <blockquote>
-<p>近24h MNC 重大首发聚焦上述3条（AZ、艾伯维、罗氏）。其余17家MNC（GSK/赛诺菲/诺华/辉瑞/强生/默沙东/诺和诺德/勃林格殷格翰/吉利德/礼来/武田/安进/拜耳/BMS）近24h未见同等量级首发新药/监管动态。</p>
+<p>补充：诺诚健华 ICP-B381 双抗ADC获CDE批准临床（前列腺癌）；怡定興 WCC301 微针新药获FDA IND生效（9/14）。</p>
 </blockquote>
-<hr>
-<h2 id="biotech">🧬 三、中国 Biotech</h2>
-<p><strong>1. 瑞银：中国 Biotech 上半年销售多超预期，首选百济神州</strong><br>
-9月4日瑞银报告称覆盖的12家中国生物科技中8家上半年销售胜预期，下半年关注WCLC/ESMO/ASH学术会议季，<strong>首选百济神州，其次信达生物、科伦博泰</strong>。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a></p>
-<p><strong>2. 科伦博泰：sac-TMT + 帕博利珠单抗一线 NSCLC Ⅲ期 HR 0.35</strong><br>
-科伦博泰披露sac-TMT（SKB264）联合帕博利珠单抗 vs 帕博利珠单抗单药一线治疗PD-L1阳性NSCLC的Ⅲ期结果（ASCO 2026并同期发表于《柳叶刀》），PFS风险比达0.35，各预设亚组均获益；该品种已提交NDA，预计2027上半年商业化。来源：<a target="_blank" rel="noopener" href="https://simplywall.st/de/stocks/hk/pharmaceuticals-biotech/hkg-6990/sichuan-kelun-biotech-biopharmaceutical-shares">Simply Wall St</a></p>
-<p><strong>3. 恒瑞医药：SHR-A2009 拟纳入突破性疗法 + HRS9531 获 Ⅲ期临床批准</strong><br>
-9月3日CDE显示恒瑞注射用瑞康芦泽妥塔单抗（SHR-A2009）拟纳入突破性疗法，联合贝伐珠单抗治疗EGFR突变非鳞状NSCLC；子公司HRS9531注射液（GIPR/GLP-1R双激动剂）获NMPA批准开展成人肥胖合并膝骨关节炎Ⅲ期临床（全球无同类获批）。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a> | <a target="_blank" rel="noopener" href="https://www.gmt8press.com/flash/detail/1475453">GMT8</a></p>
-<p><strong>4. 迈威生物：9MW1911 在 ERS 2026 壁报报告 COPD 临床数据</strong><br>
-9月5日公告，迈威生物将在9月5–9日巴塞罗那ERS年会以壁报公布9MW1911（抗ST2单抗）针对既往吸烟中重度COPD患者的Ib/IIa期数据，中高剂量组急性加重年化发生率呈下降趋势；美国IIa期临床申请已获FDA批准。来源：<a target="_blank" rel="noopener" href="https://paper.cnstock.com/html/2026-09/05/content_2265470.htm">上海证券报</a></p>
-<p><strong>5. 翰森制药：HS-20093（Risvutatug Rezetecan）上市申请获 CDE 受理</strong><br>
-9月3日翰森制药注射用HS-20093上市申请获国家药监局受理，拟用于治疗既往含铂治疗失败的小细胞肺癌成人患者。来源：<a target="_blank" rel="noopener" href="https://new.qq.com/rain/a/20260905A0265600?refer=cp_1009">腾讯新闻·风投早报</a></p>
-<hr>
-<h2 id="_2">💰 四、资本市场</h2>
-<p><strong>1. 金斯瑞拟分拆蓬勃生物（CDMO）独立上市</strong><br>
-9月4日金斯瑞生物科技（01548）公告拟分拆间接非全资附属公司蓬勃生物（生物制剂及先进疗法CDMO）于联交所主板独立上市；8月14日联交所已确认可继续推进。蓬勃生物上半年收入6110万美元（+34.2%），新签订单+54%。来源：<a target="_blank" rel="noopener" href="https://www.phirda.com/artilce_43730.html?module=trackingCodeGenerator">中国医药创新促进会/phirda</a></p>
-<p><strong>2. 四环生物拟 1.6 亿元收购中润药业 65.61% 股权</strong><br>
-9月5日公告，江苏四环生物拟以现金1.6亿元收购中润药业65.6146%股权（减资后持股80%），标的承诺2026–2028年扣非前净利润累计不低于6000万元，构成业绩承诺与商誉风险。来源：<a target="_blank" rel="noopener" href="https://epaper.cs.com.cn/zgzqb/html/2026-09/05/nw.D110000zgzqb_20260905_1-B046.htm">中国证券报</a></p>
-<p><strong>3. 达安基因控股权过户完成，广药资本入主</strong><br>
-9月5日公告，达安基因股份协议转让完成过户登记，间接控股股东变更为广药资本（广州金控集团、广州健康产投分别转让7023万股），医药国资整合落地。来源：<a target="_blank" rel="noopener" href="https://static.cninfo.com.cn/finalpage/2026-09-05/1225548241.PDF">巨潮资讯/cninfo</a></p>
-<p><strong>4. 易明西雅医药回购比例达 1%</strong><br>
-截至9月3日，易明西雅累计回购204.1万股（占总股本1.07%），回购金额3599.59万元（最高18.00元/股、最低16.96元/股），拟用于股权激励或员工持股计划。来源：<a target="_blank" rel="noopener" href="https://static.cninfo.com.cn/finalpage/2026-09-05/1225548983.PDF">巨潮资讯/cninfo</a></p>
-<p><strong>5. Vertex 完成约 100 亿美元收购 Crinetics（本周 M&amp;A 焦点）</strong><br>
-Vertex于9月1日完成对Crinetics（约100亿美元股权价值）的收购，新增PALSONIFY（肢端肥大症口服疗法）与atumelnant等罕见内分泌管线，罕见内分泌成为继囊肿性纤维化、血液学、急性疼痛、肾脏后的新增长支柱。来源：<a target="_blank" rel="noopener" href="https://www.centralcharts.com/index.php/it/6252-vertex-pharmaceuticals/news/5750853-vertex-completes-acquisition-of-crinetics-pharmaceuticals-and-announces-expansion-of-executive-leadership-team">CentralCharts</a></p>
-<hr>
-<h2 id="ai-top-5">🤖 五、全球 AI TOP 5</h2>
-<p><strong>1. OpenAI 发布 GPT-6 Astra（"欢迎来到AGI时代"）</strong><br>
-9月3–4日OpenAI发布旗舰模型GPT-6 Astra：上下文105万token、最大输出12.8万token；Computer Use通用智能体可自主操控浏览器/办公软件/开发工具闭环完成工作流；ExploitBench满分100%，<strong>首个达到"关键"级网络安全能力的OpenAI模型</strong>，采取分批次灰度开放。来源：<a target="_blank" rel="noopener" href="https://www.toutiao.com/article/7681714263341138451">21世纪经济报道/今日头条</a> | <a target="_blank" rel="noopener" href="https://epaper.cqrb.cn/cqrb/2026-09/05/004/content_rb_363911.htm">重庆日报</a> | <a target="_blank" rel="noopener" href="https://www.toutiao.com/article/7681815858217239080/">IT之家</a></p>
-<p><strong>2. Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1</strong><br>
-9月1–2日Anthropic发布Claude Fable 5.1与Mythos 5.1：缓存读取成本降75%至$0.25/百万token，Terminal-Bench-Science得分翻倍至52.6%；同步推出企业级前沿安全护栏（零数据留存+实时误用检测）。来源：<a target="_blank" rel="noopener" href="https://www.deeplearningweekly.com/p/deep-learning-weekly-issue-471">Deep Learning Weekly</a> | <a target="_blank" rel="noopener" href="https://www.sohu.com/a/1072020446_362225">搜狐</a></p>
-<p><strong>3. Google 推出 Gemini 3.8 Flash 与 3.8 Flash Cyber</strong><br>
-Google发布Gemini 3.8 Flash及网络安全专用变体，Chrome Security报告其生成的正确漏洞补丁数量达竞品的2.6倍。来源：<a target="_blank" rel="noopener" href="https://www.deeplearningweekly.com/p/deep-learning-weekly-issue-471">Deep Learning Weekly</a></p>
-<p><strong>4. 英伟达 129.3 亿美元收购 Hugging Face</strong><br>
-英伟达确认以约129亿美元收购被誉为"AI界GitHub"的开源模型平台Hugging Face，承诺保持平台开放与中立（支持AMD ROCm、Google TPU等非英伟达硬件）。来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/itech/p/22850450">AI技术日报/cnblogs</a> | <a target="_blank" rel="noopener" href="https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion">Ars Technica</a></p>
-<p><strong>5. IFM 发布 K2 Horizon 全生命周期开源模型舰队</strong><br>
-基础模型研究所（IFM）发布K2 Horizon（0.9B–375B MoE），全部Apache 2.0开放权重，并史无前例开放从预训练到Agent后训练的完整生命周期（中间检查点、训练数据配方、代码、日志、评测）。来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/itech/p/22850450">AI技术日报/cnblogs</a></p>
-<hr>
-<h2 id="ai">🔬 六、AI 前沿技术</h2>
-<h3 id="a">A. 前沿技术</h3>
-<ul>
-<li><strong>GPT-6 Astra 通用计算机操作智能体</strong>（OpenAI，9/4）：把模型边界从"生成内容"延伸到"执行完整工作流"，OSWorld 2.0得分72.6%、任务耗时降47%。来源：<a target="_blank" rel="noopener" href="https://www.toutiao.com/article/7681714263341138451">21世纪经济报道/今日头条</a> | <a target="_blank" rel="noopener" href="https://www.toutiao.com/article/7681815858217239080/">IT之家</a></li>
-<li><strong>Gemini 3.8 Flash Cyber</strong>（Google，9/3）：面向网络安全的专用变体，漏洞补丁正确率2.6x。来源：<a target="_blank" rel="noopener" href="https://www.deeplearningweekly.com/p/deep-learning-weekly-issue-471">Deep Learning Weekly</a></li>
-<li><strong>IFM K2 Horizon 全生命周期开源</strong>（9/5）：首个把"Agent能力如何训练出来"完整公开的模型族，端侧到大模型全尺寸SOTA。来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/itech/p/22850450">AI技术日报/cnblogs</a></li>
-<li><strong>英伟达×Hugging Face</strong>（9/5）：开源AI生态事实中心纳入CUDA生态，长期关注模型托管渠道多元化风险。来源：<a target="_blank" rel="noopener" href="https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion">Ars Technica</a></li>
-</ul>
-<h3 id="b-ai">B. 医药 AI</h3>
-<ul>
-<li><strong>英矽智能（Insilico）纳入 HKEX Tech 100 指数</strong>（9/3）：上半年收入约1.06亿美元（+287%），上市以来首次半年度盈利（经调整净利超5100万美元）；2026年前9个月提名9个开发候选药，自2021年累计合作总价值约110亿美元。来源：<a target="_blank" rel="noopener" href="https://medicaex.com/prnewswire/insilico-medicine-included-in-the-hkex-tech-100-index-drawing-attention-to-opportunities-in-ai-value-chain">MedicaEx/PRNewswire</a></li>
-<li><strong>字节 AI 制药业务分拆独立融资，AI4S 进入产业化</strong>：字节跳动AI制药团队（负责人刘凯，约50人）启动分拆独立融资，仍由字节控股，持续获火山引擎算力支持；2026年迭代Protenix-v1/v2、PXDesign等蛋白结构预测与设计工具。来源：<a target="_blank" rel="noopener" href="https://gmt8press.com/flash/detail/1410444">GMT8</a></li>
-<li><strong>MIT AI 密码子优化登 PNAS，蛋白药生产成本大降</strong>：大语言模型学习酵母密码子"语法"，人血清白蛋白产量由45mg/L跃升至135mg/L，6个测试蛋白中5个超越商业工具。来源：<a target="_blank" rel="noopener" href="https://miraitalk.com/article/ai-revolution-cutting-costs-in-protein-drug-development/12912">Miraitalk</a></li>
-<li><strong>和铂医药×百图生科 MegaStream TechBio AIDD 合作</strong>（背景）：以"数据–算法–验证"闭环重构DMTA流程，聚焦心血管、肿瘤等重大未满足需求。来源：<a target="_blank" rel="noopener" href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN2026061620510198674f98">腾讯新闻</a></li>
-</ul>
-<h3 id="c-crm-ai">C. CRM / 商业化 AI</h3>
-<ul>
-<li><strong>Salesforce FY27 Q2：Agentforce ARR 超15亿美元（+240%），推 Claudeforce</strong>：与Anthropic深度整合推出Claudeforce，将Claude推理能力与Salesforce数据/应用/工作流垂直整合；管理层强调"AI不取代CRM，而是释放平台价值"，九大顶级AI公司中有九家使用Salesforce+Slack且年支出+435%。来源：<a target="_blank" rel="noopener" href="https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253">腾讯/郭清水研报</a> | <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/FOO.DU/earnings/FOO.DU-Q2-2027-earnings_call-681374.html">Yahoo Finance</a></li>
-<li><strong>HubSpot Breeze Customer Agent（OpenAI 驱动）</strong>：原生SCRM AI客服代理，基于GPT-4.1/GPT-5.1等模型自动处理工单，企业微信/CRM语境下零代码接入。来源：<a target="_blank" rel="noopener" href="https://www.eesel.ai/blog/chatgpt-for-hubspot-service-hub">eesel.ai</a></li>
-<li><strong>微伴助手 AI+SCRM（企微生态）</strong>：腾讯五轮投资的企业微信战略伙伴，AI聊天助手/AI Agent支持多模型适配与金融行业合规优化，服务20万+企业客户。来源：<a target="_blank" rel="noopener" href="http://www.hqwc.cn/a/861442.html">hqwc.cn</a></li>
-<li><strong>腾讯健康NGES / 脉络洞察：近24h无重大首发新闻</strong>（背景：腾讯健康定位"医疗数字化基础设施提供者"，B端以医学影像、药物研发平台、医疗大模型升级为"云+AI"综合方案）。</li>
-</ul>
-<hr>
-<h2 id="6iqvia-salesforce-medidata-nges">⚔️ 七、竞争对手（限6家：IQVIA / Salesforce / 太美医疗 / Medidata / 腾讯健康NGES / 脉络洞察）</h2>
-<p><strong>1. Salesforce：Agentforce 商业化爆发，Claudeforce 落地</strong><br>
-FY27 Q2营收113亿美元（+11%），Agentforce ARR超15亿美元（+240%），与Anthropic的Claudeforce将AI推理嵌入CRM工作流；核心叙事为"企业级数据+零数据留存"构筑大模型安全边界。来源：<a target="_blank" rel="noopener" href="https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253">腾讯/郭清水研报</a> | <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/FOO.DU/earnings/FOO.DU-Q2-2027-earnings_call-681374.html">Yahoo Finance</a></p>
-<p><strong>2. IQVIA：CRO 龙头股价微跌，基本面稳健</strong><br>
-9月5日IQVIA（IQV）收267.77美元（-1.42%），市值约384亿美元，TTM市盈率29.92，全球员工约9.4万，临床+技术分析与医疗保健数据服务双轮驱动。来源：<a target="_blank" rel="noopener" href="http://www.forecastock.tw/stock/IQV">Forecastock</a></p>
-<p><strong>3. 太美医疗：近24h无重大首发新闻。</strong></p>
-<p><strong>4. Medidata：近24h无重大首发新闻</strong>（关联动态：Carl Zeiss Meditec 的 ZEISS CLINIC 360 眼科数据软件获FDA 510(k) clearance，非Medidata主体）。</p>
-<p><strong>5. 腾讯健康NGES：近24h无重大首发新闻</strong>（战略背景：腾讯健康聚焦医疗信息化基础设施、医学知识服务与医疗AI三条主线）。</p>
-<p><strong>6. 脉络洞察：近24h无重大首发新闻。</strong></p>
-<hr>
-<h2 id="veeva">🟢 八、Veeva</h2>
-<p><strong>近24h无重大首发新闻。</strong><br>
-已检索"Veeva Systems 2026 中国 产品 合作""Veeva CRM 维我 2026"及补充关键词（Veeva 财报/AI/生命科学云/中国数字化），未发现有价值的新发新闻。Veeva 相关动态以行业竞品（Salesforce、IQVIA）与监管/AI趋势间接影响为主，详见下方关注板块。</p>
-<hr>
-<h2 id="veeva-actionable-insights">⚡ Veeva 关注板块（Actionable Insights）</h2>
-<p><strong>1. 竞品 AI 化加速，亟需强化"生命科学垂直 AI"叙事</strong><br>
-Salesforce Claudeforce + Agentforce ARR+240%、HubSpot Breeze 原生AI客服，通用CRM正以AI重构工作流。Veeva应突出<strong>合规、数据主权与行业Know-how</strong>护城河，防御"通用大模型替代垂直CRM"的叙事，并在Veeva CRM / Veeva Link中加速落地AI助手能力。</p>
-<p><strong>2. 政策红利窗口：围绕创新药上市与准入推商业化方案</strong><br>
-国新办"十五五"发布会明确支持创新药、商保创新药目录、集采扩面与特例单议。Veeva商务/CRM团队可围绕<strong>创新药上市节奏、医保准入、商保协同</strong>，向MNC与中国Biotech推介Veeva Link（KOL/市场准入）与Veeva CRM商业化方案。</p>
-<p><strong>3. 研发云需求上行：对接 AI 制药"发现→IND"数据贯通</strong><br>
-英矽智能、字节AI制药分拆、MIT蛋白优化等显示AI制药产业化提速。Veeva Vault RIM / EDC / CDMS可主打<strong>"AI+自动化"研发管线管理</strong>，强调从靶点发现到IND申报的全链路数据贯通与可追溯。</p>
-<p><strong>4. 中国 Biotech 资本活跃，凸显全球合规底座价值</strong><br>
-金斯瑞分拆蓬勃生物、易慕峰CAR-T事件、达安基因国资入主等，凸显质量与合规体系价值。Veeva Quality / Regulatory云可在Biotech<strong>出海与IPO</strong>场景中强化"全球合规底座"卖点，降低监管与商业化风险。</p>
-<hr>
-<p><em>免责声明：本早报由AI基于公开网络信息自动汇总，可能存在时效性与准确性偏差，仅供内部参考，不构成任何投资建议或商业决策依据。</em></p>
-  </main>
-  <p class="footer">
-    Veeva 每日市场动态早讯 · 自动生成于 2026-09-05 08:00<br>
-    内容基于公开信息，不构成投资建议
-  </p>
+<hr />
+<h2><span class="h2-inner">💹 四、资本市场</span></h2>
+<p><strong>1. A股CRO板块爆发</strong><br />
+近岸蛋白、万邦医药 20CM 涨停，义翘神州、药康生物、药石科技跟涨；培育钻石、MLCC 概念亦走强。<br />
+来源：<a href="https://xnews.jin10.com/details/229995">金十数据</a></p>
+<p><strong>2. 港股医药外包活跃</strong><br />
+泰格医药(03347.HK)涨超7%、翰森制药(03692.HK)涨超5%；恒指涨0.45%。<br />
+来源：<a href="https://xnews.jin10.com/details/229995">金十数据</a></p>
+<p><strong>3. 创新药ETF净值回升</strong><br />
+易方达恒生港股通创新药ETF(159316) 9/14净值 +3.54%（重仓百济、信达、石药、康方、科伦博泰等）。<br />
+来源：<a href="https://finance.sina.com.cn/money/fund/aiassistant/jzyd/2026-09-15/doc-inirvzhk3724137.shtml">新浪财经</a></p>
+<p><strong>4. 信诺维明日科创板上市</strong><br />
+信诺维(688837) 将于9/16登陆科创板，发行后总股本4.35亿股。<br />
+来源：<a href="https://epaper.cs.com.cn/zgzqb/html/2026-09/15/nw.D110000zgzqb_20260915_1-A08.htm">中国证券报</a></p>
+<p><strong>5. H股医药回购潮延续</strong><br />
+2026年以来药企回购数量与规模同比大幅抬升，药明康德、药明生物、中国生物制药居前。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260618120258b6382ec0">腾讯证券</a></p>
+<hr />
+<h2><span class="h2-inner">🤖 五、全球 AI TOP 5</span></h2>
+<p><strong>1. OpenAI 密集迭代 GPT-5 线</strong><br />
+发布 GPT-5.5（增量迭代）、GPT-5.4 公开可用、GPT-5.3-Codex 智能体编程模型。<br />
+来源：<a href="http://lmtimeline.com/">LMTimeline</a></p>
+<p><strong>2. Anthropic 推 Opus 4.6 / 4.7</strong><br />
+Opus 4.6 为2026首款主力模型（1M上下文、自适应思考）；Opus 4.7 强化软件工程/长程推理/视觉。<br />
+来源：<a href="http://lmtimeline.com/">LMTimeline</a></p>
+<p><strong>3. Google Gemini 3.8 Flash Cyber + Fairwind</strong><br />
+最强直面网络安全的模型，650+合作伙伴；Anthropic 同期推 Claude Fable 5.1 / Mythos 5.1（含生命科学可信访问）。<br />
+来源：<a href="https://secnews.in/article/article-google-gemini-3-8-flash-cyber-fairwind-program">SecNews</a></p>
+<p><strong>4. 智谱三轮融资净募约393亿港元</strong><br />
+港交所配售新H股+201.4亿元零息可转债，约60%投向下一代 GLM "完全自训练"体系。<br />
+来源：<a href="https://www.sohu.com/a/1076026719_455313">腾讯研究院</a></p>
+<p><strong>5. 开源/多模态模型井喷</strong><br />
+xAI Grok 4.3、DeepSeek-V4 预览、Mistral Medium 3.5、Qwen3.5、GLM-5、Kimi K2.6 等密集发布。<br />
+来源：<a href="http://lmtimeline.com/">LMTimeline</a></p>
+<hr />
+<h2><span class="h2-inner">🔬 六、AI 前沿技术</span></h2>
+<h3>A. 前沿技术</h3>
+<p><strong>1. 人工智能医药创新联合体启动</strong><br />
+9/13 浦江创新论坛未来医药分论坛，临港实验室牵头启动该联合体；"虚拟疾病生物学家·元生"平台开放，"元因·百靶"计划发布，主攻新靶标发现+干湿闭环。<br />
+来源：<a href="https://news.qq.com/rain/a/20260915A035PM00">腾讯新闻</a></p>
+<p><strong>2. AI制药进入第四轮浪潮</strong><br />
+推理大模型与科学智能体使"规模化提出科学假说并迭代"成为可能，从"工具"迈向"原生"。<br />
+来源：<a href="https://news.qq.com/rain/a/20260915A035PM00">腾讯新闻</a></p>
+<h3>B. 医药AI</h3>
+<p><strong>1. Anthropic 蛋白设计命中率破纪录</strong><br />
+用 Claude Mythos/Opus 4.8 设计15个靶点微型结合蛋白，14个获湿实验确认结合剂，命中率26.7%–35.1%（行业通常10–15%）。<br />
+来源：<a href="https://m.10jqka.com.cn/20260915/c679898769.shtml">同花顺</a></p>
+<p><strong>2. 英矽智能 AI 药登 Nature Biotechnology</strong><br />
+TNIK 抑制剂 rentosertib IIa 期（9/7刊发）显示 IPF 患者6个衰老时钟均现生物学年龄逆转信号。<br />
+来源：<a href="https://www.daily8news.com/article/ai-designed-drug-biological-age-markers-trial-20260915">Daily8News</a></p>
+<p><strong>3. Moderna+默沙东个体化新抗原疗法</strong><br />
+intismeran(V940) III期黑色素瘤达主要终点，AI 贯穿开发流程。<br />
+来源：<a href="https://www.aol.com/articles/ai-could-transform-cancer-treatment-183010000.html">AOL</a></p>
+<p><strong>4. 金斯瑞扩 AIDD 产能</strong><br />
+配售23.5亿港元，约70%用于扩建 AIDD 平台与自动化高通量湿实验室。<br />
+来源：<a href="https://m.10jqka.com.cn/20260915/c679898769.shtml">同花顺</a></p>
+<h3>C. CRM / 商业化 AI</h3>
+<p><strong>1. Salesforce Agentforce 高增 + Claudeforce</strong><br />
+FY2027 Q2 Agentforce ARR 超15亿美元(+240%)，与 Data 360 合计近39亿(+210%)；Claudeforce 将 Claude 推理与 Salesforce 数据/工作流/治理垂直整合。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253">腾讯证券研报</a> | <a href="https://www.aol.com/articles/salesforces-ai-business-booming-why-160537000.html">AOL</a></p>
+<p><strong>2. 自主CRM/AI销售工具兴起</strong><br />
+Product Hunt 2026 榜单：HubSpot、Apollo.io、Clay、Jeeva AI 领跑，Clarify 等"自主CRM"崭露头角。<br />
+来源：<a href="https://www.producthunt.com/categories/ai-sales-tools">Product Hunt</a></p>
+<hr />
+<h2><span class="h2-inner">⚔️ 七、竞争对手（6家口径）</span></h2>
+<p><strong>1. IQVIA：AI工具覆盖前20大药企19家</strong><br />
+Q2（7/28）营收43.7亿超预期、adj EPS 3.15（超预期0.11），上调 FY2026 指引；9/14 成交额3.39亿美元，年初至今+17.86%。<br />
+来源：<a href="https://stock.10jqka.com.cn/usstock/20260915/c679898333.shtml">同花顺美股</a> | <a href="https://m.hk.investing.com/equities/quintis-trl-hlgs">Investing</a></p>
+<p><strong>2. Salesforce：Claudeforce 打开新叙事</strong><br />
+见板块六-C，Agentforce 商业化斜率持续向上。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253">腾讯证券研报</a></p>
+<p><strong>3. 腾讯健康：医疗数字化"基础设施"定位</strong><br />
+腾讯医典C端6亿用户、电子医保卡5–6亿；B端以医学影像、药物研发平台、医疗大模型构建"云+AI"方案。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260106175722a6f9e1a4">腾讯证券</a></p>
+<p><strong>4. 数智化生态：亿达科创牵手30余家药企</strong><br />
+已与阿斯利康、GSK、药明生物、赛诺菲、武田等深度合作，提供端到端数字服务（泛竞争生态参考）。<br />
+来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260623190308b63f4148">腾讯证券</a></p>
+<blockquote>
+<p>太美医疗 / Medidata / 脉络洞察：近24h无重大首发新闻。</p>
+</blockquote>
+<hr />
+<h2><span class="h2-inner">🟢 八、Veeva</span></h2>
+<blockquote>
+<p>近24h无 Veeva 重大首发新闻，以下为近期背景（非24h首发，仅供参考）。</p>
+</blockquote>
+<p><strong>背景：Veeva FY2027 Q2（8/26发布，截止7/31）业绩强劲</strong><br />
+营收9.28亿美元(+17.6%)，净利2.73亿(+36.5%)，毛利率75%，自由现金流2.31亿；5月推出 <strong>Veeva Falcon</strong> 代理型AI药物开发平台（降低成本、提速、保合规）。<br />
+来源：<a href="https://lily.tencent.com/dr/middle?url=https%3A%2F%2Fgu.qq.com%2Fsz000927%2Fgp%2Fjbnb&amp;request_id=374baa107abc4ac49d596a1c3d359f1e">腾讯证券财报</a> | <a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260602031659a43b3dd6">环球市场播报</a></p>
+<p><strong>背景：维我软件（上海）在华客户</strong><br />
+天眼查显示客户含上药医慧、北京赛科昌盛、北京双鹤药业经营等。<br />
+来源：<a href="https://www.tianyancha.com/company/1345286274/jingzhuang">天眼查</a></p>
+<hr />
+<h2><span class="h2-inner">⚡ Veeva 关注板块（Actionable Insights）</span></h2>
+<ol>
+<li><strong>出海红利→Veeva机会</strong>：中国创新药对外授权突破1200亿美元、MNC在华BD与研发投资加码，跨国外包/注册申报协同场景对 Veeva CRM 与 R&amp;D Cloud（含 Falcon）需求增强，建议跟进在华 MNC 客户落地。</li>
+<li><strong>AI"干湿闭环"正当时</strong>：临港联合体、Anthropic 蛋白设计、英矽智能 Nature Biotech 成果均指向"AI+实验验证"平台需求，Veeva Falcon "合规AI药物开发"定位高度契合，可强化差异化叙事。</li>
+<li><strong>竞对AI化加速</strong>：IQVIA AI 工具已覆盖前20大药企19家，Salesforce Claudeforce 将推理AI融入企业工作流——Veeva 需补齐 Veeva AI 在商业化/CRM 场景的"自主智能体"故事。</li>
+<li><strong>政策顺风</strong>：创新药加速审评、基药目录扩容、国谈"双目录"跑通，利好创新药全生命周期管理数字化，Veeva China 可借势推广 Vault RIM / Quality / Regulatory 套件。</li>
+</ol>
+<hr />
+<p><em>免责声明：本早讯由AI基于公开搜索结果自动汇总，可能存在时效与口径偏差，不构成任何投资建议或商业决策依据。</em></p>
+<div class="foot">本内容由 AI 自动搜集整理，仅供内部参考 · 生成于 2026-09-15</div>
 </div>
 </body>
 </html>
