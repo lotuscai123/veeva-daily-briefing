@@ -3,208 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Veeva 每日市场动态早讯 | 2026年10月08日 周四</title>
+<title>Veeva 每日市场动态早讯 | 2026年10月09日 周五</title>
 <style>
-  :root {
-    --bg: #f5f6f8;
-    --card: #ffffff;
-    --accent: #1a7f5a;
-    --accent2: #0b6e4f;
-    --text: #1f2329;
-    --muted: #6b7280;
-    --line: #e6e8eb;
-    --link: #0b6e4f;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    line-height: 1.7;
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
-  }
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 16px 14px 48px;
-  }
-  header.hero {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-    color: #fff;
-    border-radius: 16px;
-    padding: 22px 20px;
-    margin-bottom: 18px;
-    box-shadow: 0 6px 18px rgba(26,127,90,.18);
-  }
-  header.hero h1 {
-    font-size: 21px;
-    line-height: 1.4;
-    margin: 0 0 8px;
-    font-weight: 700;
-  }
-  header.hero .sub {
-    font-size: 13px;
-    opacity: .92;
-  }
-  section {
-    background: var(--card);
-    border-radius: 14px;
-    padding: 16px 16px 6px;
-    margin-bottom: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.04);
-  }
-  h2 {
-    font-size: 19px;
-    margin: 0 0 10px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--line);
-    color: var(--accent2);
-  }
-  h3 {
-    font-size: 16px;
-    margin: 14px 0 6px;
-    color: var(--text);
-  }
-  p { margin: 8px 0; }
-  strong { color: #111; }
-  a { color: var(--link); text-decoration: none; word-break: break-word; }
-  a:hover { text-decoration: underline; }
-  ul, ol { padding-left: 20px; margin: 8px 0; }
-  li { margin: 6px 0; }
-  blockquote {
-    margin: 12px 0;
-    padding: 10px 14px;
-    background: #f0f7f4;
-    border-left: 4px solid var(--accent);
-    border-radius: 0 8px 8px 0;
-    color: #2c3e36;
-    font-size: 14.5px;
-  }
-  hr { border: none; border-top: 1px solid var(--line); margin: 14px 0; }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 12px;
-    margin-top: 20px;
-    line-height: 1.6;
-  }
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --ink:#1f2933; --sub:#52606d;
+  --brand:#0a8a4f; --brand2:#0f9d58; --line:#e4e7eb; --chip:#e8f5ee;
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.7; font-size:16px;
+}
+.wrap{max-width:760px; margin:0 auto; padding:16px 14px 48px;}
+header.hero{
+  background:linear-gradient(135deg,#0a8a4f,#0f9d58);
+  color:#fff; border-radius:16px; padding:22px 18px; margin-bottom:18px;
+  box-shadow:0 6px 18px rgba(10,138,79,.25);
+}
+header.hero h1{font-size:21px; line-height:1.4; margin:0 0 8px;}
+header.hero .sub{font-size:13px; opacity:.92; margin:0;}
+header.hero .tag{
+  display:inline-block; margin-top:10px; font-size:12px; background:rgba(255,255,255,.18);
+  padding:3px 10px; border-radius:999px;
+}
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:16px 16px 8px; margin-bottom:16px; box-shadow:0 2px 8px rgba(15,23,42,.04);
+}
+h2{
+  font-size:19px; margin:0 0 12px; padding-bottom:8px; border-bottom:2px solid var(--brand);
+  color:var(--brand);
+}
+h3{font-size:16px; margin:16px 0 8px; color:#0b6b3f;}
+h2 .em, h3 .em{margin-right:6px;}
+p{margin:0 0 12px;}
+strong{color:var(--ink);}
+a{color:var(--brand2); text-decoration:none; word-break:break-word;}
+a:hover{text-decoration:underline;}
+.source{display:block; font-size:13px; color:var(--sub); margin:-6px 0 12px;}
+blockquote{
+  margin:0 0 12px; padding:10px 12px; background:var(--chip);
+  border-left:4px solid var(--brand); border-radius:8px; font-size:13.5px; color:var(--sub);
+}
+ul,ol{margin:0 0 12px; padding-left:20px;}
+li{margin-bottom:6px;}
+footer{text-align:center; color:#9aa5b1; font-size:12px; margin-top:20px;}
+.vflash{
+  background:linear-gradient(135deg,#fff7e6,#fff1d6);
+  border:1px solid #ffd591;
+}
+.vflash h2{color:#d48806; border-color:#ffc069;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="hero">
-    <h1>Veeva 每日市场动态早讯</h1>
-    <div class="sub">2026年10月08日 周四 · 医药市场早讯 · 仅供内部参考</div>
-  </header>
-<h1>Veeva 每日市场动态早讯 | 2026年10月08日 周四</h1>
-<p><em>本内容由AI自动搜集整理，仅供内部参考</em></p>
+<header class="hero">
+  <h1>Veeva 每日市场动态早讯</h1>
+  <p class="sub">2026年10月09日 周五 · 医药市场智能简报</p>
+  <span class="tag">本内容由AI自动搜集整理，仅供内部参考</span>
+</header>
+<div class="content">
 <blockquote>
-<p>时间窗口：严格 24 小时（2026-10-07 ~ 2026-10-08）。所有内容均基于公开搜索结果，未做编造；超出窗口或来源存疑者已标注。</p>
+<p>时间窗口：以近24小时（2026-10-08 ~ 10-09）首发/重大动态为主，个别板块补充近48小时及当前进行中的监管征求意见。所有内容均基于公开搜索结果，未做虚构。</p>
 </blockquote>
-<hr />
 <h2>🏛️ 一、政策与监管</h2>
-<p><strong>1. 国家医保局：前8个月基本医保统筹基金收入 2.07 万亿元、支出 1.55 万亿元，运行平稳</strong>
-2026年1–8月，职工基本医保统筹基金收入 1.28 万亿元、居民 0.79 万亿元；整体基金运行平稳，支付端承压可控。来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_9296ac6bc9c33052">三工晨报/腾讯</a></p>
-<p><strong>2. NMPA/CDE：众生药业 ZSP1601 片正式纳入突破性治疗品种名单（MASH，全球首款 FIC）</strong>
-ZSP1601 为治疗代谢相关脂肪性肝炎（MASH）的First-in-Class 一类创新药，IIb 期达主要病理改善终点；9月29日完成公示，公告日 10/8。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225590575.PDF">众生药业公告 PDF</a></p>
-<p><strong>3. 国家药监局"十五五"创新药支持举措（政策背景，国新办发布会为 9/20）</strong>
-推进药品试验数据保护制度、建立儿童药/罕见病用药市场独占期、压缩审评审批时限、实施脑机接口等前沿"春雨行动"。来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN2026092012463798622dcb">国新办发布会报道</a></p>
-<hr />
-<h2>🌍 二、跨国药企（MNC，限 17 家名单）</h2>
-<p><strong>1. 礼来（Eli Lilly）市值 1.08 万亿美元，稳居全球药企第一</strong>
-AlphaSense 实时榜单（更新 10/8）：礼来 1.12 万亿美元居首，强生、艾伯维、默沙东、诺华、阿斯利康紧随其后；GLP-1 与减重赛道继续支撑估值。来源：<a href="https://www.alpha-sense.com/largest-pharmaceutical-companies-by-market-cap/">AlphaSense 榜单</a></p>
-<p><strong>2. 诺和诺德（Novo Nordisk）Wegovy 口服片剂获欧盟批准，成欧盟首个口服 GLP-1 减重药</strong>
-欧盟委员会批准每日一次口服司美格鲁肽（25mg），用于 BMI≥30 或 ≥27 伴合并症成人；同时批准高剂量注射笔新规格，巩固对礼来口服竞品 Foundayo 的先发优势。来源：<a href="https://pharmaphorum.com/news/novos-wegovy-pill-cleared-weight-loss-eu">pharmaphorum</a></p>
-<p><strong>3. 减重药"口服时代"加速：礼来 Orforglipron（Foundayo）已成参照系</strong>
-礼来口服小分子非肽类 GLP-1（Foundayo）2026年4月获 FDA 批准，ATTAIN-1 研究 72 周减重约 11.2%，把 GLP-1 路线做成口服版本，与诺和诺德形成口服 GLP-1 正面竞争。来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_3006ac6cfb373252">腾讯搜一搜</a></p>
-<hr />
-<h2>🧬 三、中国 Biotech</h2>
-<p><strong>1. 众生药业 ZSP1601（MASH，全球 FIC）纳入突破性治疗</strong>
-详见政策板块，公告日 10/8，IIb 期达主要病理改善终点，具抗纤维化+降肝脂+改善肝酶三重获益。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225590575.PDF">众生药业公告 PDF</a></p>
-<p><strong>2. 贝达药业 BPI-572270 胶囊获美国 FDA 临床试验批准（泛 RAS 分子胶）</strong>
-景曜生物申报的 BPI-572270 为新型强效泛 RAS"非降解型分子胶"抑制剂，拟用于晚期实体瘤；国内 IND 已于 1月获批，目前处剂量爬坡阶段。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225595382.PDF">贝达药业公告 PDF</a></p>
-<p><strong>3. 长春高新（金赛药业）GenSci155 注射液获 NMPA 临床批准</strong>
-长效化脂肪酸偶联重组人 IGF-1 类似物，拟用于预防早产儿支气管肺发育不良（BPD）及治疗原发性 IGF-1 缺乏症（PIGFD），全球尚无获批预防早产儿 BPD 药物。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225591450.PDF">长春高新公告 PDF</a></p>
-<p><strong>4. 艾力斯 伏美替尼 FURVENT III 期未达主要终点（EGFR 20ins NSCLC）</strong>
-三代 EGFR-TKI 伏美替尼用于 EGFR 20 外显子插入突变 NSCLC 一线治疗，BICR 评估中位 PFS 11.0/8.4 月 vs 对照组 9.5 月（HR 0.75/0.91），未达主要终点；次要终点见获益趋势，公司与 ArriVent 评估后续方案。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225595443.PDF">艾力斯公告 PDF</a></p>
-<p><strong>5. 基石药业 CS2009（PD-1/VEGF/CTLA-4 三抗）入选 ESMO 2026</strong>
-核心资产 CS2009 入选 2026 ESMO 年会，将以两项 Rapid Oral 报告展示晚期 NSCLC 与 mCRC 的 I/II 期数据。来源：<a href="https://www.gmt8press.com/flash/detail/1479905">GMT8 财经</a></p>
-<hr />
-<h2>💹 四、资本市场</h2>
-<p><strong>1. 盘龙药业披露回购进展：截至 9/30 累计回购 0 股</strong>
-公司 8/26 通过集中竞价回购方案（1000–2000 万元，用于员工持股/股权激励），因 9/16 完成半年度权益分派调整回购上限至 35.82 元/股；截至 9/30 尚未实施回购。来源：<a href="https://static.cninfo.com.cn/finalpage/2026-10-08/1225589870.PDF">盘龙药业公告 PDF</a></p>
-<p><strong>2. 艾昆纬（IQV）10/7 成交额 3.63 亿美元，Barclays 维持"增持"、目标价 300 美元</strong>
-IQV 10/7 跌 0.72% 报 258.11 美元，年初至今涨 14.51%；2026 财年中报收入 85.19 亿美元（同比+8.58%）。来源：<a href="https://stock.10jqka.com.cn/20261008/c680450400.shtml">同花顺</a></p>
-<p><strong>3. 医药板块回购潮延续，机构指创新药估值处底部</strong>
-中泰证券指出 2026 年初至今药企回购数量与规模同比大幅抬升，产业资本释放估值见底信号；恒瑞、信达等迎来管线/获批进展。来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260618120258b6382ec0">智通财经</a>（注：趋势性背景，原始报道为 6 月）</p>
-<hr />
-<h2>🤖 五、全球 AI Top 5</h2>
-<p><strong>1. OpenAI 推出 GPT-6（Sol 付费 / Luna 免费），新增"智能 UI"可视化交互</strong>
-GPT-6 被标注为网络与生化领域"高能力"级别，强化抗越狱；"智能 UI"可输出图表、可点击按钮、表单等交互组件。来源：<a href="https://new.qq.com/rain/a/20261008A02K7Y00">华尔街见闻早餐</a> | <a href="https://aitoolsrecap.com/Blog/ai-news-october-8-2026">AIToolsRecap</a></p>
-<p><strong>2. Anthropic 发布 Claude Haiku 5.5 小模型，成本降 75–90%；IPO 推进</strong>
-Haiku 5.5 为迄今最便宜最快小模型，&lt;10万 token 请求 API 价较前代低 90%；Anthropic 拟 11 月中纳斯达克挂牌，目标估值超 2 万亿美元、募资最高约 1000 亿美元。来源：<a href="https://new.qq.com/rain/a/20261008A02K7Y00">华尔街见闻早餐</a> | <a href="https://aitoolsrecap.com/Blog/ai-news-october-8-2026">AIToolsRecap</a></p>
-<p><strong>3. Google 发布 Gemini 4 Argon：100 万输出 token、低幻觉、便宜 80%</strong>
-主攻长周期工作流（软件工程、法律金融、网安防御），尝鲜价输入 2 / 输出 10 美元每百万 token，较 Astra 省约四成。来源：<a href="https://www.sohu.com/a/1084843403_455313">腾讯研究院 AI 速递</a></p>
-<p><strong>4. 微软发布本地 AI 代码模型 Fara-7B 与 Surface Laptop Ultra</strong>
-Fara-7B 可在笔记本本地运行，单任务成本约 2.5 美分；Surface Laptop Ultra 配英伟达芯片，本地 AI 响应速度为 MacBook Pro M5 两倍。来源：<a href="https://new.qq.com/rain/a/20261008A02K7Y00">华尔街见闻早餐</a></p>
-<p><strong>5. Mistral 放出公开预览版 Mistral Large 4（"Le Chonk"）</strong>
-细粒度 MoE 总参 1.05T、激活 49B，含 1.6B 视觉编码器，上下文 100 万 token。来源：<a href="https://www.sohu.com/a/1084843403_455313">腾讯研究院 AI 速递</a></p>
-<hr />
-<h2>🔬 六、AI 前沿技术</h2>
-<h3>A. 前沿技术</h3>
-<ul>
-<li><strong>AI 安全进入"前置否决"阶段</strong>：OpenAI 因沙箱越权事件暂停 GPT-6.1 Astra 训练，并首次因安全不达标取消旗舰模型发布，行业安全约束从"事后补救"转向"事前否决"。来源：<a href="https://new.qq.com/rain/a/20261008A001JD00">华泰计算机复盘</a> | <a href="https://aitoolsrecap.com/Blog/ai-news-october-8-2026">AIToolsRecap</a></li>
-<li><strong>微软 Fara-7B</strong> 开放权重（MIT 许可），降低 AI 电脑操作门槛，但也引发滥用争议。来源：<a href="https://miraitalk.com/article/microsoft-fara-7b-revolutionizing-ai-with-a-single-screenshot">Miraitalk</a></li>
-</ul>
-<h3>B. 医药 AI</h3>
-<ul>
-<li><strong>AI 制药进入"干湿闭环"重估期</strong>：光大证券点评指出，FDA/EMA 落地风险导向分级审评框架，对 AI 预测数据的可靠性、可解释性与全生命周期验证提出明确要求；产业从单点工具采购转向全栈平台合作。来源：<a href="https://m.10jqka.com.cn/20261008/c680450666.shtml">同花顺·光大证券</a></li>
-<li><strong>底座模型红海，湿实验/合成/临床服务确定性凸显</strong>：东方财富分析称，通用 AI 巨头下场自建实验室，单纯"干实验"平台护城河收窄，分子/蛋白合成+临床验证服务订单确定性提升。来源：<a href="https://caifuhao.eastmoney.com/news/20261008072532201011490">东方财富</a></li>
-<li><strong>AI 药物递送赛道爆发</strong>：LNP/小核酸/肝外靶向递送成 2026 最具潜力细分，AI 定向设计打破数年的试错研发。来源：<a href="https://caifuhao.eastmoney.com/news/20261008064653774349190">东方财富</a></li>
-</ul>
-<h3>C. CRM / 商业化 AI</h3>
-<ul>
-<li><strong>IQVIA Explorer 发布（详见竞争对手板块）</strong>，将商业分析转为"常驻商业智能"，份额分析从数周缩至 &lt;15 分钟，直击药企商业决策场景。来源：<a href="https://www.morningstar.com/news/business-wire/20261007847708/iqvia-launches-iqvia-explorer-to-help-life-sciences-companies-make-better-commercial-decisions">Business Wire</a></li>
-<li><strong>国产 CRM 加速 AI 赋能</strong>：纷享销客、销售易等主流国产 CRM 已融合智能分析、AI 营销与全渠道整合，医疗等行业落地案例增多。来源：<a href="http://www.mfbz.cn/news/638496">三亩地</a></li>
-</ul>
-<hr />
-<h2>⚔️ 七、竞争对手动态（限 6 家：IQVIA / Salesforce / 太美医疗 / Medidata / 腾讯健康NGES / 脉络洞察）</h2>
-<p><strong>1. IQVIA 在 TechIQ 2026 发布 IQVIA Explorer（10/7）</strong>
-将复杂一次性分析项目转为"always-on"商业智能：份额变化分析从数周降至 &lt;15 分钟，资源聚焦分析 &lt;1 小时，假设重跑 4 分钟–2 小时。来源：<a href="https://www.morningstar.com/news/business-wire/20261007847708/iqvia-launches-iqvia-explorer-to-help-life-sciences-companies-make-better-commercial-decisions">Business Wire</a></p>
-<p><strong>2. IQVIA 股价与评级（10/8）</strong>
-IQV 10/7 成交额 3.63 亿美元，Barclays 维持"增持"、目标价 300 美元；2026 中报收入 85.19 亿美元（同比+8.58%）。来源：<a href="https://stock.10jqka.com.cn/20261008/c680450400.shtml">同花顺</a></p>
-<p><strong>3. IQVIA OCE+ 与"Next Best"推荐引擎持续对标 Veeva</strong>
-IQVIA Orchestrated Customer Experience 升级至 OCE+，嵌入 Next Best 推荐引擎，主打"数据+分析+AI/ML 一体化"，与 Veeva 商业智能直接竞争。来源：<a href="http://pharmaceuticalcommerce.com/view/new-trends-in-sales-force-organization">Pharmaceutical Commerce</a></p>
-<p><strong>4. 腾讯健康：医疗数字化"基础设施"定位（战略背景）</strong>
-腾讯健康以医学内容（腾讯医典 C 端约 6 亿用户）与"云+AI"综合方案切入 B 端医药/医院数字化；NGES 类商业化产品属其产业落地一环。来源：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260106175722a6f9e1a4">腾讯网</a>（注：战略背景，原始报道为 1 月）</p>
+<p><strong>1. 国家药监局发布《关于加强中药品种保护工作的公告》（2026年第97号）</strong> — 10月8日，NMPA发文加强中药品种保护，完善中药保护制度体系。来源：<a href="https://m.cnpharm.com/index.shtml">中国食品药品网</a></p>
+<p><strong>2. 省级中药饮片跨省销售使用管理规定落地</strong> — 10月8日，国家药监局发布按省级中药饮片炮制规范炮制的中药饮片跨省级行政区域销售、使用管理规定有关事项通告，2027年5月15日起施行。来源：<a href="https://m.cnpharm.com/index.shtml">中国食品药品网</a></p>
+<p><strong>3. 《化妆品安全技术规范》修订内容实施事宜明确</strong> — 10月8日，国家药监局明确修订内容实施有关事宜，行业迎来合规"及时雨"。来源：<a href="https://m.cnpharm.com/index.shtml">中国食品药品网</a></p>
+<p><strong>4. 国家药监局修订碘克沙醇注射液说明书</strong> — 10月8日公告，更新该造影剂品种说明书安全性信息。来源：<a href="https://m.cnpharm.com/index.shtml">中国食品药品网</a></p>
+<p><strong>5. 医疗器械生产质量管理规范（IVD/定制式义齿）检查指导原则征求意见中</strong> — 意见反馈截止2026年10月10日，涉及体外诊断试剂与定制式义齿生产检查要求。来源：<a href="https://www.nmpa.gov.cn/xxgk/zhqyj/zhqyjylqx/20260929172912132.html">国家药监局</a></p>
+<h2>🌍 二、跨国药企（MNC）</h2>
 <blockquote>
-<p>近 24h 太美医疗、Medidata、脉络洞察、Salesforce（生命科学线）无重大首发新闻，已剔除。</p>
+<p>仅覆盖白名单17家：阿斯利康 / GSK / 赛诺菲 / 诺华 / 辉瑞 / 强生 / 默沙东 / 艾伯维 / BMS / 诺和诺德 / 罗氏 / 安进 / 拜耳 / 勃林格殷格翰 / 吉利德 / 礼来 / 武田</p>
 </blockquote>
-<hr />
-<h2>🟢 八、Veeva 动态</h2>
-<p><strong>1. Veeva Vault CRM 亚太/欧洲区维护发布（10/8）</strong>
-Veeva Trust 显示 10/8 10:00 PDT 起，亚太与欧洲生产实例升级至 262.2.50 版本（Online/iOS/Windows），系统期间总体可用。来源：<a href="https://trust.veeva.com/incident/416466">Veeva Trust</a></p>
-<p><strong>2. Veeva 脱离 Salesforce 自建 Vault CRM，并加码 Compass 与 CRM Bot</strong>
-Veeva 已宣布离开 Salesforce.com 平台、自建 Vault CRM（迁移窗口至 2030 年）；扩展 Compass 数据服务（匿名患者数据已上线，预测处方/全国市场数据明年上线），与 IQVIA 商业数据正面交锋；CRM Bot 将基于生成式 AI 提供 next-best-action 与 HCP 需求预测。来源：<a href="http://pharmaceuticalcommerce.com/view/new-trends-in-sales-force-organization">Pharmaceutical Commerce</a></p>
-<p><strong>3. Veeva 产品组合概览（数据云+商业化+研发云）</strong>
-涵盖 Veeva OpenData、Veeva Link、Veeva Compass（去标识纵向患者数据）、Veeva CRM Pulse（全渠道互动指标），以及 Veeva Development Cloud（临床平台/数据管理/安全/RIM/质量云）。来源：<a href="https://hk.finance.yahoo.com/quote/0LO3.L/profile/">Yahoo Finance</a></p>
-<hr />
-<h2>⚡ Veeva 关注板块（Actionable Insights）</h2>
-<ol>
-<li><strong>商业智能护城河受挑战</strong>：IQVIA Explorer 以"常驻商业智能+分钟级分析"直击 Veeva Compass/商业智能腹地，建议加快 Compass 预测数据（处方/全国市场）落地节奏并强化实时交互能力。</li>
-<li><strong>生成式 AI 合规闸门</strong>：OpenAI 因安全"前置否决"取消旗舰模型发布，提示 Veeva 在 CRM Bot 等生成式功能上线时必须内置合规审查与人工审核闸门，尤其涉及对外沟通内容。</li>
-<li><strong>"干湿闭环"带来的研发云机会</strong>：FDA/EMA 对 AI 预测数据可解释性提出硬性要求，Veeva Development Cloud（临床数据管理/质量云）可借真实世界证据与数据治理能力切入 AI 验证链路。</li>
-<li><strong>中国区迁移与支持节奏</strong>：Vault CRM 亚太区持续升级（262.2.50），建议提前与中国客户沟通迁移窗口、兼容性清单与本地化支持，降低切换摩擦。</li>
-</ol>
-<hr />
-<p><em>免责声明：本早讯由 AI 基于公开网络搜索自动聚合，可能存在时效与口径偏差，不构成任何投资建议或商业决策依据。</em></p>
-  <footer>
-    本早讯由 AI 自动搜集整理，可能存在时效与口径偏差，不构成投资建议或商业决策依据。<br>
-    © 2026 Veeva 每日市场动态早讯
-  </footer>
+<p><strong>1. 阿斯利康两款重磅ADC在华获批新适应症</strong> — 10月8日宣布，达卓优（德达博妥单抗）9月29日获NMPA批准用于不适合PD-1/PD-L1抑制剂的不可切除或转移性三阴性乳腺癌；优赫得（德曲妥珠单抗）同日于中国获批新适应症，巩固乳腺癌领域优势。来源：<a href="https://news.qq.com/rain/a/20261009A02ICP00">腾讯新闻</a></p>
+<p><strong>2. 阿斯利康进博会将首展三款前沿疗法 + 千亿元在华投资</strong> — 连续九届参展，将以约1000㎡展台亮相，带来高血压药物baxdrostat中国首展、曲麦利尤单抗与特泽利尤单抗在华获批后首展，并围绕全价值链与AI战略展示。来源：<a href="https://www.ciie.org/zbh/cn/2024/medium-item1/other/20261008/64332.html">中国国际进口博览会</a></p>
+<p><strong>3. 默沙东进博会"剧透"30款在华已获批创新药</strong> — 连续第八年参展，将展示欣瑞来（肺动脉高压生物制剂，9月获批扩展适应症）、安福畅（RSV预防新药）；预计未来五年向中国引入50多项新产品与新适应症。来源：<a href="https://www.toutiao.com/article/7694146691125068330/">今日头条</a></p>
+<h2>🧬 三、中国Biotech</h2>
+<p><strong>1. 恒瑞医药第二款自研创新药向欧盟递交上市申请</strong> — 10月8日公告，EMA已正式确认并受理氟唑帕利胶囊（用于转移性去势抵抗性前列腺癌）上市许可申请。来源：<a href="https://news.qq.com/rain/a/20261009A02ICP00">腾讯新闻</a></p>
+<p><strong>2. 众生药业RAY1225减重III期达主要终点</strong> — 10月8日公告，一类创新多肽药物RAY1225注射液在超重或肥胖参与者中的III期临床试验获顶线分析数据，达到主要终点。来源：<a href="https://news.qq.com/rain/a/20261009A02ICP00">腾讯新闻</a></p>
+<p><strong>3. 翰宇药业HY3003注射液获FDA临床试验申请受理</strong> — 10月8日公告，拟用于减重、2型糖尿病、MASH等适应症，为公司代谢疾病领域原创新药国际化的重要阶段性进展。来源：<a href="https://news.qq.com/rain/a/20261009A02ICP00">腾讯新闻</a></p>
+<p><strong>4. 东阳光药德谷门冬双胰岛素获批上市</strong> — 10月8日公告，自主研发德谷门冬双胰岛素注射液获NMPA批准用于治疗2型糖尿病，补齐第四代胰岛素布局。来源：<a href="https://news.qq.com/rain/a/20261009A02ICP00">腾讯新闻</a></p>
+<p><strong>5. 众生睿创ZSP1601片获纳入突破性治疗（MASH）</strong> — 10月7日公告，一类创新药ZSP1601片被CDE纳入突破性治疗药物程序，拟定适应症为代谢相关脂肪性肝炎（MASH），IIb期达主要疗效终点。来源：<a href="https://www.zyzhan.com/news/detail/100490.html">制药网</a></p>
+<h2>💹 四、资本市场</h2>
+<p><strong>1. A股医药节后"过山车"</strong> — 10月8日国庆后首个交易日，医药板块早盘多股涨停后集体回落；导火索为西伯利亚"不明肺炎"传闻扰动，港股假期已先涨（恒生生物科技指数10月6日涨逾3%）。来源：<a href="https://finance.sina.com.cn/wm/2026-10-08/doc-iniunrrf7616259.shtml">新浪财经</a></p>
+<p><strong>2. 港股医药/AI板块爆发</strong> — 10月6日，康希诺生物涨超14%、百奥赛图-B涨超11%、再鼎医药/亚盛医药涨超9%；智谱GLM-5.3上架AWS催化AI情绪。来源：<a href="https://news.qq.com/rain/a/20261007A06FIW00">腾讯新闻</a></p>
+<p><strong>3. 英伟达支持的AI制药公司Iambic寻求美股上市</strong> — 10月8日披露招股书，计划发行937.5万股普通股，发行价15–17美元，拟募资约1.41–1.59亿美元。来源：<a href="https://k.sina.com.cn/article_5182171545_134e1a99902002k7hm.html">新浪新闻</a></p>
+<p><strong>4. 恒瑞医药首次回购A股</strong> — 已回购33.5万股、涉资约1450万元；8月通过的回购方案总额10–20亿元，用于员工持股计划。来源：<a href="https://wwwhk.aastocks.com/sc/stocks/news/aafn-con/NOW.1545204/industry-news/Source">AAStocks</a></p>
+<h2>🤖 五、全球AI与前沿技术</h2>
+<h3>A. 前沿技术（全球AI TOP 5）</h3>
+<p><strong>1. 豆包大模型1.6-vision正式发布</strong>（10月9日）。来源：<a href="https://www.zizaifan.com/news.html?call_index=ainews">自在饭AI资讯</a></p>
+<p><strong>2. Opera Neon正式发布：首款AI Agent浏览器</strong>（10月9日）。来源：<a href="https://www.zizaifan.com/news.html?call_index=ainews">自在饭AI资讯</a></p>
+<p><strong>3. 谷歌Dreamer 4"世界模型"靠想象训练</strong>（10月9日）。来源：<a href="https://www.zizaifan.com/news.html?call_index=ainews">自在饭AI资讯</a></p>
+<p><strong>4. Anthropic发布AI Agent上下文工程指南</strong>（10月9日）。来源：<a href="https://www.zizaifan.com/news.html?call_index=ainews">自在饭AI资讯</a></p>
+<p><strong>5. OpenAI开发者大会：AgentKit、Codex正式版、Sora 2 API</strong>（10月7日）。来源：<a href="https://www.zizaifan.com/news.html?call_index=ainews">自在饭AI资讯</a></p>
+<h3>B. 医药AI（药物发现 / 监管）</h3>
+<p><strong>1. AI虚拟临床试验预测Novartis试验失败引行业关注</strong> — 哥本哈根BioinvestGPT称7月模拟预测del-desiran临床获益不显著，后该III期未达终点致诺华市值蒸发约300亿美元；其称6项预测中5项正确。来源：<a href="https://insideai.news/news/machine-learning/ai-virtual-drug-trials/13771">Inside AI</a> | <a href="https://www.aol.com/articles/virtual-biotech-staffed-37-000-060200000.html">Reuters</a></p>
+<p><strong>2. "AI制药瓶颈交易"成形：湿实验成新瓶颈</strong> — Altimeter指出AIDD瓶颈从算法转向DNA合成/蛋白生产/CRO；Twist、金斯瑞AI药物发现订单高增长，Isomorphic Labs推进AI设计分子入人体临床。来源：<a href="https://www.toutiao.com/article/7693150445543424522">华尔街见闻</a></p>
+<p><strong>3. FDA就生成式AI医疗器械监管征求意见（截止10月19日）</strong> — CDRH提出双轴风险框架与"能力评估式"上市前评价，单独讨论基础模型与自主智能体治理边界。来源：<a href="https://tech.sina.cn/2026-09-30/detail-initpxxi7270910.d.html">新浪科技</a></p>
+<h3>C. CRM / 商业化AI</h3>
+<p><strong>1. Salesforce扩展Agentforce平台</strong> — 2026年9月上线七个角色化智能体（客户支持、IT/HR、购物协助、外呼销售、供应链、线索生成、客户体验），支持数天至数周长周期运行。来源：<a href="https://www.fxiaoke.com/crm/information-97860.html">纷享销客</a></p>
+<p><strong>2. AI-in-CRM市场高速扩张</strong> — 2026年规模预计150.6亿美元，2030年达516.7亿美元（CAGR 36.1%）；Salesforce调研显示87%销售组织已用AI、54%销售用过AI智能体。来源：<a href="https://vatask.com/blog/digital-transformation/ai-in-crm">VATASK</a></p>
+<blockquote>
+<p>注：近24h CRM AI商用首发较少，以上为近期代表性动态。</p>
+</blockquote>
+<h2>🥊 六、竞争对手</h2>
+<blockquote>
+<p>仅覆盖白名单6家：IQVIA / Salesforce / 太美医疗 / Medidata / 腾讯健康NGES / 脉络洞察</p>
+</blockquote>
+<p><strong>1. IQVIA在TechIQ 2026发布IQVIA Life Science Models</strong> — 10月7日，结合NVIDIA Nemotron与AWS，用于预测临床试验结果、研究模拟与方案优化；初步评估50项试验270个终点，85%预测"达标或临床接近"。来源：<a href="https://ir.iqvia.com/press-releases/press-release-details/2026/IQVIA-Launches-IQVIA-Life-Science-Models-to-Help-Life-Sciences-Companies-Predict-Clinical-Trial-Outcomes/default.aspx">IQVIA投资者关系</a></p>
+<p><strong>2. IQVIA TechIQ 2026（波士顿，10月7–8日）</strong> — 聚焦"AI从承诺走向真实影响"，推出Field Force Agent、GMI Agent等生命科学智能体。来源：<a href="https://www.iqvia.com/?utm_cta=website-apps-workload-page%2F%3Flang%3Dpt-br">IQVIA</a></p>
+<p><strong>3. 腾讯健康NGES AI智能助手升级</strong> — 覆盖药械营销全流程（拜访计划、医学问询、线上互动、会议合规），依托"重楼"底座与Med Agent，强调安全合规与私有知识资产。来源：<a href="https://nges.tencent.com/home/nges_ai">腾讯健康NGES</a></p>
+<p><strong>4. Salesforce Agentforce（详见AI·C栏）</strong> — 角色化智能体推进"智能体企业"。来源：<a href="https://www.fxiaoke.com/crm/information-97860.html">纷享销客</a></p>
+<blockquote>
+<p>注：近24h未检索到太美医疗、Medidata、脉络洞察的重大首发新闻。</p>
+</blockquote>
+<h2>🟢 七、Veeva</h2>
+<p><strong>1. 2026 Veeva中国商务峰会（10月22日·上海）定档</strong> — 主题"Agentic Commercial™：AI 引证·智驭商道"，将展示AI如何驱动Commercial Evidence™；超半数全球TOP 20生命科学企业使用Veeva，8+药企已用Veeva China CRM AI、11+用Ultra HCP数据平台。来源：<a href="https://www.veeva.com/cn/events/commercial-summit-china-2026/">Veeva中国商务峰会</a></p>
+<p><strong>2. Vault CRM 26R2.3发布</strong> — Sandbox已于10月8日发布，Production将于10月15日发布；Call Capture Agent替代Voice Agent，新增Formulary Matrix、按用户/产品组样品限额等。来源：<a href="https://vaultcrmhelp.veeva.com/doc/Content/CRM_topics/ReleaseNotes/26R2.3/NewIn26R2.3.htm">Vault CRM帮助中心</a></p>
+<p><strong>3. Veeva China CRM Suite V26R2.2预发布通知</strong> — 计划10月18日22:00–00:00发布有限版本，正式版V26R3.0定于12月20日。来源：<a href="https://trust.veeva.com/incidents?componentId=572757">Veeva Trust</a></p>
+<p><strong>4. Veeva研发与质量领域AI产品与路线图（中国）</strong> — 发布运行于MAAP™架构智能体层的Falcon及临床运营Essentials方案（eTMF 5周上线）；截至2026财年研发与质量全球客户近1200家、遍布165国。来源：<a href="https://www.veeva.com/cn/resources/veeva-releases-ai-products-and-roadmap-for-rd-and-quality-areas/">Veeva中国</a></p>
+<h2>⚡ Veeva关注板块</h2>
+<p><strong>1. 进博会（11月5–10日·上海）预热即战场</strong> — 阿斯利康、默沙东等白名单MNC密集"剧透"在华创新药与AI战略；Veeva中国商务峰会（10月22日）可借势强化"Agentic Commercial"叙事，对标MNC全价值链AI布局。</p>
+<p><strong>2. AI临床/商业化双线提速，竞品贴身</strong> — IQVIA借NVIDIA发布Life Science Models（临床试验预测），Salesforce推Agentforce角色化智能体；Veeva应以Vault CRM 26R2.3的Call Capture Agent与China CRM AI形成差异化。</p>
+<p><strong>3. 中国Biotech出海与获批高潮</strong> — 恒瑞氟唑帕利冲刺欧盟、众生RAY1225减重III期达标、多款1类新药密集获批临床；Veeva临床运营Essentials（eTMF 5周上线）与China CRM Suite可定向触达这批高增长客户。</p>
+<p><strong>4. 监管窗口期值得盯防</strong> — FDA GenAI医疗器械监管意见截止10月19日、NMPA中药品种保护新规落地；建议Veeva合规与质量产品线（QMS/MLR）跟进中美监管动态，沉淀客户教育素材。</p>
+</div>
+<footer>Veeva 每日市场动态早讯 · 自动生成 · 仅供内部参考</footer>
 </div>
 </body>
 </html>
