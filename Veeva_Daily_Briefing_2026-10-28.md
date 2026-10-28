@@ -1,0 +1,255 @@
+# Veeva 每日市场动态早讯 | 2026年10月28日 周三
+
+*本内容由AI自动搜集整理，仅供内部参考*
+
+> **时间窗口**：近 24 小时（2026-10-27 08:00 — 2026-10-28 08:00，GMT+8）。
+> 10 月 26 日晚间发布、10 月 27 日集中发酵的重磅事件（拜耳获批、国采断供罚单等）予以保留并标注原始发布时间。
+
+---
+
+## 🏛️ 一、政策与监管 TOP 5
+
+**1. CDE 发布抗肿瘤药"前线推进"技术指导原则（2026年第48号）**
+国家药监局药审中心发布《抗肿瘤药物基于后线研究数据开展前线适应症临床试验技术指导原则》，自发布之日起施行。核心是明确"前线/后线"为基于治疗顺序的动态相对概念，要求系统评估**药物作用机制、后线疗效数据、安全性特征**三大要素后再向前线推进；并对单药/联合给药策略、剂量优化、生物标志物人群筛选提出建议。适用于抗肿瘤治疗性药物，不含细胞与基因治疗产品。
+来源：[中国食品药品网](https://m.cnpharm.com/c/2026-10-27/1109520.shtml) | [医药魔方](https://bydrug.pharmcube.com/news/detail/ba70ee28af0234a19c97c56b51617163)
+
+**2. 器审中心发布 BNCT 硼中子俘获治疗系统临床试验审评要点（10月27日）**
+国家药监局医疗器械技术审评中心发布《硼中子俘获治疗系统临床试验设计技术审评要点》，聚焦局部复发、无标准治疗手段的头颈部恶性肿瘤。明确应采用**前瞻性、单组目标值试验设计**；有效评价病例不低于 30 例，治疗后 90 天 IRC 评估 ORR 不低于 50%；试验期通常 90 天、总随访不低于 2 年。脑胶质瘤、鼻咽癌等其他适应证可参考。
+来源：[中国食品药品网](https://m.cnpharm.com/c/2026-10-27/1109522.shtml)
+
+**3. 国采首次分级开罚：两款药品被取消中选资格，禁入 4 年与 2 年（10月26日公告）**
+国家组织药品联合采购办公室公告：Eugia Pharma 来曲唑片（杭州科图供应链申报）自接续采购执行以来**从未配送供应**，被取消 2026-10-26 至 2030-10-25 国采参与资格；JSC "Farmak" 钆特酸葡胺注射液（上海礼易医药）因无法继续供应，被取消 2026-10-26 至 2028-10-25 申报资格，主供地区启动替补程序。这被解读为"**低价中标、断供离场**"的分级处置模板，履约能力正式计入集采成本。
+来源：[财联社](https://www.cls.cn/detail/2516232) | [腾讯新闻](https://news.qq.com/rain/a/20261027A0BEAV00)
+
+**4. CDE 就放射性药物非临床研究问答文件公开征求意见（10月26日）**
+药审中心发布《〈放射性体内诊断药物非临床研究技术指导原则〉问答文件（征求意见稿）》及治疗药物对应文件，基于 2021/2024 版指导原则修订形成，征求意见时限为发布之日起 1 个月，旨在规范放射性药物的非临床研发与评价。
+来源：[医药晚讯](http://mp.weixin.qq.com/s?__biz=MzY5OTM4MjM3Nw==&mid=2247484920&idx=1&sn=1c68d44114da05bf380559647d58a423)
+
+**5. 中药审评审批改革再加码；NMPA 力推传统药物监管国际协调**
+国家药监局 10 月 23 日在京召开中药监管工作座谈会，明确将进一步加大中药政策支持力度、优化监管模式与评价方法、完善指导原则体系，推动名方验方、医疗机构中药制剂向新药转化。同期（10月18日，北京）世界传统医学大会 2026 平行论坛"传统药物监管与产业创新论坛"发布共识文件《Good Regulation Promotes Access to Quality Traditional Medicines》，来自 10 余个国家/地区 300 余名代表参会。
+来源：[重庆市药监局](https://yaojianju.cq.gov.cn/zwxx_217/yjjdt/202610/t20261027_16297914_wap.html) | [NMPA](https://english.nmpa.gov.cn/2026-10/27/c_1222833.htm)
+
+---
+
+## 🌍 二、跨国药企（MNC）TOP 5
+
+**1. 拜耳 FXIa 抑制剂舒华博（阿舒克森片）在华获批，中国拿下全球首批（10月26日）**
+NMPA 通过优先审评审批程序批准拜耳 1 类创新药阿舒克森片（Asundexian，商品名舒华博），用于降低缺血性卒中或高风险 TIA 成人患者的卒中风险（不含心源性栓塞型），受理到获批历时约半年。依据全球关键 III 期 OCEANIC-STROKE（n=12,327，中位随访 19 个月）：在标准抗血小板基础上，缺血性卒中发生风险**降低 26%**（6.2% vs 8.4%，csHR 0.74，P<0.0001），ISTH 定义大出血未显著增加（1.9% vs 1.7%）；结果发表于《新英格兰医学杂志》。该药为**全球首款获批上市的 FXIa 抑制剂**，同期也在美日启动申报。
+来源：[美通社/网易](https://www.163.com/dy/article/LA8I3PP9051494RM.html) | [财经网](https://m.caijing.com.cn/article/202610/450200) | [医药网](https://news.pharmnet.com.cn/news/2026/10/27/627723.html)
+
+**2. 辉瑞他拉唑帕利联合疗法获 FDA 批准，全球首个 mHSPC 的 PARP 抑制剂（10月27日）**
+FDA 批准 talazoparib（他拉唑帕利）联合 enzalutamide（恩扎卢胺）用于经 FDA 授权检测确认存在 HRR 基因突变的转移性激素敏感性前列腺癌（mHSPC）成人患者，为该适应症全球首个 PARP 抑制剂。
+来源：[医药晚讯](http://mp.weixin.qq.com/s?__biz=MzY5OTM4MjM3Nw==&mid=2247484920&idx=1&sn=1c68d44114da05bf380559647d58a423)
+
+**3. 阿斯利康、礼来、诺华三巨头 2026 年在华投资计划合计超 1230 亿元**
+据每日经济新闻不完全统计，2026 年以来仅这三家跨国巨头披露的在华研发、制造及相关业务投资计划合计规模已超 1230 亿元人民币；礼来 30 亿美元投资计划中拟投 2 亿美元支持康龙化成建设药品产能。同期西班牙百年药企 ESTEVE 斥资 5.3 亿元扩建绍兴基地。2026 上半年全球创新药 BD 交易中，涉及中国分子的对外交易 90 起，占全球交易数量 14.5%、交易金额约 31.66%。
+来源：[每日经济新闻](https://www.nbd.com.cn/articles/2026-10-27/4620391.html) | [腾讯新闻](https://news.qq.com/rain/a/20261027A0ARNI00)
+
+**4. 阿斯利康牵手 insitro，加码 AI 药物发现**
+10 月，阿斯利康与 AI 公司 insitro 达成战略药物发现合作与许可协议，针对代谢功能障碍相关脂肪性肝炎（MASH）与心肌病开展新靶点和创新疗法发现工作。
+来源：[中国经济网](https://www.ce.cn/cysc/newmain/yc/jsxw/202610/t20261027_3272396.shtml)
+
+**5. 吉利德约 13 亿美元收购上海创新药企抑制剂项目；艾伯维中国合作日今日举办**
+吉利德科学以约 13 亿美元收购上海一家创新药企的抑制剂项目（10月26日）。今日（10月28日），2026 H2 艾伯维中国合作日在苏州举办，旨在寻找优质本土创新管线、促进 MNC 与国内 Biotech 的 BD 合作与联合开发。
+来源：[新浪财经](https://cj.sina.com.cn/articles/view/5115326071/130e5ae77020033gbo) | [医药晚讯](http://mp.weixin.qq.com/s?__biz=MzY5OTM4MjM3Nw==&mid=2247484920&idx=1&sn=1c68d44114da05bf380559647d58a423)
+
+---
+
+## 🧬 三、中国 Biotech TOP 5
+
+**1. 科伦博泰芦康沙妥珠单抗第七项适应症上市申请获 NMPA 受理（10月27日）**
+科伦博泰宣布 TROP2 ADC 芦康沙妥珠单抗（sac-TMT / SKB264 / MK-2870，佳泰莱®）新适应症上市申请获 CDE 受理：联合默沙东帕博利珠单抗一线治疗 PD-L1 TPS<1% 的 EGFR/ALK 阴性局部晚期或转移性非鳞 NSCLC。基于 III 期 OptiTROP-Lung06——**全球首个 ADC 联合免疫检查点抑制剂在该人群中达到主要终点的 III 期研究**：BICR 评估 PFS HR 0.49（95% CI 0.36-0.65，P<0.0001），OS 亦观察到获益趋势（HR 0.58，95% CI 0.38-0.88）。结果于 ESMO 2026 以 LBA 口头报告公布，并同步发表于《新英格兰医学杂志》。
+来源：[医药魔方](https://bydrug.pharmcube.com/news/detail/35621ba253dce7511520a554d8d52ca0) | [医药网](https://news.pharmnet.com.cn/news/2026/10/27/627729.html)
+
+**2. 希格生科 SIGX1094 联合信达氟泽雷塞片 IND 获 NMPA 批准（10月27日）**
+希格生科宣布其自主研发的**全球首个进入临床阶段的 FAK/SRC 双靶点抑制剂 SIGX1094**，将联合信达生物已上市的 KRAS-G12C 抑制剂氟泽雷塞片（达伯特），针对 KRAS-G12C 突变阳性 NSCLC 开展 II/III 期临床试验，申请已获 NMPA 批准。这是 SIGX1094 继弥漫性胃癌后拓展的第二个核心适应症。该管线依托"类器官+AI"技术平台推进，此前已获 FDA 与 NMPA 的 IND、FDA 孤儿药资格与快速通道认定。
+来源：[上证报/新浪财经](https://finance.sina.com.cn/roll/2026-10-27/doc-iniwsseu0231099.shtml) | [腾讯新闻](https://news.qq.com/rain/a/20261027A08WW800)
+
+**3. 丽珠集团抗 FXI 双抗获批临床（10月27日）**
+丽珠集团公告子公司丽珠单抗收到 NMPA 临床试验批准通知书，同意重组人源化抗 FXI 双特异性抗体注射液开展预防全膝关节置换术后静脉血栓栓塞症（VTE）的临床试验，为治疗用生物制品 1 类，累计研发投入约 2824 万元。
+来源：[医药晚讯](http://mp.weixin.qq.com/s?__biz=MzY5OTM4MjM3Nw==&mid=2247484920&idx=1&sn=1c68d44114da05bf380559647d58a423)
+
+**4. 长春高新子公司金赛药业 GenSci136 获批临床（10月27日）**
+长春金赛药业收到 NMPA《药物临床试验批准通知书》，注射用 GenSci136 境内生产药品注册临床试验申请获批。GenSci136 为自主研发的 **BAFF/APRIL 双靶点拮抗剂**，治疗用生物制品 1 类，拟用于治疗干燥综合征。
+来源：[格隆汇/新浪财经](https://k.sina.com.cn/article_5115326071_130e5ae77020033gbo.html)
+
+**5. ESMO 2026 收官：中国创新药 29 项入选 LBA，创历史新高**
+本届 ESMO（10月23-27日，马德里）共约 96 项 LBA，中国相关研究 29 项、占比约 30%；最高规格的主席研讨会 12 席中中国占 5 席（和黄医药赛沃替尼+奥希替尼 SAFFRON、康诺亚/乐普生物 CMG901、康方生物依沃西、翰森制药 HS-20093、科伦博泰 sac-TMT），且全部为注册性 III 期确证研究。两年前的 ESMO 2024 中国仅 7 项入选 LBA、无一进入主席研讨会。ADC 仍是最密集赛道（23 项 ADC 相关 LBA 中 15 项来自中国原研）。
+来源：[证券时报](https://jjb@stcn.com/article/detail/4264731.html) | [腾讯新闻/动脉网](https://news.qq.com/rain/a/20261027A07R1U00) | [行业观察](https://news.qq.com/rain/a/20261027A0BK8G00)
+
+> **其他速览**：恒瑞医药 SHR-2005 注射液联合 SHR-1501 ± 阿得贝利单抗 ± BCG 治疗膀胱癌获临床批准（SHR-2005 国内外尚无同类上市，三项研发投入合计约 15.6 亿元）；众生药业昂拉地韦片新增高并发症风险甲型流感适应症 III 期获批；康辰药业 KC1086 获临床通知书（全球首个进临床的 KAT6/7 抑制剂）；智翔金泰 IL-4Rα 单抗泰利奇拜单抗 CSU 适应症拟纳入优先审评。
+
+---
+
+## 💰 四、资本市场 TOP 5
+
+**1. 药明康德三季报超预期，全年收入指引再上调（10月26日晚披露）**
+前三季度营收 **455.37 亿元**（+38.59%，持续经营业务 +46.3%），归母净利润 **193.98 亿元**（+60.64%），扣非净利 164.77 亿元（+73.03%）。Q3 单季营收 166.40 亿元（+38.01%）创上市以来新高，归母净利 83.18 亿元（+136.67%）。截至 9 月末持续经营业务在手订单 **767.4 亿元**（+36.4%，环比新增 100 亿元）。全年收入指引由 585-605 亿元上调至 **610-619 亿元**，持续经营业务增速上调至 40%-42%。
+来源：[上海证券报](https://www.cnstock.com/commonDetail/811204) | [中新经纬](https://m.chinanews.com/wap/detail/cht/zw/jw694414.shtml)
+
+**2. 10月27日 A 股全线下挫，创新药与 CXO 成调整重灾区**
+上证指数跌 1.33%、深证成指跌 2.50%、创业板指跌 3.41%、科创50 跌 4.81%、北证50 跌 3.35%；两市成交 1.46 万亿元、缩量 1478 亿元，全市场超 4900 只个股下跌，涨跌中位数 -2.98%。重组蛋白、mRNA 疫苗、CRO、创新药等医药概念全线走低。
+来源：[华夏时报](https://www.toutiao.com/a1880187734838348) | [腾讯新闻](https://news.qq.com/rain/a/20261027A0CZ7U00) | [每日经济新闻](https://www.nbd.com.cn/articles/2026-10-27/4620261.html)
+
+**3. 科创创新药指数重挫超 5%，龙头股集体回调**
+泽璟制药跌超 9%，百济神州、荣昌生物跌超 6%，皓元医药跌 6%，迪哲医药、博瑞医药、君实生物、成都先导跌超 5%，艾力斯跌超 4%，百利天恒跌超 2%。市场解读为核心矛盾在**流动性而非基本面**——ESMO 进入收官，资金兑现前期预期，叠加部分数据出现预期差（如康诺亚/乐普生物 Sone-Ve 2L+ PFS P 值 0.053，略高于显著性门槛）。
+来源：[腾讯新闻](https://news.qq.com/rain/a/20261027A0CZ7U00)
+
+**4. 三季报窗口进入冲刺，超四成药企同比增长**
+截至 10 月 26 日，A 股医药生物板块 129 家公司披露三季报、15 家发布业绩预告，超四成企业业绩同比增长。创新药出海从签约迈入业绩兑现期，海外权益授权款项集中入账成为利润重要增量。**10月31日为 A 股三季报披露截止日**，剩余公司业绩将集中落地。
+来源：[每日经济新闻](https://www.nbd.com.cn/articles/2026-10-27/4619798.html)
+
+**5. 海外 biotech 融资窗口重开：Corxel US 借 SPAC 上市，募资约 3.77 亿美元（10月27日）**
+RTW 旗下 Corxel Pharmaceuticals 美国分部宣布与 Nasdaq 上市 SPAC Amanat Acquisition Corp（AMAN）达成最终合并协议，预计总募资约 3.77 亿美元（含约 3 亿美元超额认购 PIPE 及约 7500 万美元信托资金），资金可支撑至 2029 年并覆盖核心管线 CX11（每日一次口服小分子 GLP-1 受体激动剂，美国 II 期 36 周减重最高 11.5%）的全球 III 期。同日 Actuate Therapeutics 定价 1100 万美元公开发行，Rapport Therapeutics 拟发行 2 亿美元普通股 + 1.5 亿美元 2032 年到期可转债。
+来源：[TradingView/Reuters](https://www.tradingview.com/news/reuters.com,2026-10-27:newsml_RSa5170Aa:0-reg-rtw-biotech-opp-corxel-us-to-go-public-via-merger-with-amanat/) | [BioXconomy](https://www.bioxconomy.com/investment/corxel-us-bets-on-spac-route-to-fund-oral-glp-1-race) | [Actuate](https://actuatetherapeutics.com/press_releases/actuate-therapeutics-announces-pricing-of-11-0-million-underwritten-public-offering/)
+
+---
+
+## 🤖 五、全球 AI TOP 5
+
+**1. OpenAI 发布 GPT-6.1 Terra，API 价格直接腰斩（10月26日）**
+定价 $1/百万输入 token、$5/百万输出 token、$0.05/百万缓存 token，为 GPT-5.6 Terra 的一半；上下文窗口 1.05M token。定位计算机操作、桌面自动化与视觉推理。官方称 Terminal-Bench 4.0 编码准确率从 21.5% 提升至 50.3%，Agents' Last Exam 上以十分之一 token 成本追平 GPT-6 Astra。已在 ChatGPT Work、Codex、API 及 OpenRouter、Vercel AI Gateway 上线。
+来源：[OpenAI](https://openai.com/) | [Communeify AI Daily](https://www.communeify.com/en/blog/ai-daily-latest/) | [The Morning Build](https://themorningbuild.com/digest/2026-10-27)
+
+**2. OpenAI 上线常驻型智能体 "dots"（Pro 及以上，$100/月起）**
+"dots" 是运行在云端的常驻个人助理，可连接日历、邮件、电脑等工具，按计划主动开展研究、在用户离线后继续后台执行任务，并继承 ChatGPT 隐私控制（含关闭模型训练选项）。目前不支持只读云盘访问，权限粒度仍较粗。OpenAI 表示正与支付处理方洽谈，未来或支持代用户执行付款。
+来源：[Communeify AI Daily](https://www.communeify.com/en/blog/ai-daily-latest/) | [The Morning Build](https://themorningbuild.com/digest/2026-10-27)
+
+**3. Anthropic 递交 IPO 招股书（S-1）：Q2 营收 116 亿美元，算力承诺超 7800 亿美元**
+招股书显示二季度营收 116 亿美元、净收入留存率处于高位，并披露超过 7800 亿美元的算力承诺。文件同时把"递归自我改进（RSI）"既列为生存性风险、也列为核心战略优势——即"闭环"式 AI 加速研发。外界认为该文件首次为前沿实验室的经济学提供了可公开衡量的参照系。
+来源：[The Morning Build](https://themorningbuild.com/digest/2026-10-27) | [BYOBot AI Newsstand](https://byobot.ai/ai-news/ai-daily-newsstand-october-27-2026)
+
+**4. Anthropic 推出主动型个人智能体 Claude Duet（研究预览版）**
+Claude Duet 可连接邮件、日历、银行及企业业务系统，在用户未下达指令时**主动发现待办事项**、每日推送晨间简报，并在用户离开后于自有虚拟机中继续执行任务；产品集成 6000 多个应用连接器，直接对标 Meta 的 Muse 与 OpenAI 的 Dots。个人智能体从"等指令"走向"主动干活"。
+来源：[21世纪经济报道](https://m.21jingji.com/article/20261027/herald/7e0210c2a3e773524a8bad3c68b9daa8.html) | [MINOWORKS](https://minoworks.net/en/claude-duet-research-preview-and-more)
+
+**5. Anthropic 将 Agent Skills 标准捐赠给 Linux Foundation**
+Anthropic 把 Agent Skills 的名称、规范、GitHub 组织与域名捐赠给 Agentic AI Foundation（此前 12 月已将 MCP 捐赠给同一机构）。目前已有 70 多个平台采用该标准，包括 ChatGPT 与 GitHub Copilot。
+来源：[AI News Brief](https://ai-news-brief.com/?ref=producthunt) | [MINOWORKS](https://minoworks.net/en/claude-duet-research-preview-and-more)
+
+> **其他速览**：月之暗面发布 Kimi K3.1 Pro，3 万亿参数开源、支持 100 万 token 上下文；MiniMax 发布 M3.1 Flash，Agent 调用价格较前代下降约七成；腾讯开源实时语音同传模型 Hy-SimulMT（平均响应延迟约 3 秒，支持零样本音色克隆）；苹果 iOS 27.2 于 10 月 26 日推送，Siri AI 具备跨会话记忆与上下文调用能力。
+
+---
+
+## 🔬 六、AI 前沿技术
+
+### A. 前沿技术
+
+- **Google Cloud 推出 Gemini API CLI 与 IAM Helper Agent Skills**：Gemini API CLI 为无状态、自描述的命令行工具，允许 Claude Code、Codex 等第三方智能体在零内存开销下调用 Gemini 多模态能力；IAM Helper 通过 Agent Skills 与 MCP 工具接入 Policy Intelligence 与 Privileged Access Manager，让自主编码助手可在不绕过最小权限护栏的前提下起草 Terraform 与云架构。
+  来源：[Communeify](https://www.communeify.com/en/blog/ai-daily-latest/)
+- **NVIDIA 扩展开源 Agent Toolkit**：新增 Agent Knowledge Foundation、CUDA-X 库、Nemotron Retriever 与 Kumo 模型用于企业数据接入；Auto-Ontology 将原始数据映射为业务概念与关系；OpenShell 提供运行时访问边界，NemoClaw 提供智能体参考设计。
+  来源：[MINOWORKS](https://minoworks.net/en/claude-duet-research-preview-and-more)
+- **NVIDIA 投入 2.5 亿美元用于英国智能体安全研究**（五年期），聚焦智能体系统的动态监管、归因、审计轨迹与人工复核——与 GMP 对数据完整性、变更控制的要求高度对应。
+  来源：[Pharmaceutical Technology](https://www.pharmtech.com/view/nvidia-s-250m-agentic-ai-safety-bet-what-gmp-gains)
+- **vLLM 0.32.0 收紧安全默认**：OpenAI 兼容服务器不再默认允许所有来源，浏览器客户端须显式配置 allowed-origins，同时修复聊天模板资源耗尽与 ZMQ socket 耗尽缺陷。
+  来源：[vLLM](https://github.com/vllm-project/vllm)
+
+### B. 医药 AI
+
+- **AI 制药交易持续提速，跨国药企"重金押注平台与自研管线"**：继剂泰科技与礼来围绕组织特异性 LNP 递送达成战略合作（10月19日）、英矽智能与施维雅 8.88 亿美元合作 10 个月内达成首个早期药物发现里程碑（10月20日）后，阿斯利康 10 月与 insitro 达成 MASH 与心肌病方向的药物发现合作。医药魔方 NextPharma 数据库显示，已有**超过 1500 条药物管线**涉及 AI 辅助开发或 AI 设计。
+  来源：[中国经济网/中国财富网](https://www.ce.cn/cysc/newmain/yc/jsxw/202610/t20261027_3272396.shtml) | [今日头条](https://www.toutiao.com/article/7701171164076392970/)
+- **全球 AI 交易增速远超医药总交易**：国海证券测算，2020—2025 年全球 AI 技术交易数量 CAGR 达 **30.7%**，远高于医药总交易的 0.4%；截至 2026 年 7 月 18 日全球 AI 交易 173 起，已达 2025 年全年的 119.3%，而医药总交易仅完成 2025 年的 71.5%。按已披露口径，**中国贡献全球约 63% 的交易总额、约 79% 的首付款**。
+  来源：[中国经济网](https://www.ce.cn/cysc/newmain/yc/jsxw/202610/t20261027_3272396.shtml)
+- **Iambic Therapeutics 公布 AI 设计 HER2 抑制剂 IAM1363 临床数据（10月26日）**：I/Ib 期试验已有 122 名受试者接受治疗，部分患者肿瘤缩小并观察到脑转移病灶缓解迹象——其中一例经七线 HER2 靶向治疗后、脑部超 50 处转移灶的乳腺癌患者达到经影像确认的颅内部分缓解。该公司 10 月 15 日刚登陆纳斯达克（IAM），IPO 募资约 1.5 亿美元。
+  来源：[DeepTech深科技](https://www.toutiao.com/article/7701338861741343232)
+- **英矽智能 ISM6331（泛 TEAD 抑制剂）I 期数据在 ESMO 公布**：依托生成式 AI 平台 Pharma.AI 完成分子从头设计，在恶性间皮瘤中观察到肿瘤缩小与较高疾病控制率。公司上半年总收入 1.063 亿美元（+287.2%），实现上市以来首个半年度盈利。
+  来源：[腾讯新闻/行业观察](https://news.qq.com/rain/a/20261027A0BK8G00) | [新华网](https://www.xinhuanet.com/health/20261027/b497a9e7b072409e9a49d5a6875170b5/c.html)
+- **监管侧：EMA 与 FDA 于 2026 年 1 月联合发布 10 项"良好 AI 实践"指导原则**，覆盖非临床、临床、上市后与生产环节，要求基于风险的验证与监督、对"人-机"完整系统进行性能评估、并对数据漂移等问题开展定期复评。FDA 于 2025 年 1 月发布的《使用 AI 支持药品和生物制品监管决策的考虑》草案（七步可信度评估框架）仍在草案阶段。
+  来源：[EMA](https://www.ema.europa.eu/en/news/ema-fda-set-common-principles-ai-medicine-development-0) | [FDA](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological)
+
+### C. CRM / 商业化 AI
+
+- **Salesforce Dreamforce 2026 发布七大"岗位型"智能体**：Piper（inbound）、Hunter（outbound 销售）、Casey（客服）、Paige（运营）、Fin（财务）、Carter（商务）、Marshall（供应链/HR），每个智能体围绕特定职能配置上下文、数据权限与工具，而非通用智能体逐案配置。
+  来源：[Dotsquares](https://www.dotsquares.com/au/press-and-events/tech/dreamforce-2026-salesforce-announcements)
+- **Agentforce 四项能力扩展**：长周期执行（可从单会话任务扩展到数天/数周目标）、Agent Script（对单个智能体行为的细粒度控制）、多智能体编排（跨工作流协同）、Agent Optimizer（随时间自动优化性能）。
+  来源：[Dotsquares](https://www.dotsquares.com/au/press-and-events/tech/dreamforce-2026-salesforce-announcements)
+- **Koa：Salesforce 首个 CRM 推理模型**：与 NVIDIA 合作开发、专为 CRM 工作流推理训练，已在 1-800Accountant、Baxter Credit Union、Formula 1、UChicago Medicine、Xero 等客户中试点，美国 GA 计划于 2026 年冬季。配套的 Enterprise AI Harness 提供跨所有智能体的监控、追踪、安全与治理。
+  来源：[Dotsquares](https://www.dotsquares.com/au/press-and-events/tech/dreamforce-2026-salesforce-announcements)
+- **Agentforce Coworker 与 Builder Central**：Coworker 在标准 Lightning 界面之上叠加智能体交互层，上线 35 天内获 10 万用户采用；Builder Central 把 Salesforce 开发从"配置"变为"对话"——用自然语言描述业务需求即可生成数据模型、智能体、流程、校验与测试。
+  来源：[Dotsquares](https://www.dotsquares.com/au/press-and-events/tech/dreamforce-2026-salesforce-announcements)
+- **行业判断：Gartner 预计到 2026 年底 40% 的企业应用将内置任务型 AI 智能体（2025 年不足 5%）**；但智能体的价值上限取决于底层数据与权限治理——"干净、互联的数据"与"清晰的边界"被反复强调为部署前的先决条件。
+  来源：[247 Commerce](https://www.247commerce.co.uk/insights/agentic-crm-2026-when-your-crm-becomes-a-colleague)
+
+---
+
+## 🆚 七、竞争对手动态 TOP 5
+
+**1. IQVIA 推出 Life Science Models™，主打"先跑一遍试验"（10月7日，TechIQ 2026）**
+IQVIA 发布面向生命科学的专用模型套件，结合其专有专家内容、领域知识与既有法规/合规/隐私框架，基于 NVIDIA Nemotron 构建、AWS 提供基础设施。应用覆盖临床研究模拟与方案优化（终点选择、入排标准、剂量选择、样本量规划），以及数字孪生与合成对照。**在 50 项试验、270 个终点的初始评估中，85% 的预测"on target 或临床接近"。** IQVIA 同时推出基于 NVIDIA 技术的定制化 AI 智能体。
+来源：[IQVIA Newsroom](https://www.iqvia.com/newsroom/2026/10/iqvia-launches-iqvia-life-science-models-to-help-life-sciences-companies)
+
+**2. IQVIA 选定 Veeva 临床运营应用为企业标准（10月13日）**
+IQVIA 与 Veeva 宣布扩展合作，选定 **Veeva CTMS、eTMF、Study Startup 与 Site Connect** 作为企业标准应用，用于其临床开发研究；此前双方已有 EDC 合作。所有 Veeva 临床解决方案亦可通过 IQVIA 提供，供希望采用完整 Veeva 技术栈的申办方使用。（*既是竞合关系，也是 Veeva 在 CRO 渠道的关键卡位*）
+来源：[Veeva](https://www.veeva.com/eu?p=105372) | [BioBuzz](https://biobuzz.io/news/iqvia-selects-veeva-clinical-operations-applications-as-enterprise-standard-expanding-partnership)
+
+**3. Medidata 与 Worldwide Clinical Trials 扩大战略合作（2026年4月）**
+Worldwide 成为**首个部署 Medidata Plus 的全球 CRO**，获得跨 Study、Data 与 Patient Experiences 的企业级 AI 接入能力，并可使用虚拟伴侣 Dot 贯穿临床试验全生命周期。标志着头部 CRO 开始把企业级 AI 从试点推向多研究规模化落地。
+来源：[HTF Market Intelligence](https://www.htfmarketintelligence.com/report/north-america-clinical-trial-protocol-management-software-market)
+
+**4. 太美医疗科技：AI 临床开发平台保持高毛利增长**
+2026 年上半年，太美医疗科技 AI 临床开发平台实现收入 **1.59 亿元人民币**（同比 +22%），新增合同金额 **2.66 亿元**（同比 +47%），分部毛利率 **63.6%**；核心 Wiz.AI 文思智能平台收入 6183 万元（同比 +48%）。部署模式属"数据底座"型，聚焦临床开发环节的 AI 提效。
+来源：[健康之路/医护网](https://www.jkzl.com/knowledges/c1c4b349a.html)
+
+**5. 腾讯健康 NGES 2026 与脉络洞察：本土 AI 营销/洞察双路径**
+- **腾讯健康 NGES 2026**：基于"重楼"AI 原生底座，提供约 **11 个标准 Skill 模块**，药企可自由组合实现全链路 Agent 化；属"平台嵌入部署"，优势在模块化灵活配置与零迁移成本触达。
+- **脉络洞察**（北京脉络洞察科技有限公司）：面向生命科学行业的 AI 营销型 GEO 服务商，构建"**AI 模拟提问 → AI 分析信源 → AI 生成内容 → AI 持续监控**"全链路闭环（五个层次：用户探针与需求建模、AI 模拟提问与平台监测、AI 分析信源与诊断、AI 生成内容与结构化布局、持续监控与动态优化）；覆盖豆包、DeepSeek、Kimi、千问等主流 AI 平台。NICE 解决方案含脉络慧牍、脉客全书、脉客慧标、脉客慧策、脉络洞察 ACE 五大平台，服务医学部、市场部、数字化部、IT 部与数据分析部。HCP360 覆盖全国 31 个省市约 400 万名 HCP 的外部公开画像数据。
+来源：[健康之路/医护网](https://www.jkzl.com/knowledges/c1c4b349a.html) | [脉络洞察](https://www.medomino.com/resource-center/137142d72af325fe175a15daaab37719) | [齐鲁网财经](https://caijing.iqilu.com/cjzx/2026/1027/5956223.shtml)
+
+> **Salesforce 竞争位势补充**：Agentforce ARR 已突破 10 亿美元（2026 年 7 月口径含 Slackbot），AI 与数据合计 ARR 约 39 亿美元（同比 +210%），已交付 70 亿个"智能体工作单元"；Agentic Enterprise Index 显示单个组织的智能体数量 14 个月内接近增至 3 倍（达 13 个），70% 的客服会话自主运行。
+
+---
+
+## 🏢 八、Veeva 动态
+
+> ⚠️ **近24h无重大首发新闻**（截至 2026-10-28 08:00）。以下为近日关键动态，均标注原始日期，供业务参考。
+
+**1. Veeva 中国商务峰会落幕，正式提出 Agentic Commercial™ 新范式（10月22日，上海）**
+主题"AI 引证 智驭商道"，来自数十家知名药企的 400 余位嘉宾参会。Veeva 中国总经理丁晓枫表示："医药行业正在迎来变革时代，商业模式的重置已经开始。真正的 AI 原生企业，是重新设计人、智能体和业务流程之间关系的企业。"他强调这场进化"始于人，但最终考验的是整个组织"。
+来源：[Veeva 中国商务峰会纪要](http://mp.weixin.qq.com/s?__biz=MzA4OTcyNjgyOQ==&mid=2647793612&idx=1&sn=630ef6a3e5c2c439994ea3c5c365f908)
+
+**2. 一年发布 16 个 AI 智能体，覆盖 90% 关键业务流程**
+Veeva 中国商务产品总经理靳越介绍，过去一年发布的 16 个 AI 智能体可归为三类——**会追问的 CRM、懂医生的 AI 助手、随问随得的洞察**，共同构成 Agentic Commercial 工作方式，其驱动内核为 Commercial Evidence（商业证据）。Veeva 中国商业化战略副总裁高翔透露，16 个智能体已覆盖 90% 的关键业务流程，贯穿产品全生命周期，并打通"策略制定—反馈收集—动态调整"闭环。
+来源：[Veeva 中国商务峰会纪要](http://mp.weixin.qq.com/s?__biz=MzA4OTcyNjgyOQ==&mid=2647793612&idx=1&sn=630ef6a3e5c2c439994ea3c5c365f908)
+
+**3. 中国市场 AI 落地数据：10 余家头部 MNC 客户，超 500 万条语音记录**
+高翔透露，目前已有 **10 余家头部 MNC 客户在中国市场选择 Veeva AI，累计产生超过 500 万条语音记录**。他强调 AI 落地不仅是功能交付，更要与组织变革、工作流程深度结合，让新能力"长"在组织里。
+来源：[Veeva 中国商务峰会纪要](http://mp.weixin.qq.com/s?__biz=MzA4OTcyNjgyOQ==&mid=2647793612&idx=1&sn=630ef6a3e5c2c439994ea3c5c365f908)
+
+**4. Veeva Data Cloud 参考系升级，客户验证多识别 40%、超 1 万名高价值医生**
+Veeva 中国数据云副总裁赵骢表示："只有经过校验的数据才能称为 Evidence。"Data Cloud 提供基于客观事实与主观热度构建的"参考矩阵"，帮助企业校验内部数据、快速定位与适应症相关的高价值医生并调整策略。落地项目中，这套方法帮助某医药企业**多识别出 40%、超过 1 万名潜在相关医生**。
+来源：[Veeva 中国商务峰会纪要](http://mp.weixin.qq.com/s?__biz=MzA4OTcyNjgyOQ==&mid=2647793612&idx=1&sn=630ef6a3e5c2c439994ea3c5c365f908)
+
+**5. 客户实证：辉瑞中国、罗氏、强生、吉利德等落地案例**
+- **辉瑞中国**：Veeva Data Cloud 的相关性和影响力评估帮助一线代表优化全国布局，覆盖 **18 座城市、约 400 家医院、近 7000 名目标医生**（含 600 多位腰部 KOL）。
+- **强生创新制药**：MSL 一线同事试点 **100% 使用 Veeva AI**，拜访后信息录入质量与效率大幅提升。
+- **罗氏制药**：从"管理一线"转向"赋能一线"。
+- **益普生中国**：Veeva Ultra HCP 提供客观、准确、标准统一的全国 HCP 数据。
+- **Veeva Falcon MLR**（亚洲）：像资深审核员一样工作的 AI 审核团队，覆盖所有角度、产品、格式、市场，**审核时间节省 70%**（最终判断仍由人做出）。
+- **第五届 Veeva Heroes 获奖企业**：百济神州、罗氏制药、吉利德、强生创新制药、默沙东、勃林格殷格翰、武田。
+来源：[Veeva 中国商务峰会纪要](http://mp.weixin.qq.com/s?__biz=MzA4OTcyNjgyOQ==&mid=2647793612&idx=1&sn=630ef6a3e5c2c439994ea3c5c365f908)
+
+**6. 全球侧：Veeva Basics 客户破 175 家（10月7日）**
+超过 **175 家新兴 biotech** 正在以 Veeva Basics 建立技术底座，预配置、预验证的应用可在数周内上线，覆盖临床、注册、质量、医学与商业化，并随公司从初创走向商业化平滑扩展。
+来源：[Veeva](https://www.veeva.com/?p=143105)
+
+---
+
+## ⚡ Veeva 关注板块
+
+**1. 【商业化 AI 军备升级，需重新校准差异化话术】**
+Salesforce 在 Dreamforce 2026 一次性推出 7 个岗位型智能体 + 长周期执行 + 多智能体编排 + CRM 专用推理模型 Koa；OpenAI 的 "dots"、Anthropic 的 Claude Duet 又把"常驻主动型智能体"变成新标准。**建议**：面向客户的沟通重点从"我们有多少个 AI 功能"转向"**16 个智能体已覆盖 90% 关键业务流程、10 余家头部 MNC 在中国落地、500 万条语音记录**"这类可验证的规模化证据，并强化"生命科学专属 + 合规内建 + 数据底座（Commercial Evidence）"的护城河叙事——这是通用 CRM 智能体无法直接复制的部分。
+
+**2. 【ESMO 数据兑现期 = 进院与医生分层需求窗口，主推 Data Cloud 参考系】**
+ESMO 2026 中国 29 项 LBA、5 项进入主席研讨会，ADC/双抗新适应症集中读出，药企随即要回答"**新适应症的医生在哪里**"。Veeva Data Cloud 参考系已有"多识别 40%、超 1 万名潜在相关医生"和辉瑞中国"18 城/400 家医院/近 7000 名目标医生"的可量化案例。**建议**：把这两组数字做成标准化 ROI 测算模板，针对刚读出 III 期数据的品种（科伦博泰 sac-TMT、康方依沃西、和黄赛沃替尼等）主动发起进院策略与医生分级评估对话。
+
+**3. 【IQVIA 竞合深化：把 CRO 渠道优势转化为商业化入口】**
+IQVIA 一边在 10 月 7 日推出 Life Science Models（85% 预测命中率），一边在 10 月 13 日把 Veeva CTMS/eTMF/Study Startup/Site Connect 定为**企业标准**。这意味着 Veeva 已嵌入 IQVIA 全球临床开发主链路。**建议**：评估将"临床侧已建立的 IQVIA 集成标准"向商业化侧延伸（如 Data Cloud、Ultra HCP 联合方案）的可行性，把竞合关系做成渠道增量；同时密切跟踪 IQVIA Life Science Models 在"方案模拟/终点预测"上的能力边界，防止其向商业化洞察端外溢。
+
+**4. 【政策端"履约刚性 + 前线提速"双信号，锁定合规与准入场景】**
+国采首开"断供禁入 4 年/2 年"分级罚单，释放履约刚性约束；CDE 同期发布抗肿瘤药"后线数据→前线适应症"指导原则，意味着**适应症扩展的申报节奏将显著加快**。适应症越快扩展，内容合规、医生画像更新、进院策略的压力就越大。**建议**：以 Falcon MLR（审核时间 -70%，且"最终判断由人做出"）作为合规提效切入点，配合 Data Cloud 做适应症扩展后的目标医生重估，形成"**合规快 + 找人准**"的组合打法，重点覆盖刚完成适应症扩增的品种。
+
+---
+
+*本早报由 AI 自动搜集公开信息整理生成，内容仅供参考，不构成任何投资建议或商业决策依据。数据与观点以原始来源为准。*
+
+*生成时间：2026年10月28日 08:00（GMT+8）*
