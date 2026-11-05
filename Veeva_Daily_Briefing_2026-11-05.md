@@ -1,0 +1,204 @@
+# Veeva 每日市场动态早讯 | 2026年11月05日 周四
+
+*本内容由AI自动搜集整理，仅供内部参考*
+
+> ⏰ 时间窗口：近24小时（11月4日 08:00 — 11月5日 08:00），超窗内容已剔除。
+
+---
+
+## 🏛️ 一、政策与监管
+
+**1. 中国—东盟医药交易（集采）平台加速建设，服务中国医药出海**
+中国—东盟医疗保障能力分享活动11月4日在广西南宁举办。该平台为国家医保局指导下由广西建设的全国首个跨境医药交易服务平台，已吸引428家医药生产企业、89家采购商入驻，助力140个医疗器械完成境外注册；2026年7月成功助力国产智能手术机器人在越南注册上市。东南亚新兴医药市场年均复合增速5%—8%，高于发达国家水平。
+来源：[央视新闻](https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=7712755884310975693&channelId=1119)
+
+**2. 《脑机接口技术标准与产业应用参考规范（1.0）》正式发布上线**
+《规范（1.0）》近日正式发布，标志着我国脑机接口行业共识与规范建设迈出实质性一步，与NMPA此前"在脑机接口等前沿领域制定临床试验和审评指导原则"的监管方向形成呼应，为创新器械审评与产业落地提供标准支撑。
+来源：[新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+**3. 监管层对IPO"窗口指导"传闻发酵：部分券商接到放慢甚至暂停IPO进程安排**
+财联社向业内核实，部分券商收到放缓甚至暂停IPO进程的安排，但大概率是"收紧而非一刀切"。对排队中的医疗健康企业（含Biotech、医械公司）上市节奏构成直接影响，18A/科创板申报窗口或进一步收窄。
+来源：[新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+**4. 央行股票回购增持再贷款支持对象扩容，新增5家系统重要性城商行**
+央行11月4日宣布，回购增持再贷款支持对象扩大至21家全国性银行+5家系统重要性城商行，为上市公司（含医药公司）回购增持提供更充足的政策资金通道，利好近期密集的医药回购潮。
+来源：[新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+*其余近24h内未监测到重大首发监管新闻。*
+
+---
+
+## 🌍 二、跨国药企（MNC）
+
+**1. 阿斯利康据传出价约100亿美元收购肥胖症药企Rhythm Pharmaceuticals**
+知情人士称，阿斯利康已提出非约束性收购提议，报价最高可达每股134美元（含里程碑付款），较上月每股124美元的报价上调；交易将通过旗下罕见病业务Alexion进行。受消息影响，Rhythm股价周三收盘大涨28%至110.68美元。肥胖症市场未来十年年销售额预计超1000亿美元。
+来源：[金融界/网易](https://www.163.com/dy/article/LAV3B4BC0519QIKK.html)
+
+**2. 中国生物制药与勃林格殷格翰签下70亿美元BD，刷新公司交易纪录**
+中生制药公告与BI签订战略选择权及许可协议，覆盖6个ADC和T细胞衔接器临床前项目；中生将获3.58亿美元首付款及近期付款，里程碑合计最高70亿美元，另有最高双位数销售分成。6个项目中5个来自2025年7月收购的礼新医药，这是中生今年第三笔与跨国药企的重磅合作。
+来源：[华尔街见闻](https://www.toutiao.com/article/7704461401510707747/)
+
+**3. 阿斯利康：2030年前在华投资逾1000亿元，携AI战略亮相进博会**
+阿斯利康全球执行副总裁、国际业务负责人尹思睿在进博会前接受人民日报专访，称"中国是全球创新的重要策源地"；无锡基地已应用30多项工业4.0技术，泰州基地探索AI机器人作业，青岛基地以AI推动仓储供应自动化，本届进博会将全面呈现AI战略。
+来源：[人民网](http://m2.people.cn/news/default.html?s=MV8xXzQwODI3ODY0XzEwMDJfMTc5MzgzMDI5MA==&from=tencent)
+
+*其余17家MNC近24h内无重大首发新闻。*
+
+---
+
+## 🧬 三、中国Biotech
+
+**1. 恒瑞医药：ADC+PD-L1联合疗法获NMPA临床试验批准**
+恒瑞公告，子公司收到注射用瑞康曲妥珠单抗（HER2 ADC）、阿得贝利单抗注射液（PD-L1）的《药物临床试验批准通知书》，将在伴有HER2异常的可切除非鳞非小细胞肺癌围手术期患者中开展联合治疗临床。
+来源：[巨潮资讯](https://static.cninfo.com.cn/finalpage/2026-11-05/1225657236.PDF)
+
+**2. 翰宇药业GLP-1R/GIPR/GCGR三重激动剂HY3003获美国FDA临床试验许可**
+HY3003注射液（周制剂）于10月5日获IND受理后30天内拿到FDA许可，审评全程零IR。临床前显示减重效果优于替尔泊肽及在研三靶点瑞他曲肽，布局减重、2型糖尿病、MASH等适应症，并同步开发月制剂与口服片剂。
+来源：[中国证券报](https://epaper.cs.com.cn/zgzqb/html/2026-11/05/nw.D110000zgzqb_20261105_3-B020.htm)
+
+**3. 复宏汉霖HLX109获全球首个临床试验许可（澳大利亚）**
+复星医药公告，控股子公司复宏汉霖自研靶向IL1RAP单抗HLX109（拟用于泛发性脓疱型银屑病）获澳大利亚TGA备案及伦理批准，系该药全球首个临床许可；全球范围内尚无靶向IL1RAP的单抗产品获批上市。
+来源：[巨潮资讯](https://static.cninfo.com.cn/finalpage/2026-11-05/1225657248.PDF)
+
+**4. 希格生科完成数亿元A+轮融资首关，"类器官+AI"平台持续加码**
+11月4日，希格生科宣布完成由国寿股权领投的数亿元A+轮融资首关。核心管线SIGX1094为全球首款"类器官+AI"推进至临床的弥漫性胃癌靶向药（FAK/SRC双靶点），曾获盖伦奖提名；资金将支持管线推进关键临床及平台迭代。
+来源：[医药创新促进会/医药魔方](https://www.phirda.com/artilce_44103.html)
+
+**5. 药明康德前三季度营收455.4亿元、同比增38.6%，在手订单767.4亿元**
+11月4日港股医药大涨行情中，药明系股价涨9%。药明康德前三季度营收455.4亿元（+38.6%），在手订单三个季度净增约170亿元；三季度CXO板块整体收入同比+28.2%、归母净利同比+87.9%。
+来源：[东方财富](https://caifuhao.eastmoney.com/news/20261105000124587223120)
+
+---
+
+## 📈 四、资本市场
+
+**1. 医药板块11月4日强势领涨：中证医药+2.64%，恒生创新药指数大涨约7.25%**
+A股港股双双反弹，医药指数表现尤为强劲；公募三季度医药生物获加仓最多，仓位环比上升4.1个百分点，为加仓幅度最大行业。
+来源：[凤凰财经](https://finance.ifeng.com/c/8xnRHOalLat)
+
+**2. 港股创新药/CXO龙头集体拉升：药明系涨9%、百济神州涨约8%、康方生物涨约6%**
+11月4日港股医药板块走强，凯莱英A股触及涨停，皓元医药、益诺思、药明康德、百奥赛图涨幅靠前。
+来源：[东方财富](https://caifuhao.eastmoney.com/news/20261105000124587223120)
+
+**3. 港股创新药ETF单日净值大涨：银华159567涨6.78%、富国159506涨7.34%**
+重仓股集中于康方生物、百济神州、石药集团、中国生物制药、信达生物、翰森制药、科伦博泰等核心创新药标的。
+来源：[新浪财经](https://finance.sina.com.cn/money/fund/aiassistant/jzyd/2026-11-05/doc-inixrqea8969535.shtml)
+
+**4. 凯莱英拟5亿—7亿元回购股份，用于激励与注销**
+凯莱英11月5日公告回购方案：回购价不超过246元/股，用于员工持股/股权激励（不高于60%）及注销减资（不低于40%），资金含回购专项贷款；当日同批公告回购的医药公司还包括三环集团（5亿—10亿）等。
+来源：[中国证券报](https://epaper.cs.com.cn/zgzqb/html/2026-11/05/nw.D110000zgzqb_20261105_7-B013.htm) | [新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+**5. 医药并购与投资动态：东诚药业11亿控股蓝纳成、睿智医药出资产业基金**
+东诚药业拟以不超11.21亿元回购控股子公司蓝纳成34.92%股份，持股比例升至78.87%；睿智医药全资子公司拟1000万元增资武汉佰诺嘉泰创投基金（占29.24%）。器械领域并购活跃，摩根大通指出并购主要围绕"买技术平台或买销售渠道"。
+来源：[东方财富](https://quote.eastmoney.com/sz002675.html) | [新浪财经](https://finance.sina.com.cn/jjxw/2026-11-05/doc-inixrcqh9160934.shtml)
+
+---
+
+## 🤖 五、全球 AI TOP 5
+
+**1. OpenAI宣布收购Pierre Computer，强化Codex开发工具能力**
+OpenAI 11月4日宣布收购Pierre Computer Company，将把其构建、理解和审查代码的工具能力纳入Codex，交易金额未披露；后续关注产品整合节奏及开发者工作流变化。
+来源：[东方财富/财富号](https://caifuhao.eastmoney.com/news/20261105072540979154720)
+
+**2. GPT-6.2 Astra灰测结果流出，OpenAI内部模型BenchCAD得分0.875**
+OpenAI新模型GPT-6.2 Astra开启灰度测试，首批实测显示更注重物理真实感；GPT-6 Astra reportedly一周包办一款AI硬件的外壳、电路板与软件设计。
+来源：[腾讯研究院AI速递](https://www.sohu.com/a/1097287287_455313)
+
+**3. Google为Anthropic数据中心项目提供信用融资支持（TeraWulf，约401MW）**
+Reuters报道，TeraWulf获Google信用支持，为其与Anthropic合作的数据中心项目融资，场址规划约401兆瓦关键IT容量，预计2027年下半年投运；云厂商与AI企业以长期合同+信用支持共同推算力建设。
+来源：[东方财富/财富号](https://caifuhao.eastmoney.com/news/20261105072540979154720)
+
+**4. Anthropic开源FlashProve：零知识证明核验"回答出自指定模型"**
+基于零知识证明，无需公开权重即可证明回答出自所承诺模型；单张H100证明吞吐约110 Token/s，CPU验证约17秒。目前仅证来源不证正确性。
+来源：[腾讯研究院AI速递](https://www.sohu.com/a/1097287287_455313)
+
+**5. 腾讯混元Hy4正式版发布（770B参数）：首次引入视觉理解与Computer Use**
+Hy4首次支持视觉理解与电脑操作能力，金融任务众测居开源第一，自建测试幻觉率由15.76%降至5.45%；已上线腾讯云与OpenRouter，计划开源权重。
+来源：[网易/每日经济新闻](https://www.163.com/dy/article/LAV1N82K0512B07B.html)
+
+---
+
+## 🔬 六、AI 前沿技术（三分栏）
+
+### A. 前沿技术
+
+**微信开源视觉模型WeVisOne-VL：一个模型包办框选、分割与抠图**
+统一输出格式完成定位、计数、读字、分割与抠图，约960万参数小模块替代外接SAM；开源2B/4B权重及标注工具，Apache 2.0许可。同日，OpenAI披露GPT-6 Astra参与实体设备工程试验。
+来源：[腾讯研究院AI速递](https://www.sohu.com/a/1097287287_455313) | [AI模型排行榜](https://cnaihot.com/articles/timesintelli-pt153s-usb-gigabit-ethernet-chip-2026)
+
+**中国信通院、华为、阿里、腾讯、小米等20家单位联合发布《智能体发展自律公约》**
+提出建设智能体互联基础设施，降低跨域发现连接成本，加速智能体赋能千行百业——国内Agent生态治理框架首次成体系落地。
+来源：[新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+### B. 医药AI
+
+**中国科大发布开源RNA序列基础模型structRFM，登上《自然》**
+构建约2100万条序列-二级结构配对数据预训练，提升RNA结构预测与功能推断性能，可支撑药物发现；完整数据、权重与源代码已开放。这是AI for Science在生命科学基础模型层的标志性开源成果。
+来源：[央视网/新华网](https://news.cctv.cn/2026/11/05/ARTI8IFd5K33Ud0NYEWUtNlj261105.shtml)
+
+**"硅谷誓言AI将治愈疾病，药企CEO并不买账"——行业冷思考**
+Anthropic CEO称AI可能十年内治愈大多数疾病；但迄今尚无一款AI设计的药物获FDA批准上市，制药界指出人体现存生物学未知才是最大绊脚石。Insitro创始人Daphne Koller批评行业过度关注分子设计、忽视疾病生物学与临床转化。
+来源：[网易](https://www.163.com/dy/article/LAV0ACDJ053159A3.html) | [网易订阅](https://dy.163.com/article/LAUEIOQ305562QFT.html)
+
+**希格生科"类器官+AI"完成数亿元A+轮融资，全球首个"类器官+AI"临床管线继续推进**
+SIGX1094从靶点发现到进入I期临床用时不到4年，已获FDA与NMPA IND批件、FDA孤儿药与快速通道认定。
+来源：[医药魔方](https://www.phirda.com/artilce_44103.html)
+
+### C. CRM / 商业化 AI
+
+**Veeva 2026中国商务峰会：Agentic Commercial全栈方案全线升级，覆盖90%商业化流程**
+Veeva宣布中国区Agentic CRM Suite升级（"Evidence In, Insights Out"），过去一年发布16款Veeva AI Agents，覆盖90%商业化全流程；10余家头部药企在华选择Veeva AI，累计产生500万条以上语音拜访记录。详见下文「Veeva板块」。
+来源：[腾讯自选股](https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026110419125497256ed4)
+
+**Salesforce×Anthropic推出Claudeforce，Agentforce ARR超15亿美元（同比+240%）**
+最新研报显示，市场对Salesforce与Anthropic的深度合作寄予厚望，Claude推理能力与Salesforce数据、工作流、治理垂直整合；Agentforce与Data 360合计ARR近39亿美元（+210%），但商业化落地仍待观望，目标价被上调52%至304美元。
+来源：[中金研报/腾讯自选股](https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253)
+
+*IQVIA、太美医疗、Medidata、腾讯健康NGES、脉络洞察：近24h无重大首发新闻。*
+
+---
+
+## 🎯 七、竞争对手动态（IQVIA / Salesforce / 太美医疗 / Medidata / 腾讯健康NGES / 脉络洞察）
+
+**1. Salesforce：Claudeforce合作推动股价大涨，Agentforce商业化斜率向上**
+公司2027财年Q2收入113亿美元（+11%）；Agentforce ARR超15亿美元（+240%）。中金提示：当前行情类似2024年Agentforce推出初期，实际落地有待验证。
+来源：[中金研报](https://gu.qq.com/resources/shy/news/detail-v2/index.html#/?id=res841498528253)
+
+**2. 腾讯（健康生态关联）：混元Hy4正式版发布并计划开源，微信开源WeVisOne-VL**
+腾讯云AI基础设施持续加密，Hy4首次具备视觉与电脑操作能力，其Agent化能力（长程智能体、HyCell）未来可能向医疗健康场景输出，需持续跟踪腾讯健康NGES与其底层模型的联动。
+来源：[网易](https://www.163.com/dy/article/LAV1N82K0512B07B.html) | [腾讯研究院](https://www.sohu.com/a/1097287287_455313)
+
+**3. 中国信通院牵头《智能体发展自律公约》发布，CRM/Agent厂商均需对齐**
+华为、阿里、腾讯等20家单位联署，智能体互联基础设施与合规治理成为行业共识；生命科学CRM领域的Agent治理要求预计趋同。
+来源：[新浪财经](https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml)
+
+*IQVIA、太美医疗、Medidata、脉络洞察：近24h无重大首发新闻。*
+
+---
+
+## 💊 八、Veeva 动态
+
+**1. Veeva中国商务峰会发布Agentic CRM Suite升级："Evidence In, Insights Out"**
+面向中国生命科学行业的Agentic Commercial全栈方案覆盖应用、智能体、数据与咨询四层：Voice Agents支持代表口述拜访、AI四步追问补全细节；Chat Agents可调用CRM、UltraHCP、HCPAccess、HCPMemory等八类上下文；MyInsights+支持自然语言生成个性化看板并直接派发跟进任务。
+来源：[腾讯自选股](https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026110419125497256ed4)
+
+**2. 关键运营数据披露：16款AI Agents、10余家头部药企、500万+条语音拜访记录**
+Veeva过去一年发布16款Veeva AI Agents覆盖90%商业化全流程；10余家头部药企在中国选择Veeva AI；语音拜访记录累计超500万条——中国区AI商业化已进入规模化数据沉淀阶段。
+来源：[腾讯自选股](https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026110419125497256ed4)
+
+**3. VEEV股价收涨2.45%报310.63美元，市值502.9亿美元**
+11月5日（美东11月4日收盘）VEEV成交额4.46亿美元，股价距52周高点325.99美元约4.7%；最新季度营收9.28亿美元（+17.6%），净利润2.73亿美元（+36.5%），盈利增速显著快于收入。
+来源：[新浪财经](https://finance.sina.com.cn/stock/usstock/notice/2026-11-05/doc-inixrqea8938862.shtml)
+
+---
+
+## ⚡ Veeva 关注板块（Actionable Insights）
+
+1. **中国区Agentic CRM竞争正式进入"证据闭环"叙事战**：Veeva峰会以"Evidence In, Insights Out"对标Salesforce×Anthropic的"Claudeforce"叙事，双方均在抢"Agent自主闭环+企业级治理"的心智。建议本周内完成一份两套方案的治理/合规对比一页纸，供客户沟通使用。
+2. **AI Agents渗透数据可转化为营销弹药**：16款Agents、10余家头部药企、500万条语音拜访记录是可引用的一线素材，建议在与头部MNC及大型本土药企的Q4商务沟通中重点引用，并邀请标杆客户在中国区峰会后做案例背书。
+3. **MNC"加码中国"窗口期明确**：阿斯利康2030年前在华投资超1000亿元、BI-中生70亿美元BD、阿斯利康洽购Rhythm——MNC在华全价值链与AI战略投入加速，商业系统选型与扩容需求将同步上升，建议针对在华MNC启动Agentic CRM升级专项沟通。
+4. **警惕"AI制药泡沫"情绪外溢至医药数字化预算**：药企CEO公开质疑"AI治愈疾病"叙事，行业对AI投入产出比更审慎；建议客户沟通中强调商业化AI的可量化ROI（拜访效率、任务闭环率、内容合规），避免宏大叙事、聚焦可验证指标。
+
+---
+
+*免责声明：本早报由AI基于公开网络信息自动搜集整理，观点仅供参考，不构成投资建议。所有新闻均附来源链接，请以原始报道为准。*
