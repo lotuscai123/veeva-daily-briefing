@@ -366,6 +366,16 @@
   <!-- Phase 2: Creation -->
   <div class="phase-section" data-phase="creation">
   <div class="phase-divider"><span class="phase-label creation">Phase 2 · 内容创作</span><span class="phase-line"></span></div>
+
+  <!-- 新任务启动模板 -->
+  <div style="background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);border-radius:var(--radius);padding:16px 20px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:var(--shadow);">
+    <div style="flex:1;min-width:280px;">
+      <div style="font-size:14px;font-weight:700;margin-bottom:4px;">🧩 要写成套内容？先复制启动模板</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.65;">一个选题出多渠道（长文＋短视频＋LinkedIn＋一页纸）建议<b>新开一个任务</b>写。点右侧复制模板，粘贴到新任务第一句，口径、风格、授权边界、交付格式一次交代清楚，不用重讲背景。只想改一句话，就地处理即可。</div>
+    </div>
+    <button class="btn btn-primary" onclick="copyStartupTemplate()">📋 复制启动模板</button>
+  </div>
+
   <div class="cards-grid">
     <div class="card" onclick="launchSkill('新闻稿撰写', '请为Veeva中国撰写一份新闻稿。主题：[请在此填入主题]。请调用Veeva品牌Messaging体系（定位：生命科学行业AI Application公司），确保稿件符合Veeva全球新闻稿模板与编辑规范。')">
       <div class="card-header">
@@ -640,6 +650,41 @@
     activePhase = null;
     showAllBtn.classList.remove('visible');
     document.getElementById('pipeline').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // 新任务启动模板（成套内容创作）
+  const STARTUP_TEMPLATE = `【新任务启动 · Veeva 内容创作】
+
+■ 选题：[可直接使用的标题]
+■ 由头/触发事件：[一句话，例如「11/9 早讯：医保双目录 11 月底公布」]
+■ 要交付的内容（可多选）：
+  [ ] 公众号长文（约 1500-2000 字）
+  [ ] 媒体新闻稿 / 行业解读稿
+  [ ] 短视频脚本（口播，30-90 秒）
+  [ ] LinkedIn 中英双语 Post
+  [ ] 知乎问答长文（AIO 用）
+  [ ] 一页纸 PDF / 信息图文案
+  [ ] 高管采访 Q&A 应答
+■ 目标读者：[药企 IT / 市场 / 医学 / 注册 / 准入 / KA / 高管，选 1-2 个]
+■ 叙事锚点：MAAP（Models + Agents + Applications + Platform）／ Agentic Commercial ／ Agentic Life Sciences ／ "Evidence in, Insights out"，按需选 1-2 个，不要全堆
+■ 必须用到的素材：[例如 China Summit 公开口径：16 款 AI Agents、500 万+ 语音拜访记录、10 余家头部药企；或某客户案例]
+■ 硬性限制：
+  - 未获授权的客户数据不得出现（Roche、MSD 相关内容需先确认授权边界，未授权只讲全球公开信息）
+  - 不确定的数字标「需核实」，不要编造
+  - 涉及 IQVIA 用「竞合 / 互补」，不做任何竞争性对比；腾讯健康不点名
+  - 媒体只到媒体名称，不写记者个人
+■ 写作要求：中文为主；去 AI 味——少用破折号、不用三连排比、不用「赋能 / 闭环 / 抓手 / 打通」这类套话；短句、具体、有数据支撑
+■ 参考资料：先检索 IMA「品牌和PR工作知识库」与 IMA 品牌知识库；需要时再读工作区 outputs/ 下相关文档
+■ 交付格式：[Word 文档 / 直接文本 / HTML]
+
+请先不要直接写正文。先输出三样东西给我确认：
+① 这篇的立意（一句话）
+② 3-5 段的结构大纲
+③ 需要我补充或确认的素材清单`;
+
+  function copyStartupTemplate() {
+    copyToClipboard(STARTUP_TEMPLATE);
+    showToast('🧩 启动模板已复制！新建任务后粘贴到第一句，替换 [ ] 里的内容即可。');
   }
 
   // Launch skill - copies prompt and shows toast
