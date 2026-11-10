@@ -187,11 +187,11 @@
   <div class="stats-bar">
     <div class="stat-card">
       <div class="stat-icon blue">📰</div>
-      <div><div class="stat-value">7</div><div class="stat-label">已就绪 AI 能力</div></div>
+      <div><div class="stat-value">17</div><div class="stat-label">可用 AI 能力</div></div>
     </div>
     <div class="stat-card">
       <div class="stat-icon green">🤖</div>
-      <div><div class="stat-value">2</div><div class="stat-label">自动化监测运行中</div></div>
+      <div><div class="stat-value">5</div><div class="stat-label">自动化运行中</div></div>
     </div>
     <div class="stat-card">
       <div class="stat-icon purple">👥</div>
@@ -199,7 +199,7 @@
     </div>
     <div class="stat-card">
       <div class="stat-icon amber">📊</div>
-      <div><div class="stat-value">17家</div><div class="stat-label">G17 药企监测</div></div>
+      <div><div class="stat-value">运行中</div><div class="stat-label">高管情报监测</div></div>
     </div>
   </div>
 
@@ -303,6 +303,32 @@
       </div>
     </div>
 
+    <!-- 每日早报 → IMA 知识库同步 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">🗂️</div>
+        <span class="card-badge ready">运行中</span>
+      </div>
+      <div class="card-title">早报归档 · IMA 知识库</div>
+      <div class="card-desc">每日 8:30 自动把当天早讯归档进 IMA「品牌和PR工作知识库」的每日监测分组，方便后续检索引用，不用再翻邮箱。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏰ 自动运行中 · 每日 8:30</button>
+      </div>
+    </div>
+
+    <!-- 官网新闻稿 → IMA 知识库同步 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">📥</div>
+        <span class="card-badge ready">运行中</span>
+      </div>
+      <div class="card-title">官网新闻稿入库 · IMA</div>
+      <div class="card-desc">每周一 10:00 自动抓取 Veeva 官网新发布的新闻稿，同步进 IMA PR 知识库，作为撰写稿件时的官方口径来源。</div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏰ 自动运行中 · 每周一 10:00</button>
+      </div>
+    </div>
+
     <!-- 行业热点深度扫描 -->
     <div class="card" onclick="launchSkill('行业热点深度扫描', '请帮我深度扫描医药行业最近一周的AI相关热点动态，重点关注生命科学AI应用、药企数字化转型、AI Agent在制药领域的落地。生成一份热点简报，包含关键事件摘要和对Veeva的传播启示。')">
       <div class="card-header">
@@ -335,6 +361,24 @@
   <div class="phase-section" data-phase="strategy">
   <div class="phase-divider"><span class="phase-label strategy">Phase 1 · 选题策划</span><span class="phase-line"></span></div>
   <div class="cards-grid">
+    <!-- 周度选题与内容建议 - 自动化运行 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">📮</div>
+        <span class="card-badge ready">运行中</span>
+      </div>
+      <div class="card-title">周度选题与内容建议</div>
+      <div class="card-desc">每周一 9:30 自动生成并邮件送达。四部分：值得关注的市场热点 → 媒体采访选题（含匹配媒体、推荐原因、业务价值、竞品做法）→ 自媒体内容建议（公众号/视频号/LinkedIn/知乎）→ 执行优先级与风险日历。严格中国视角。</div>
+      <div class="card-tags" style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;">
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">📧 邮件周报</span>
+        <span style="font-size:10px;background:#f0fdf4;color:#15803d;padding:2px 7px;border-radius:4px;">🇨🇳 中国视角</span>
+        <span style="font-size:10px;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:4px;">🎯 媒体只到媒体名</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline btn-sm" style="opacity:0.5; cursor:default;">⏰ 自动运行中 · 每周一 9:30</button>
+      </div>
+    </div>
+
     <div class="card" onclick="launchSkill('选题方向生成', '请基于当前医药行业AI热点（如MAAP架构、生命科学AI应用、药企数字化转型），为Veeva中国策划3-5个下周可行的传播选题方向。每个选题需要包含：1) 新闻角度，2) 目标媒体类型，3) 与Veeva品牌定位（AI Application公司）的契合点。')">
       <div class="card-header">
         <div class="card-icon">💡</div>
@@ -755,7 +799,7 @@
 
   console.log('🟢 Veeva PR AI 工作台已就绪');
   console.log('💡 点击管道按钮筛选流程 | 点击功能卡片 → Prompt 复制 → 粘贴执行');
-  console.log('📊 4 项已就绪 Skill | 2 项自动化运行中 | 9 项按需 | 2 项规划中 | 3 组快捷串联流程');
+  console.log('📊 17 项可用 AI 能力 | 5 项自动化运行中 | 3 组快捷串联流程');
 </script>
 </body>
 </html>
